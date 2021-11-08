@@ -1,4 +1,3 @@
-import {Link} from "react-router-dom";
 import React from "react";
 import BaseComponent from "../Base/BaseComponent";
 
@@ -25,22 +24,22 @@ export default class Nav extends BaseComponent {
                 <nav>
                     <ul>
                         <li>
-                            <Link to="/">Home</Link>
+                            <a href="/">Home</a>
                         </li>
                         <li>
-                            <Link to="/places-lists">All Lists</Link>
+                            <a href="/places-lists">All Lists</a>
                         </li>
                         <li>
                             <div>|</div>
                         </li>
                         <li>
-                            <Link to="/my-places-lists">My Lists</Link>
+                            <a href="/my-places-lists">My Lists</a>
                         </li>
                         <li>
-                            <Link to="/add-places-list">Add New List</Link>
+                            <a href="/add-places-list">Add New List</a>
                         </li>
                         <li>
-                            <Link to="#" onClick={this.signOut}>Sign out (<i>{this.state.user}</i>)</Link>
+                            <a href="#" onClick={this.signOut}>Sign out ({this.state.user})</a>
                         </li>
                     </ul>
                 </nav>
@@ -50,10 +49,10 @@ export default class Nav extends BaseComponent {
                 <nav>
                     <ul>
                         <li>
-                            <Link to="/">Home</Link>
+                            <a href="/">Home</a>
                         </li>
                         <li>
-                            <Link to="/places-lists">All Lists</Link>
+                            <a href="/places-lists">All Lists</a>
                         </li>
                     </ul>
                 </nav>

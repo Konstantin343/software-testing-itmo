@@ -1,7 +1,7 @@
 import React from "react";
 import BaseComponent from "../Base/BaseComponent";
 import {withRouter} from "react-router-dom";
-import PlacesItem from "../Places/PlaceItem";
+import PlaceItem from "../Places/PlaceItem";
 import AddPlace from "../Places/AddPlace";
 import PlacesListItem from "./PlacesListItem";
 
@@ -52,7 +52,7 @@ class PlacesList extends BaseComponent {
                     })
                     this.placesService.getPlacesLists(u[0]).then(al => {
                         this.setState({
-                            added: (al[0].addedLists ?? []).map(l => l.id.toString()).includes(this.props.match.params.id.toString())
+                            added: (al[0].addedLists ?? []).map(l => l.id?.toString()).includes(this.props.match.params.id?.toString())
                         })
                     })
                 })
@@ -76,7 +76,7 @@ class PlacesList extends BaseComponent {
                         <div className="list-group m-lg-3">
                             {this.state.places.map(p => {
                                 return (
-                                    <PlacesItem key={p.name} place={p}/>
+                                    <PlaceItem key={p.name} place={p}/>
                                 )
                             })}
                         </div>
@@ -96,7 +96,7 @@ class PlacesList extends BaseComponent {
                     <div className="list-group w-50 m-lg-3">
                         {this.state.places.map(p => {
                             return (
-                                <PlacesItem key={p.name} place={p}/>
+                                <PlaceItem key={p.name} place={p}/>
                             )
                         })}
                     </div>
@@ -111,7 +111,7 @@ class PlacesList extends BaseComponent {
                     <div className="list-group w-50 m-lg-3">
                         {this.state.places.map(p => {
                             return (
-                                <PlacesItem key={p.name} place={p}/>
+                                <PlaceItem key={p.name} place={p}/>
                             )
                         })}
                     </div>

@@ -10,7 +10,7 @@ export default class Preview extends BaseComponent {
         const hello = this.state.user ? (', ' + this.state.user) : ''
         return (
             <center className={"pt-5"}>
-                <h1>Hello{hello}! This is <span className={"app-name"}>Places App</span>.</h1>
+                <h1><span>Hello{hello}!</span> This is <span className={"app-name"}>Places App</span>.</h1>
                 <div className={"app-info"}>
                     <p>
                         Create your own lists with places<br/>

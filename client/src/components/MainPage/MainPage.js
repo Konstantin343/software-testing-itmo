@@ -3,7 +3,7 @@ import Unauthorized from "../Unauthorized/Unauthorized";
 import BaseComponent from "../Base/BaseComponent";
 import Preview from "../Preview/Preview";
 import PlacesListItem from "../PlacesLists/PlacesListItem";
-import PlacesItem from "../Places/PlaceItem";
+import PlaceItem from "../Places/PlaceItem";
 
 export default class MainPage extends BaseComponent {
     componentDidMount() {
@@ -29,8 +29,8 @@ export default class MainPage extends BaseComponent {
                             }}/>
                         </div>
                         <div className="list-group w-50">
-                            <PlacesItem place={{
-                                name: 'Good Place',
+                            <PlaceItem place={{
+                                name: 'Example Place',
                                 description: 'Best place in this city',
                                 type: 'Cafe',
                                 city: 'Moscow',

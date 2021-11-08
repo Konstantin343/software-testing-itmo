@@ -114,7 +114,7 @@ class AddPlace extends BaseComponent {
                            onChange={this.changeNumber}/>
                 </div>
                 <div className="login-button-holder w-50 mt-3">
-                    <button className={"login-button"} onClick={this.submitAdd}>Add List</button>
+                    <button className={"login-button"} onClick={this.submitAdd}>Add</button>
                 </div>
             </div>
         )

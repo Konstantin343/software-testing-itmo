@@ -1,6 +1,6 @@
 import React from "react";
 
-export default class PlacesItem extends React.Component {
+export default class PlaceItem extends React.Component {
     render() {
         return (
             <a href='#'
