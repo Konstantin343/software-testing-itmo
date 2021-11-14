@@ -28,10 +28,6 @@ test.describe('Places lists', () => {
     })
 
     test('Add new places list with place', async ({page}) => {
-        suffix = Math.random()
-        await page.goto('http://localhost:3000/sign-in')
-        await submitCredentials(page, 'login' + suffix, 'password' + suffix)
-
         await addNewList(page, 'testName' + suffix, 'testDescription' + suffix)
 
         await page.click('text=testName' + suffix)
