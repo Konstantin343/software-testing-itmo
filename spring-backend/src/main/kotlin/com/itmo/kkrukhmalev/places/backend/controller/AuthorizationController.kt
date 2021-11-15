@@ -1,11 +1,9 @@
 package com.itmo.kkrukhmalev.places.backend.controller
 
-import com.itmo.kkrukhmalev.places.backend.domain.User
-import com.itmo.kkrukhmalev.places.backend.repository.UsersRepository
 import com.itmo.kkrukhmalev.places.backend.requestModel.AuthRequestModel
 import com.itmo.kkrukhmalev.places.backend.responseModel.UserResponseModel
+import com.itmo.kkrukhmalev.places.backend.service.AuthorizationService
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.http.MediaType
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RestController
@@ -14,17 +12,18 @@ import javax.servlet.http.HttpSession
 
 @RestController
 class AuthorizationController {
+    companion object {
+        const val USER_SESSION = "user"
+    }
+
     @Autowired
-    lateinit var usersRepository: UsersRepository
+    lateinit var authorizationService: AuthorizationService
 
     @PostMapping("/sign-up")
     fun signUp(httpServletResponse: HttpServletResponse, httpSession: HttpSession, authRequestModel: AuthRequestModel) {
         try {
-            val user = usersRepository.save(User().apply {
-                login = authRequestModel.login
-                password = authRequestModel.password
-            })
-            httpSession.setAttribute("user", user.login)
+            val user = authorizationService.signUp(authRequestModel)
+            httpSession.setAttribute(USER_SESSION, user.login)
             httpServletResponse.status = 301
             httpServletResponse.sendRedirect(authRequestModel.redirectTo)
         } catch (e: Exception) {
@@ -36,11 +35,8 @@ class AuthorizationController {
     @PostMapping("/sign-in")
     fun signIn(httpServletResponse: HttpServletResponse, httpSession: HttpSession, authRequestModel: AuthRequestModel) {
         try {
-            val user = usersRepository.findUserByLoginAndPassword(
-                authRequestModel.login,
-                authRequestModel.password
-            )
-            httpSession.setAttribute("user", user.login)
+            val user = authorizationService.signIn(authRequestModel)
+            httpSession.setAttribute(USER_SESSION, user.login)
             httpServletResponse.status = 301
             httpServletResponse.sendRedirect(authRequestModel.redirectTo)
         } catch (e: Exception) {
@@ -50,12 +46,10 @@ class AuthorizationController {
     }
 
     @PostMapping("/sign-out")
-    fun signOut(httpSession: HttpSession) {
-        httpSession.setAttribute("user", null)
-    }
+    fun signOut(httpSession: HttpSession) = httpSession.setAttribute(USER_SESSION, null)
 
     @GetMapping("/current-user")
     fun currentUser(httpSession: HttpSession): UserResponseModel {
-        return UserResponseModel(httpSession.getAttribute("user") as? String)
+        return UserResponseModel(httpSession.getAttribute(USER_SESSION) as? String)
     }
 }

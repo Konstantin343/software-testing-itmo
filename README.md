@@ -59,7 +59,7 @@
 
 #### Main часть: 
 
-- [ ] Сделать сервис на Java+Spring+любая DB (или NodeJS + DI tool), который имеет как мин 1 Controller.
+- [X] Сделать сервис на Java+Spring+любая DB (или NodeJS + DI tool), который имеет как мин 1 Controller.
 - [ ] Написать Unit и Component тесты для этого сервиса. 
 - [ ] Использовать TestContainers для одного теста с DB. 
 - [ ] Использовать Mockito для мокирования тестов с внешним сервисом. 
@@ -67,15 +67,36 @@
 
 #### Advanced часть: 
 
-- [ ] Сделать взаимодействие сервиса и вашего Frontend приложения.
+- [X] Сделать взаимодействие сервиса и вашего Frontend приложения.
 - [ ] Сделать тесты на авторизацию. 
-- [ ] Создать отдельные Spring Test Configruation, которые можно переключать с помощью флага при запуске тестов. 
+- [ ] Создать отдельные Spring Test Configuration, которые можно переключать с помощью флага при запуске тестов. 
 - [ ] Сделать генерацию тестовой документации через Asci Doctor(Spring Rest Docs).
 
 #### Bonus часть:
 
 - [ ] Придумать функциональность, с которой можно использовать очереди/стримы вида RabbitMQ/Kafka streams. 
 - [ ] Написать компонентные тесты на эту функциональность(используя TestContainers).
+
+---
+
+### Структура
+
+- [**client**](client) - React App frontend. Run: `cd client && npm start`
+
+  `http://localhost:3000` by default
+- [**spring-backend**](spring-backend) - Spring backend. Run: main from `PlacesBackendApplication.kt` file
+
+  `server.port=5000` by default (change in [**application.properties**](spring-backend/src/main/resources/application.properties))
+
+  Database: `postgresql`
+  
+  Change properties and start postgres on this port (`5432` by default)
+  ```properties
+  spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
+  spring.datasource.username=
+  spring.datasource.password=
+  ```
+
 
 ---
 
