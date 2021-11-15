@@ -81,7 +81,7 @@ function start(port, dbString, sessionSecret, allowedHosts) {
     app.get('/places-lists', (req, res) => {
         placesDb.getPlacesLists(req.query.user,
             lists => {
-                placesDb.getAddedPlacesLists(req.query.user ?? -1, added => {
+                placesDb.getAddedPlacesLists(req.query.user, added => {
                     res.status(200)
                     res.contentType("application/json")
                     res.send(
@@ -165,7 +165,7 @@ function start(port, dbString, sessionSecret, allowedHosts) {
                     res.send(JSON.stringify({error: "Can not find user"}))
                 })
             } else {
-                res.status(400)
+                res.status(401)
                 res.send(JSON.stringify({error: "Sign in to add lists"}))
             }
         }
@@ -188,7 +188,7 @@ function start(port, dbString, sessionSecret, allowedHosts) {
                     res.send(JSON.stringify({error: "Can not find user"}))
                 })
             } else {
-                res.status(400)
+                res.status(401)
                 res.send(JSON.stringify({error: "Sign in to add lists"}))
             }
         }
@@ -211,7 +211,7 @@ function start(port, dbString, sessionSecret, allowedHosts) {
                     res.send(JSON.stringify({error: "Can not find user"}))
                 })
             } else {
-                res.status(400)
+                res.status(401)
                 res.send(JSON.stringify({error: "Sign in to create lists"}))
             }
         }
@@ -234,7 +234,7 @@ function start(port, dbString, sessionSecret, allowedHosts) {
                     res.send(JSON.stringify({error: "Can not find user"}))
                 })
             } else {
-                res.status(400)
+                res.status(401)
                 res.send(JSON.stringify({error: "Sign in to create lists"}))
             }
         }
