@@ -27,7 +27,7 @@
 ---
 ## Примеры:
 
-### [Cypress](../client/cypress/integration)
+### [Cypress](https://github.com/Konstantin343/software-testing-itmo/tree/hw1/client/cypress/integration)
 ```javascript
 describe('My First Test', () => {
     it('Does not do much!', () => {
@@ -44,7 +44,7 @@ describe('My First Test', () => {
     })
 })
 ```
-### [Playwright](../client/src/tests/e2e)
+### [Playwright](https://github.com/Konstantin343/software-testing-itmo/tree/hw1/client/src/tests/e2e)
 ```javascript
 test.describe('Places lists', () => {
     test('Add new places list', async ({page}) => {
