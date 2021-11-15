@@ -43,6 +43,8 @@
 
   Database: `sqlite`
 
+- [**e2e**](client/src/tests/e2e) - End-to-End tests. Run: `npx playwright test src/tests/e2e/*.spec.*js --workers=1`
+
 ---
 
 ### GitHub Pages
