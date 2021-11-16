@@ -81,7 +81,7 @@ function start(port, dbString, sessionSecret, allowedHosts) {
     app.get('/places-lists', (req, res) => {
         placesDb.getPlacesLists(req.query.user,
             lists => {
-                placesDb.getAddedPlacesLists(req.query.user, added => {
+                placesDb.getAddedPlacesLists(req.query.user ?? -1, added => {
                     res.status(200)
                     res.contentType("application/json")
                     res.send(
@@ -171,7 +171,7 @@ function start(port, dbString, sessionSecret, allowedHosts) {
         }
     )
 
-    app.post('/remove-list-to-added',
+    app.post('/remove-list-from-added',
         (req, res) => {
             if (req.session.user) {
                 placesDb.getUserByLogin(req.session.user, u => {

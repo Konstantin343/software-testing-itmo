@@ -112,7 +112,7 @@ export default class PlacesService {
 
     async removeListFromAdded(id) {
         const result = await this.post(
-            `remove-list-to-added`,
+            `remove-list-from-added`,
             {
                 id: id
             }

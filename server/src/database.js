@@ -138,20 +138,6 @@ class PlacesDatabase {
         )
     }
 
-    getTags(onSuccess, onError) {
-        this.query(
-            'SELECT * FROM Tags',
-            onSuccess, onError
-        )
-    }
-
-    addTag(tag, onSuccess, onError) {
-        this.query(
-            `INSERT INTO Tags (name, description) VALUES ('${tag.name}', '${tag.description}')`,
-            onSuccess, onError
-        )
-    }
-
     query(queryString, onSuccess, onError) {
         this.db.all(queryString, [], (e, r) => {
             if (r && onSuccess) onSuccess(r)
