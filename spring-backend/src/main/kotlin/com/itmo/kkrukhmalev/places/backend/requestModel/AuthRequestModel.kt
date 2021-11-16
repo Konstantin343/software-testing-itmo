@@ -1,7 +1,7 @@
 package com.itmo.kkrukhmalev.places.backend.requestModel
 
-class AuthRequestModel {
-    lateinit var login: String
-    lateinit var password: String
-    lateinit var redirectTo: String
-}
+data class AuthRequestModel(
+    var login: String,
+    var password: String,
+    var redirectTo: String
+)

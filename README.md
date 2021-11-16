@@ -62,15 +62,15 @@
 #### Main часть: 
 
 - [X] Сделать сервис на Java+Spring+любая DB (или NodeJS + DI tool), который имеет как мин 1 Controller.
-- [ ] Написать Unit и Component тесты для этого сервиса. 
+- [X] Написать Unit и Component тесты для этого сервиса. 
 - [ ] Использовать TestContainers для одного теста с DB. 
-- [ ] Использовать Mockito для мокирования тестов с внешним сервисом. 
+- [X] Использовать Mockito для мокирования тестов с внешним сервисом. 
 - [ ] Написать документацию(README) какие тесты еще необходимо написать, но вы не успели.
 
 #### Advanced часть: 
 
 - [X] Сделать взаимодействие сервиса и вашего Frontend приложения.
-- [ ] Сделать тесты на авторизацию. 
+- [X] Сделать тесты на авторизацию. 
 - [ ] Создать отдельные Spring Test Configuration, которые можно переключать с помощью флага при запуске тестов. 
 - [ ] Сделать генерацию тестовой документации через Asci Doctor(Spring Rest Docs).
 
@@ -86,7 +86,7 @@
 - [**client**](client) - React App frontend. Run: `cd client && npm start`
 
   `http://localhost:3000` by default
-- [**spring-backend**](spring-backend) - Spring backend. Run: main from `PlacesBackendApplication.kt` file
+- [**spring-backend**](spring-backend) - Spring backend. Run: `cd spring-backend && ./mvnw spring-boot:run`
 
   `server.port=5000` by default (change in [**application.properties**](spring-backend/src/main/resources/application.properties))
 
@@ -99,7 +99,7 @@
   spring.datasource.password=
   ```
 
-  **Test**: `mvn test`
+  **Test**: `cd spring-backend && ./mvnw test`
 
 ---
 

@@ -23,10 +23,9 @@ class AuthorizationServiceTest : BaseServiceTest() {
         `when`(mockUsersRepo.save(any()))
             .then { user = it.arguments[0] as User; return@then user }
 
-        val newUser = authorizationService.signUp(AuthRequestModel().apply {
-            login = "login"
-            password = "password"
-        })
+        val newUser = authorizationService.signUp(
+            AuthRequestModel("login", "password", "")
+        )
 
         Assertions.assertEquals("login", newUser.login)
         Assertions.assertEquals(hashPass, newUser.password)
@@ -44,10 +43,9 @@ class AuthorizationServiceTest : BaseServiceTest() {
                 password = hashPass
             })
 
-        val newUser = authorizationService.signIn(AuthRequestModel().apply {
-            login = "login"
-            password = "password"
-        })
+        val newUser = authorizationService.signIn(
+            AuthRequestModel("login", "password", "")
+        )
 
         Assertions.assertEquals("login", newUser.login)
         Assertions.assertEquals(hashPass, newUser.password)
