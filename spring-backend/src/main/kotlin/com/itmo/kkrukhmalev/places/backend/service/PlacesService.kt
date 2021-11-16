@@ -15,15 +15,14 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 
 @Service
-class PlacesService {
+class PlacesService(
     @Autowired
-    lateinit var usersRepository: UsersRepository
-
+    var usersRepository: UsersRepository,
     @Autowired
-    lateinit var placesListsRepository: PlacesListsRepository
-
+    var placesListsRepository: PlacesListsRepository,
     @Autowired
-    lateinit var placesRepository: PlacesRepository
+    var placesRepository: PlacesRepository,
+) {
 
     fun getPlacesLists(user: String?): ListsResponseModel {
         val lists = if (user == null) placesListsRepository.findAll()

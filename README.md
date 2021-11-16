@@ -88,7 +88,7 @@
 
   `server.port=5000` by default (change in [**application.properties**](spring-backend/src/main/resources/application.properties))
 
-  Database: `postgresql`
+  **Database**: `postgresql`
   
   Change properties and start postgres on this port (`5432` by default)
   ```properties
@@ -97,6 +97,7 @@
   spring.datasource.password=
   ```
 
+  **Test**: `mvn test`
 
 ---
 
