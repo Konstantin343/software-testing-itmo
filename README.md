@@ -41,7 +41,9 @@
 
   `SERVER_PORT = 5000` by default (change in [**.env**](server/.env))
 
-  Database: `sqlite`
+  **Database**: `sqlite`
+
+  **Test**: `cd client && npm test`
 
 - [**e2e**](client/src/tests/e2e) - End-to-End tests. Run: `npx playwright test src/tests/e2e/*.spec.*js --workers=1`
 
