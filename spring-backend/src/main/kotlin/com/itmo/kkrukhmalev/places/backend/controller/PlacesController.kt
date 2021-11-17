@@ -47,6 +47,7 @@ class PlacesController {
                 httpServletResponse.status = 401
                 return ErrorResponseModel("Sign in to add places lists")
             }
+            httpServletResponse.status = 200
             placesService.addListToAdded(sessionUser.toString(), idRequestModel.id)
             return ""
         } catch (e: Exception) {
