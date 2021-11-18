@@ -1,5 +1,6 @@
 package com.itmo.kkrukhmalev.places.backend.base
 
+import com.itmo.kkrukhmalev.places.backend.responseModel.ListsResponseModel
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.boot.test.util.TestPropertyValues
@@ -16,13 +17,16 @@ import org.springframework.util.LinkedMultiValueMap
 import org.testcontainers.containers.PostgreSQLContainer
 import org.testcontainers.junit.jupiter.Testcontainers
 
+@Suppress("SameParameterValue")
 @Testcontainers
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ContextConfiguration(initializers = [BaseSystemTest.Initializer::class])
 abstract class BaseSystemTest {
-    class Initializer : ApplicationContextInitializer<ConfigurableApplicationContext> {
+    object Initializer : ApplicationContextInitializer<ConfigurableApplicationContext> {
+        lateinit var postgreSQLContainer: PostgreSQLContainer<Nothing>
+        
         override fun initialize(configurableApplicationContext: ConfigurableApplicationContext) {
-            val postgreSQLContainer = PostgreSQLContainer<Nothing>("postgres:11.1")
+            postgreSQLContainer = PostgreSQLContainer<Nothing>("postgres:11.1")
                 .apply {
                     withDatabaseName("integration-tests-db")
                     withExposedPorts(30030)
@@ -34,7 +38,7 @@ abstract class BaseSystemTest {
                 "spring.datasource.url=" + postgreSQLContainer.jdbcUrl,
                 "spring.datasource.username=" + postgreSQLContainer.username,
                 "spring.datasource.password=" + postgreSQLContainer.password
-            ).applyTo(configurableApplicationContext.environment);
+            ).applyTo(configurableApplicationContext.environment)
         }
     }
 
@@ -44,20 +48,20 @@ abstract class BaseSystemTest {
     @LocalServerPort
     protected var port: Int = 0
 
-    protected final inline fun <reified T, P> post(method: String, httpEntity: HttpEntity<P>) =
+    private inline fun <reified T, P> post(method: String, httpEntity: HttpEntity<P>) =
         restTemplateBuilder.build().postForEntity(
             "http://localhost:$port/$method",
             httpEntity,
             T::class.java
         )
 
-    protected final inline fun <reified T> get(
+    private inline fun <reified T> get(
         method: String,
         cookie: String? = null,
         params: Map<String, String> = mapOf(),
     ) =
         restTemplateBuilder.build().exchange(
-            "http://localhost:$port/$method" + params.entries.joinToString("&") { it.key + "=" + it.value },
+            "http://localhost:$port/$method?" + params.entries.joinToString("&") { it.key + "=" + it.value },
             HttpMethod.GET,
             HttpEntity<Any>(
                 HttpHeaders().apply {
@@ -97,4 +101,22 @@ abstract class BaseSystemTest {
 
     protected fun currentUser(cookie: String? = null) =
         get<String>("current-user", cookie)
+
+    protected fun createPlacesList(name: String, description: String, cookie: String? = null) =
+        post<String, Any>("add-places-list", HttpEntity(
+            """
+                {
+                    "name":"$name",
+                    "description":"$description"
+                }
+            """.trimIndent(),
+            HttpHeaders().apply {
+                if (cookie != null)
+                    set(HttpHeaders.COOKIE, cookie)
+                contentType = MediaType.APPLICATION_JSON
+            }
+        ))
+    
+    protected fun getPlacesLists(user: String? = null, cookie: String? = null) =
+        get<ListsResponseModel>("places-lists", cookie, if (user != null) mapOf("user" to user) else mapOf())
 }

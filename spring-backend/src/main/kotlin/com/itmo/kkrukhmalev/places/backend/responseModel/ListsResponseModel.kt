@@ -6,7 +6,7 @@ data class ListsResponseModel(
 )
 
 data class ListResponseModel(
-    val id: Long,
+    var id: Long,
     val name: String,
     val description: String,
     val owner: String,
