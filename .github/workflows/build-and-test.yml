@@ -11,36 +11,36 @@ env:
   NODE_VERSION: '14'
 
 jobs:
-#  Backend-Tests:
-#    name: Backend Tests
-#    runs-on: ubuntu-latest
-#    steps:
-#      - name: Checkout
-#        uses: actions/checkout@v2
-#
-#      - name: Run Backend Tests
-#        working-directory: spring-backend
-#        run: ./mvnw test
-#
-#  Frontend-Tests:
-#    name: Frontend Tests
-#    runs-on: ubuntu-latest
-#    steps:
-#      - name: Checkout
-#        uses: actions/checkout@v2
-#
-#      - name: Set up Node.js
-#        uses: actions/setup-node@v2
-#        with:
-#          node-version: ${{ env.NODE_VERSION }}
-#
-#      - name: Install dependencies
-#        working-directory: client
-#        run: npm install
-#
-#      - name: Run Frontend Tests
-#        working-directory: client
-#        run: npm test
+  Backend-Tests:
+    name: Backend Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Run Backend Tests
+        working-directory: spring-backend
+        run: ./mvnw test
+
+  Frontend-Tests:
+    name: Frontend Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install dependencies
+        working-directory: client
+        run: npm install
+
+      - name: Run Frontend Tests
+        working-directory: client
+        run: npm test
 
   End-To-End-Tests:
     name: End-to-End Tests
@@ -56,7 +56,7 @@ jobs:
         ports:
           - 5432:5432
         options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
-#    needs: [BackendTests, FrontendTests]
+    needs: [BackendTests, FrontendTests]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -84,7 +84,7 @@ jobs:
           waitFor200() {
             tmt=0
             st=0
-            while [[ "$st" == "200" && "$tmt" -lt "120" ]]; do
+            while [[ "$st" == "000" && "$tmt" -lt "120" ]]; do
               st=$(curl -s -o /dev/null -w ''%{http_code}'' localhost:$1)
               echo $st; sleep 5; tmt=$tmt+5
             done
