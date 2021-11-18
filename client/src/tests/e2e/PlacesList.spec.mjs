@@ -7,9 +7,6 @@ let suffix
 let login
 let password
 
-const host = 'http://localhost'
-const port = 3000
-
 test.describe('Places lists', () => {
     test.beforeEach(async ({page}) => {
         if (!login && !password) {

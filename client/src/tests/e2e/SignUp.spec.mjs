@@ -3,7 +3,6 @@ import {submitCredentials} from "./Steps.mjs";
 import {config} from 'dotenv'
 config({ path: './.env.test' });
 
-
 test.describe('Sign up', () => {
     test('Sing up, sign out, sign in and check session', async ({page}) => {
         const suffix = Math.random()
