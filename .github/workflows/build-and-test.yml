@@ -74,17 +74,16 @@ jobs:
         working-directory: spring-backend
         run: ./mvnw spring-boot:run &
 
-      - name: Start Client
-        working-directory: client
-        run: npm start &
-
-      - name: Wait for Backend and Client starts
+      - name: Run E2E Cypress Tests
         uses: cypress-io/github-action@v2
         with:
-          command: echo "Pass"
+          working-directory: client
+          start: npm start
           wait-on: 'http://localhost:5000, http://localhost:3000'
           wait-on-timeout: 120
+          headless: true
+          browser: chrome
 
-      - name: Run E2E Tests
+      - name: Run E2E Playwirght Tests
         working-directory: client
         run: npx playwright test src/tests/e2e/*.spec.*js --workers=1
