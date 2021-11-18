@@ -83,7 +83,7 @@ jobs:
         run: |
           waitFor200() {
             tmt=0
-            st=0
+            st=000
             while [[ "$st" == "000" && "$tmt" -lt "120" ]]; do
               st=$(curl -s -o /dev/null -w ''%{http_code}'' localhost:$1)
               echo $st; sleep 5; tmt=$tmt+5
