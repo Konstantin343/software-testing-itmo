@@ -18,6 +18,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Build Backend
+        working-directory: spring-backend
+        run: ./mvnw build
+
       - name: Run Backend Tests
         working-directory: spring-backend
         run: ./mvnw test
