@@ -20,7 +20,7 @@ jobs:
 
       - name: Build Backend
         working-directory: spring-backend
-        run: ./mvnw build
+        run: ./mvnw compile
 
       - name: Run Backend Tests
         working-directory: spring-backend
