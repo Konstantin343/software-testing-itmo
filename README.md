@@ -119,6 +119,11 @@
 
 - [ ] Использовать Kubernetes в Azure/Яндекс Облаке для разворачивания среды.
 
+### Структура 
+
+- [**workflows**](.github/workflows) - `*.yml` files with GitHub workflows
+  - [**Build & Test**](.github/workflows/build-and-test.yml) - workflow that build `spring-backend`/`client` and run tests
+
 ---
 
 ## ДЗ 4 (Репортинг Allure)
