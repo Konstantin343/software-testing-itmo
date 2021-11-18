@@ -32,10 +32,14 @@ jobs:
       - name: Install dependencies
         working-directory: client
         run: npm install
+        env:
+          CI: true
 
       - name: Run Frontend Tests
         working-directory: client
         run: npm test
+        env:
+          CI: true
 
   EndToEndTests:
     runs-on: ubuntu-latest
