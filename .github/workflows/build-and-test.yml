@@ -78,8 +78,13 @@ jobs:
         working-directory: client
         run: npm start &
 
+      - name: Wait for Backend and Client starts
+        uses: cypress-io/github-action@v2
+        with:
+          command: echo "Pass"
+          wait-on: 'http://localhost:5000, http://localhost:3000'
+          wait-on-timeout: 120
+
       - name: Run E2E Tests
         working-directory: client
-        run: |
-          sleep 120
-          npx playwright test src/tests/e2e/*.spec.*js --workers=1
+        run: npx playwright test src/tests/e2e/*.spec.*js --workers=1
