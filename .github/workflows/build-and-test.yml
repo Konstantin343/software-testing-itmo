@@ -55,6 +55,17 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
 
+      services:
+        postgres:
+          image: postgres:11
+          env:
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: postgres
+            POSTGRES_DB: postgres
+          ports:
+            - 5432:5432
+          options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
+
       - name: Install dependencies
         working-directory: client
         run: npm install
@@ -69,4 +80,4 @@ jobs:
 
       - name: Run E2E Tests
         working-directory: client
-        run: npx playwright test src/tests/e2e/*.spec.*js --workers=1
+        run: sleep 120 && npx playwright test src/tests/e2e/*.spec.*js --workers=1
