@@ -109,7 +109,7 @@
 
 #### Main часть:
 
-- [ ] Добавить GitHub action для запуска тестов на UI и Backend по пушу из в master ветку.
+- [X] Добавить GitHub action для запуска тестов на UI и Backend по пушу из в master ветку.
 
 #### Advanced часть:
 
