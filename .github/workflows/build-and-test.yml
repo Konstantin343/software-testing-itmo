@@ -11,51 +11,62 @@ env:
   NODE_VERSION: '14'
 
 jobs:
-  BackendTests:
+#  Backend-Tests:
+#    name: Backend Tests
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Checkout
+#        uses: actions/checkout@v2
+#
+#      - name: Run Backend Tests
+#        working-directory: spring-backend
+#        run: ./mvnw test
+#
+#  Frontend-Tests:
+#    name: Frontend Tests
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Checkout
+#        uses: actions/checkout@v2
+#
+#      - name: Set up Node.js
+#        uses: actions/setup-node@v2
+#        with:
+#          node-version: ${{ env.NODE_VERSION }}
+#
+#      - name: Install dependencies
+#        working-directory: client
+#        run: npm install
+#
+#      - name: Run Frontend Tests
+#        working-directory: client
+#        run: npm test
+
+  End-To-End-Tests:
+    name: End-to-End Tests
     runs-on: ubuntu-latest
+#    needs: [BackendTests, FrontendTests]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Run Backend Tests
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install dependencies
+        working-directory: client
+        run: npm install
+
+      - name: Start Backend
         working-directory: spring-backend
-        run: ./mvnw test
+        run: ./mvnw spring-boot:run &
 
-  FrontendTests:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-
-      - name: Install dependencies
+      - name: Start Client
         working-directory: client
-        run: npm install
+        run: npm start &
 
-      - name: Run Frontend Tests
-        working-directory: client
-        run: npm test
-
-  EndToEndTests:
-    runs-on: ubuntu-latest
-    needs: [BackendTests, FrontendTests]
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-
-      - name: Install dependencies
-        working-directory: client
-        run: npm install
-
-      - name: Run Frontend Tests
+      - name: Run E2E Tests
         working-directory: client
         run: npx playwright test src/tests/e2e/*.spec.*js --workers=1
