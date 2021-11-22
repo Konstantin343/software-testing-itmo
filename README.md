@@ -73,7 +73,7 @@ Run: `npx playwright test src/tests/e2e/*.spec.*js --workers=1 --config=src/test
 - [X] ~~Сделать взаимодействие сервиса и вашего Frontend приложения.~~
 - [X] ~~Сделать тесты на авторизацию.~~ 
 - [ ] Создать отдельные Spring Test Configuration, которые можно переключать с помощью флага при запуске тестов. 
-- [ ] Сделать генерацию тестовой документации через Asci Doctor(Spring Rest Docs).
+- [X] ~~Сделать генерацию тестовой документации через Asci Doctor(Spring Rest Docs).~~
 
 #### Bonus часть:
 

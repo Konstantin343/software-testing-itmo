@@ -9,6 +9,7 @@ import org.mockito.kotlin.given
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest
 import org.springframework.http.MediaType
 import org.springframework.mock.web.MockHttpSession
+import org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.document
 import org.springframework.test.web.servlet.get
 import org.springframework.test.web.servlet.post
 
@@ -27,13 +28,13 @@ class AuthorizationControllerTest : BaseControllerTest<AuthorizationService>() {
     @Test
     fun `current user when authorized`() {
         mockMvc.get("/current-user") {
-            session = MockHttpSession().apply { 
-                setAttribute("user", "user123") 
+            session = MockHttpSession().apply {
+                setAttribute("user", "user123")
             }
         }.andExpect {
             status { isOk() }
             content { json("{\"user\":\"user123\"}") }
-        }
+        }.createDocs()
     }
 
     @Test
@@ -57,7 +58,7 @@ class AuthorizationControllerTest : BaseControllerTest<AuthorizationService>() {
             }
             content { string("") }
             request { sessionAttribute("user", "login") }
-        }
+        }.createDocs()
     }
 
     @Test
@@ -102,7 +103,7 @@ class AuthorizationControllerTest : BaseControllerTest<AuthorizationService>() {
             }
             content { string("") }
             request { sessionAttribute("user", "login") }
-        }
+        }.createDocs()
     }
 
     @Test
