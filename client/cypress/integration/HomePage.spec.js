@@ -1,5 +1,5 @@
-describe('My First Test', () => {
-    it('Does not do much!', () => {
+describe('Home Page', () => {
+    it('User should be able to sign up', () => {
         cy.visit('http://localhost:3000')
 
         cy.contains('Sign up').click()

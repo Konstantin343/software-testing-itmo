@@ -1,23 +1,18 @@
 import {test, expect} from '@playwright/test';
 import {addNewList, addNewPlace, submitCredentials} from "./Steps.mjs";
-import {config} from 'dotenv'
-config({ path: './.env.test' });
 
 let suffix
 let login
 let password
-
-const host = 'http://localhost'
-const port = 3000
 
 test.describe('Places lists', () => {
     test.beforeEach(async ({page}) => {
         if (!login && !password) {
             login = 'login' + Math.random()
             password = 'password' + Math.random()
-            await page.goto(`${process.env.E2E_TESTS_URL}/sign-up`)
+            await page.goto(`/sign-up`)
         } else {
-            await page.goto(`${process.env.E2E_TESTS_URL}/sign-in`)
+            await page.goto(`/sign-in`)
         }
         suffix = Math.random()
         await submitCredentials(page, login, password)
