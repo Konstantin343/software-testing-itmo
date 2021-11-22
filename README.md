@@ -102,7 +102,7 @@ Run: `npx playwright test src/tests/e2e/*.spec.*js --workers=1 --config=src/test
 
   **Test**: `cd spring-backend && ./mvnw test`  
   You can specify `-Dtest.configuration=<value>` flag, where `<value>` in [`springMock`, `mockitoMock`].  
-  - `springMock` - use `org.springframework.boot.test.mock.mockito.@MockBean` in `*ControllerTest`
+  - `springMock` _(default)_ - use `org.springframework.boot.test.mock.mockito.@MockBean` in `*ControllerTest`
   - `mockitoMock` - use `org.mockito.kotlin.mock()` in `*ControllerTest`
 
 ---
