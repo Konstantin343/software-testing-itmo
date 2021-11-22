@@ -27,13 +27,13 @@ class AuthorizationControllerTest : BaseControllerTest<AuthorizationService>() {
     @Test
     fun `current user when authorized`() {
         mockMvc.get("/current-user") {
-            session = MockHttpSession().apply { 
-                setAttribute("user", "user123") 
+            session = MockHttpSession().apply {
+                setAttribute("user", "user123")
             }
         }.andExpect {
             status { isOk() }
             content { json("{\"user\":\"user123\"}") }
-        }
+        }.createDocs()
     }
 
     @Test
@@ -57,7 +57,7 @@ class AuthorizationControllerTest : BaseControllerTest<AuthorizationService>() {
             }
             content { string("") }
             request { sessionAttribute("user", "login") }
-        }
+        }.createDocs()
     }
 
     @Test
@@ -102,7 +102,7 @@ class AuthorizationControllerTest : BaseControllerTest<AuthorizationService>() {
             }
             content { string("") }
             request { sessionAttribute("user", "login") }
-        }
+        }.createDocs()
     }
 
     @Test

@@ -58,7 +58,7 @@ class PlacesControllerTest : BaseControllerTest<PlacesService>() {
                         }
                     """.trimIndent())
                 }
-            }
+            }.createDocs()
 
         verify(service).getPlacesLists(null)
     }
@@ -110,7 +110,7 @@ class PlacesControllerTest : BaseControllerTest<PlacesService>() {
                         }
                     """.trimIndent())
             }
-        }
+        }.createDocs()
 
         verify(service).getPlacesList(1)
     }
@@ -149,7 +149,7 @@ class PlacesControllerTest : BaseControllerTest<PlacesService>() {
             content { 
                 string("")
             }
-        }
+        }.createDocs()
         
         verify(service).addListToAdded("user", 1)
     }
@@ -204,7 +204,7 @@ class PlacesControllerTest : BaseControllerTest<PlacesService>() {
             content {
                 string("")
             }
-        }
+        }.createDocs()
 
         verify(service).removeListFromAdded("user", 1)
     }
@@ -268,7 +268,7 @@ class PlacesControllerTest : BaseControllerTest<PlacesService>() {
             content {
                 string("")
             }
-        }
+        }.createDocs()
 
         verify(service).addPlacesList("user", placesList)
     }

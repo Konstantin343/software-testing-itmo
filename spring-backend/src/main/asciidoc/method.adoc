@@ -1,0 +1,8 @@
+.request
+include::{snippets}/{class}/{method}/http-request.adoc[]
+
+.response
+include::{snippets}/{class}/{method}/http-response.adoc[]
+
+.curl
+include::{snippets}/{class}/{method}/curl-request.adoc[]

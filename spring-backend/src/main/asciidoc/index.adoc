@@ -1,0 +1,56 @@
+= Places App REST Docs
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:snippets: ../../../target/snippets
+
+
+== Authorization
+
+:class: AuthorizationControllerTest
+
+=== Current user
+
+:method: current user when authorized
+include::method.adoc[]
+
+=== Sign up
+
+:method: sign up success
+include::method.adoc[]
+
+=== Sign in
+
+:method: sign in success
+include::method.adoc[]
+
+== Places
+
+:class: PlacesControllerTest
+
+=== Get all places lists
+
+:method: get all places lists
+include::method.adoc[]
+
+=== Get places list
+
+:method: get places list
+include::method.adoc[]
+
+=== Add places list
+
+:method: add places list
+include::method.adoc[]
+
+=== Add list to added
+
+:method: add list to added
+include::method.adoc[]
+
+=== Remove list from added
+
+:method: remove list from added
+include::method.adoc[]

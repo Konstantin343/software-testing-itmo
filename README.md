@@ -72,8 +72,8 @@ Run: `npx playwright test src/tests/e2e/*.spec.*js --workers=1 --config=src/test
 
 - [X] ~~Сделать взаимодействие сервиса и вашего Frontend приложения.~~
 - [X] ~~Сделать тесты на авторизацию.~~ 
-- [ ] Создать отдельные Spring Test Configuration, которые можно переключать с помощью флага при запуске тестов. 
-- [ ] Сделать генерацию тестовой документации через Asci Doctor(Spring Rest Docs).
+- [X] ~~Создать отдельные Spring Test Configuration, которые можно переключать с помощью флага при запуске тестов.~~ 
+- [X] ~~Сделать генерацию тестовой документации через Asci Doctor(Spring Rest Docs).~~
 
 #### Bonus часть:
 
@@ -100,7 +100,10 @@ Run: `npx playwright test src/tests/e2e/*.spec.*js --workers=1 --config=src/test
   spring.datasource.password=
   ```
 
-  **Test**: `cd spring-backend && ./mvnw test`
+  **Test**: `cd spring-backend && ./mvnw test`  
+  You can specify `-Dtest.configuration=<value>` flag, where `<value>` in [`springMock`, `mockitoMock`].  
+  - `springMock` _(default)_ - use `org.springframework.boot.test.mock.mockito.@MockBean` in `*ControllerTest`
+  - `mockitoMock` - use `org.mockito.kotlin.mock()` in `*ControllerTest`
 
 ---
 
