@@ -117,7 +117,7 @@ jobs:
     #    # uncomment after hw check
     #    if: ${{ github.event_name == 'refs/heads/main' }}
 
-    needs: [ Backend-Tests, Frontend-Tests, End-To-End-Test ]
+    needs: [ End-To-End-Test ]
     steps:
       - name: Download backend allure results
         uses: actions/download-artifact@v2
