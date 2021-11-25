@@ -12,9 +12,9 @@ import org.junit.Test
 import org.springframework.http.HttpHeaders
 import org.springframework.http.HttpStatus
 
-@Epic("System Tests")
+@Epic("System Tests (Backend)")
 @Feature("Authorization Tests")
-@DisplayName("System Authorization Tests")
+@DisplayName("System Authorization Tests (Backend)")
 class AuthorizationSystemTest : BaseSystemTest() {
     @Test
     @Story("User must sign up/sign in/sing out only with correct data")

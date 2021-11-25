@@ -22,9 +22,9 @@ import org.springframework.test.web.servlet.get
 import org.springframework.test.web.servlet.post
 
 @WebMvcTest(PlacesController::class)
-@Epic("Controller Tests")
+@Epic("Controller Tests (Backend)")
 @Feature("Places Tests")
-@DisplayName("Controller Places Tests")
+@DisplayName("Controller Places Tests (Backend)")
 class PlacesControllerTest : BaseControllerTest<PlacesService>() {
     @Test
     @Story("Get all places lists")

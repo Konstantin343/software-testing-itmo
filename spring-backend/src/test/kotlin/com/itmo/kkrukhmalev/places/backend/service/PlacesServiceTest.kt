@@ -19,9 +19,9 @@ import org.mockito.kotlin.any
 import org.mockito.kotlin.verify
 import org.mockito.kotlin.whenever
 
-@Epic("Service Tests")
+@Epic("Service Tests (Backend)")
 @Feature("Places Tests")
-@DisplayName("Service Places Tests")
+@DisplayName("Service Places Tests (Backend)")
 class PlacesServiceTest : BaseServiceTest() {
 
     private val placesService = PlacesService(

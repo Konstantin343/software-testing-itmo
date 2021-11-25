@@ -14,9 +14,9 @@ import org.junit.jupiter.api.Assertions
 import org.springframework.http.HttpHeaders
 import org.springframework.http.HttpStatus
 
-@Epic("System Tests")
+@Epic("System Tests (Backend)")
 @Feature("Places Tests")
-@DisplayName("System Places Tests")
+@DisplayName("System Places Tests (Backend)")
 class PlacesSystemTest : BaseSystemTest() {
     @Test
     @Story("User must see created lists")

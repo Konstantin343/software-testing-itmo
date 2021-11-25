@@ -64,66 +64,67 @@ jobs:
         working-directory: client
         run: npm test
 
-#  End-To-End-Tests:
-#    name: End-to-End Tests
-#    runs-on: ubuntu-latest
-#
-#    services:
-#      postgres:
-#        image: postgres:11
-#        env:
-#          POSTGRES_USER: postgres
-#          POSTGRES_PASSWORD: postgres
-#          POSTGRES_DB: postgres
-#        ports:
-#          - 5432:5432
-#        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
-#    needs: [Backend-Tests, Frontend-Tests]
-#    steps:
-#      - name: Checkout
-#        uses: actions/checkout@v2
-#
-#      - name: Set up Node.js
-#        uses: actions/setup-node@v2
-#        with:
-#          node-version: ${{ env.NODE_VERSION }}
-#
-#      - name: Install dependencies
-#        working-directory: client
-#        run: npm install
-#
-#      - name: Start Backend
-#        working-directory: spring-backend
-#        run: ./mvnw spring-boot:run &
-#
-#      - name: Run E2E Cypress Tests
-#        uses: cypress-io/github-action@v2
-#        with:
-#          working-directory: client
-#          start: npm start
-#          wait-on: 'http://localhost:5000/places-lists, http://localhost:3000'
-#          wait-on-timeout: 120
-#          headless: true
-#          browser: chrome
-#
-#      - name: Run E2E Playwirght Tests
-#        working-directory: client
-#        run: npx playwright test src/tests/e2e/*.spec.*js --workers=1 --config=src/tests/e2e/playwright.config.ts
-        
+  End-To-End-Tests:
+    name: End-to-End Tests
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:11
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: postgres
+        ports:
+          - 5432:5432
+        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
+    needs: [ Backend-Tests, Frontend-Tests ]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install dependencies
+        working-directory: client
+        run: npm install
+
+      - name: Start Backend
+        working-directory: spring-backend
+        run: ./mvnw spring-boot:run &
+
+      - name: Run E2E Cypress Tests
+        uses: cypress-io/github-action@v2
+        with:
+          working-directory: client
+          start: npm start
+          wait-on: 'http://localhost:5000/places-lists, http://localhost:3000'
+          wait-on-timeout: 120
+          headless: true
+          browser: chrome
+
+      - name: Run E2E Playwirght Tests
+        working-directory: client
+        run: npx playwright test src/tests/e2e/*.spec.*js --workers=1 --config=src/tests/e2e/playwright.config.ts
+
   Upload-Allure-Report:
     name: Upload Allure Report
     runs-on: ubuntu-latest
     if: always()
+    #    # uncomment after hw check
+    #    if: ${{ github.event_name == 'refs/heads/main' }}
 
-#    needs: [Backend-Tests, Frontend-Tests, End-To-End-Test]
-    needs: [Backend-Tests, Frontend-Tests]
+    needs: [ Backend-Tests, Frontend-Tests, End-To-End-Test ]
     steps:
       - name: Download backend allure results
         uses: actions/download-artifact@v2
         with:
           name: backend-allure-results
           path: allure-results
-          
+
       - name: Create allure report
         uses: simple-elf/allure-report-action@v1.5
         id: allure-report
@@ -132,7 +133,7 @@ jobs:
           gh_pages: gh-pages
           allure_report: allure-report
           allure_history: allure-history
-          
+
       - name: Deploy report to Github Pages
         uses: peaceiris/actions-gh-pages@v2
         env:

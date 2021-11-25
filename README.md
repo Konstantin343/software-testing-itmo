@@ -52,7 +52,7 @@ Run: `npx playwright test src/tests/e2e/*.spec.*js --workers=1 --config=src/test
 
 ### GitHub Pages
 
-[**Playwright vs Cypress**](https://konstantin343.github.io/software-testing-itmo/)
+[**Playwright vs Cypress**](https://konstantin343.github.io/software-testing-itmo/) _(disabled now)_
 
 ---
 
@@ -136,7 +136,11 @@ Run: `npx playwright test src/tests/e2e/*.spec.*js --workers=1 --config=src/test
 
 #### Bonus часть:
 
-- [ ] Использовать Allure reporting для написанных тестов.
+- [X] Использовать Allure reporting для написанных тестов.
+
+### Allure Reports
+
+[**Reports from `main`**](https://konstantin343.github.io/software-testing-itmo/)
 
 ---
 

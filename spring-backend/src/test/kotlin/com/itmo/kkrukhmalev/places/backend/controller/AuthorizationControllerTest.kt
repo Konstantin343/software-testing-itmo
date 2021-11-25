@@ -17,9 +17,9 @@ import org.springframework.test.web.servlet.get
 import org.springframework.test.web.servlet.post
 
 @WebMvcTest(AuthorizationController::class)
-@Epic("Controller Tests")
+@Epic("Controller Tests (Backend)")
 @Feature("Authorization Tests")
-@DisplayName("Controller Authorization Tests")
+@DisplayName("Controller Authorization Tests (Backend)")
 class AuthorizationControllerTest : BaseControllerTest<AuthorizationService>() {
 
     @Test

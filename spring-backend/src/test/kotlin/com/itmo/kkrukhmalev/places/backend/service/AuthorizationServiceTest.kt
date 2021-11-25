@@ -8,16 +8,16 @@ import io.qameta.allure.Epic
 import io.qameta.allure.Feature
 import io.qameta.allure.Story
 import io.qameta.allure.junit4.DisplayName
-import org.junit.jupiter.api.Assertions
 import org.junit.Test
+import org.junit.jupiter.api.Assertions
 import org.mockito.Mockito.`when`
 import org.mockito.kotlin.any
-import org.mockito.kotlin.whenever
 import org.mockito.kotlin.verify
+import org.mockito.kotlin.whenever
 
-@Epic("Service Tests")
+@Epic("Service Tests (Backend)")
 @Feature("Authorization Tests")
-@DisplayName("Service Authorization Tests")
+@DisplayName("Service Authorization Tests (Backend)")
 class AuthorizationServiceTest : BaseServiceTest() {
     private val authorizationService = AuthorizationService(mockUsersRepo)
 
