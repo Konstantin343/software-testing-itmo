@@ -124,6 +124,13 @@ jobs:
         with:
           name: backend-allure-results
           path: allure-results
+          
+      - name: Get Allure history
+        uses: actions/checkout@v2
+        continue-on-error: true
+        with:
+          ref: allure-reports-pages
+          path: allure-reports-pages
 
       - name: Create allure report
         uses: simple-elf/allure-report-action@v1.5
