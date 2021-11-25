@@ -8,13 +8,20 @@ import com.itmo.kkrukhmalev.places.backend.domain.User
 import com.itmo.kkrukhmalev.places.backend.requestModel.AddPlaceRequestModel
 import com.itmo.kkrukhmalev.places.backend.requestModel.AddPlacesListRequestModel
 import com.itmo.kkrukhmalev.places.backend.responseModel.ListsResponseModel
+import io.qameta.allure.Epic
+import io.qameta.allure.Feature
+import io.qameta.allure.Story
+import io.qameta.allure.junit4.DisplayName
 import org.junit.jupiter.api.Assertions
-import org.junit.jupiter.api.Test
+import org.junit.Test
 import org.mockito.Mockito.`when`
 import org.mockito.kotlin.any
 import org.mockito.kotlin.verify
 import org.mockito.kotlin.whenever
 
+@Epic("Service Tests")
+@Feature("Places Tests")
+@DisplayName("Service Places Tests")
 class PlacesServiceTest : BaseServiceTest() {
 
     private val placesService = PlacesService(
@@ -24,6 +31,8 @@ class PlacesServiceTest : BaseServiceTest() {
     )
 
     @Test
+    @Story("Get all places lists")
+    @DisplayName("Get all places lists")
     fun `get all places lists`() {
         whenever(mockPlacesListsRepo.findAll())
             .thenReturn(listOf(
@@ -46,6 +55,8 @@ class PlacesServiceTest : BaseServiceTest() {
     }
 
     @Test
+    @Story("Get places lists by user")
+    @DisplayName("Get places lists by user")
     fun `get places lists by user`() {
         val login = "user1"
 
@@ -73,6 +84,8 @@ class PlacesServiceTest : BaseServiceTest() {
     }
 
     @Test
+    @Story("Get places list with place by id")
+    @DisplayName("Get places list with place by id")
     fun `get places list with place by id`() {
         whenever(mockPlacesListsRepo.findPlacesListById(1))
             .thenReturn(TestModels.placesList(1, 1, 1))
@@ -86,6 +99,8 @@ class PlacesServiceTest : BaseServiceTest() {
     }
 
     @Test
+    @Story("Add list to added")
+    @DisplayName("Add list to added")
     fun `add list to added`() {
         val login = "user1"
         val users = mutableListOf<User>()
@@ -110,6 +125,8 @@ class PlacesServiceTest : BaseServiceTest() {
     }
 
     @Test
+    @Story("Remove list from added")
+    @DisplayName("Remove list from added")
     fun `remove list from added`() {
         val login = "user1"
         val users = mutableListOf<User>()
@@ -131,6 +148,8 @@ class PlacesServiceTest : BaseServiceTest() {
     }
 
     @Test
+    @Story("Add places list")
+    @DisplayName("Add places list")
     fun `add places list`() {
         val login = "user2"
         lateinit var placesList: PlacesList
@@ -159,6 +178,8 @@ class PlacesServiceTest : BaseServiceTest() {
     }
 
     @Test
+    @Story("Add place")
+    @DisplayName("Add place")
     fun `add place`() {
         val placesList = TestModels.placesList(1, 1, 0)
         lateinit var place: Place

@@ -5,7 +5,11 @@ import com.itmo.kkrukhmalev.places.backend.base.TestModels
 import com.itmo.kkrukhmalev.places.backend.requestModel.AddPlacesListRequestModel
 import com.itmo.kkrukhmalev.places.backend.responseModel.ListsResponseModel
 import com.itmo.kkrukhmalev.places.backend.service.PlacesService
-import org.junit.jupiter.api.Test
+import io.qameta.allure.Epic
+import io.qameta.allure.Feature
+import io.qameta.allure.Story
+import io.qameta.allure.junit4.DisplayName
+import org.junit.Test
 import org.mockito.BDDMockito.doNothing
 import org.mockito.BDDMockito.given
 import org.mockito.Mockito.doThrow
@@ -18,8 +22,13 @@ import org.springframework.test.web.servlet.get
 import org.springframework.test.web.servlet.post
 
 @WebMvcTest(PlacesController::class)
+@Epic("Controller Tests")
+@Feature("Places Tests")
+@DisplayName("Controller Places Tests")
 class PlacesControllerTest : BaseControllerTest<PlacesService>() {
     @Test
+    @Story("Get all places lists")
+    @DisplayName("Get all places lists")
     fun `get all places lists`() {
         given(service.getPlacesLists(null))
             .willReturn(ListsResponseModel(
@@ -64,6 +73,8 @@ class PlacesControllerTest : BaseControllerTest<PlacesService>() {
     }
 
     @Test
+    @Story("Get all places lists")
+    @DisplayName("Get all places lists (exception)")
     fun `get places lists with exception`() {
         given(service.getPlacesLists(null))
             .willThrow(RuntimeException("errorText"))
@@ -80,6 +91,8 @@ class PlacesControllerTest : BaseControllerTest<PlacesService>() {
     }
 
     @Test
+    @Story("Get place lists")
+    @DisplayName("Get place lists")
     fun `get places list`() {
         given(service.getPlacesList(1))
             .willReturn(TestModels.placesListResponseModel(1, 1, 1))
@@ -116,6 +129,8 @@ class PlacesControllerTest : BaseControllerTest<PlacesService>() {
     }
 
     @Test
+    @Story("Get place lists")
+    @DisplayName("Get place lists (error)")
     fun `get places list with error`() {
         given(service.getPlacesList(1))
             .willThrow(RuntimeException("errorText"))
@@ -129,36 +144,40 @@ class PlacesControllerTest : BaseControllerTest<PlacesService>() {
                 json("{\"error\":\"errorText\"}".trimIndent())
             }
         }
-        
+
         verify(service).getPlacesList(1)
     }
-    
+
     @Test
+    @Story("Add list to added")
+    @DisplayName("Add list to added")
     fun `add list to added`() {
         doNothing()
             .whenever(service).addListToAdded("user", 1)
 
         mockMvc.post("/add-list-to-added") {
-            session = MockHttpSession().apply { 
-                setAttribute("user", "user") 
+            session = MockHttpSession().apply {
+                setAttribute("user", "user")
             }
             contentType = MediaType.APPLICATION_JSON
             content = "{\"id\":1}"
-        }.andExpect { 
+        }.andExpect {
             status { isOk() }
-            content { 
+            content {
                 string("")
             }
         }.createDocs()
-        
+
         verify(service).addListToAdded("user", 1)
     }
-    
+
     @Test
+    @Story("Add list to added")
+    @DisplayName("Add list to added (exception)")
     fun `add list to added with exception`() {
         doThrow(RuntimeException("errorText"))
             .whenever(service).addListToAdded("user", 1)
-        
+
         mockMvc.post("/add-list-to-added") {
             session = MockHttpSession().apply {
                 setAttribute("user", "user")
@@ -176,6 +195,8 @@ class PlacesControllerTest : BaseControllerTest<PlacesService>() {
     }
 
     @Test
+    @Story("Add list to added")
+    @DisplayName("Add list to added (unauthorized)")
     fun `add list to added when unauthorized`() {
         mockMvc.post("/add-list-to-added") {
             contentType = MediaType.APPLICATION_JSON
@@ -189,6 +210,8 @@ class PlacesControllerTest : BaseControllerTest<PlacesService>() {
     }
 
     @Test
+    @Story("Remove list from added")
+    @DisplayName("Remove list from added")
     fun `remove list from added`() {
         doNothing()
             .whenever(service).removeListFromAdded("user", 1)
@@ -210,6 +233,8 @@ class PlacesControllerTest : BaseControllerTest<PlacesService>() {
     }
 
     @Test
+    @Story("Remove list from added")
+    @DisplayName("Remove list from added (exception)")
     fun `remove list from added with exception`() {
         doThrow(RuntimeException("errorText"))
             .whenever(service).removeListFromAdded("user", 1)
@@ -231,6 +256,8 @@ class PlacesControllerTest : BaseControllerTest<PlacesService>() {
     }
 
     @Test
+    @Story("Remove list from added")
+    @DisplayName("Remove list from added (unauthorized)")
     fun `remove list from added when unauthorized`() {
         mockMvc.post("/remove-list-from-added") {
             contentType = MediaType.APPLICATION_JSON
@@ -244,6 +271,8 @@ class PlacesControllerTest : BaseControllerTest<PlacesService>() {
     }
 
     @Test
+    @Story("Add places list")
+    @DisplayName("Add places list")
     fun `add places list`() {
         val placesList = AddPlacesListRequestModel(
             "listName",
@@ -274,6 +303,8 @@ class PlacesControllerTest : BaseControllerTest<PlacesService>() {
     }
 
     @Test
+    @Story("Add places list")
+    @DisplayName("Add places list (exception)")
     fun `add places list with exception`() {
         val placesList = AddPlacesListRequestModel(
             "listName",
@@ -304,6 +335,8 @@ class PlacesControllerTest : BaseControllerTest<PlacesService>() {
     }
 
     @Test
+    @Story("Add places list")
+    @DisplayName("Add places list (unauthorized)")
     fun `add places list when unauthorized`() {
         mockMvc.post("/add-places-list") {
             contentType = MediaType.APPLICATION_JSON

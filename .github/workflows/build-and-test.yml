@@ -37,6 +37,12 @@ jobs:
           name: docs.pdf
           path: index.pdf
 
+      - name: Upload Allure Reports Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: backend-allure-results
+          path: spring-backend/target/allure-results
+
   Frontend-Tests:
     name: Frontend Tests
     runs-on: ubuntu-latest
@@ -102,3 +108,12 @@ jobs:
       - name: Run E2E Playwirght Tests
         working-directory: client
         run: npx playwright test src/tests/e2e/*.spec.*js --workers=1 --config=src/tests/e2e/playwright.config.ts
+        
+  Upload-Allure-Report:
+    name: Upload Allure Report
+    runs-on: ubuntu-latest
+    
+    needs: [Backend-Tests, Frontend-Tests, End-To-End-Test]
+    steps:
+      - name: test
+        run: echo test

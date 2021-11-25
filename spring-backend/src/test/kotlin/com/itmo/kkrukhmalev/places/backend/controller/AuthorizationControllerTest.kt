@@ -4,7 +4,11 @@ import com.itmo.kkrukhmalev.places.backend.base.BaseControllerTest
 import com.itmo.kkrukhmalev.places.backend.domain.User
 import com.itmo.kkrukhmalev.places.backend.requestModel.AuthRequestModel
 import com.itmo.kkrukhmalev.places.backend.service.AuthorizationService
-import org.junit.jupiter.api.Test
+import io.qameta.allure.Epic
+import io.qameta.allure.Feature
+import io.qameta.allure.Story
+import io.qameta.allure.junit4.DisplayName
+import org.junit.Test
 import org.mockito.kotlin.given
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest
 import org.springframework.http.MediaType
@@ -13,9 +17,14 @@ import org.springframework.test.web.servlet.get
 import org.springframework.test.web.servlet.post
 
 @WebMvcTest(AuthorizationController::class)
+@Epic("Controller Tests")
+@Feature("Authorization Tests")
+@DisplayName("Controller Authorization Tests")
 class AuthorizationControllerTest : BaseControllerTest<AuthorizationService>() {
 
     @Test
+    @Story("Get current user")
+    @DisplayName("Current user when unauthorized")
     fun `current user when unauthorized`() {
         mockMvc.get("/current-user")
             .andExpect {
@@ -25,6 +34,8 @@ class AuthorizationControllerTest : BaseControllerTest<AuthorizationService>() {
     }
 
     @Test
+    @Story("Get current user")
+    @DisplayName("Current user when authorized")
     fun `current user when authorized`() {
         mockMvc.get("/current-user") {
             session = MockHttpSession().apply {
@@ -37,6 +48,8 @@ class AuthorizationControllerTest : BaseControllerTest<AuthorizationService>() {
     }
 
     @Test
+    @Story("Sign in")
+    @DisplayName("Sign in with correct data")
     fun `sign in success`() {
         val authModel = AuthRequestModel("login", "password", "redirectTo")
         given(service.signIn(authModel))
@@ -61,6 +74,8 @@ class AuthorizationControllerTest : BaseControllerTest<AuthorizationService>() {
     }
 
     @Test
+    @Story("Sign in")
+    @DisplayName("Sign in with incorrect data")
     fun `sign in failed`() {
         val authModel = AuthRequestModel("login", "password", "redirectTo/")
         given(service.signIn(authModel))
@@ -82,6 +97,8 @@ class AuthorizationControllerTest : BaseControllerTest<AuthorizationService>() {
     }
 
     @Test
+    @Story("Sign up")
+    @DisplayName("Sign up with correct data")
     fun `sign up success`() {
         val authModel = AuthRequestModel("login", "password", "redirectTo")
         given(service.signUp(authModel))
@@ -106,6 +123,8 @@ class AuthorizationControllerTest : BaseControllerTest<AuthorizationService>() {
     }
 
     @Test
+    @Story("Sign up")
+    @DisplayName("Sign up with incorrect data")
     fun `sign up failed`() {
         val authModel = AuthRequestModel("login", "password", "redirectTo/")
         given(service.signUp(authModel))
