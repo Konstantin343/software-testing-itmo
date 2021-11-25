@@ -1,0 +1,59 @@
+{
+  "uid" : "e6d4a3628aca3b4a",
+  "name" : "Remove list from added (unauthorized)",
+  "fullName" : "com.itmo.kkrukhmalev.places.backend.controller.PlacesControllerTest.remove list from added when unauthorized",
+  "historyId" : "2e26f346c7bcb93a82332304a7111231",
+  "time" : {
+    "start" : 1637878018757,
+    "stop" : 1637878018763,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.itmo.kkrukhmalev.places.backend.controller"
+  }, {
+    "name" : "testClass",
+    "value" : "com.itmo.kkrukhmalev.places.backend.controller.PlacesControllerTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "remove list from added when unauthorized"
+  }, {
+    "name" : "suite",
+    "value" : "Controller Places Tests"
+  }, {
+    "name" : "host",
+    "value" : "fv-az37-931"
+  }, {
+    "name" : "thread",
+    "value" : "2113@fv-az37-931.main(1)"
+  }, {
+    "name" : "epic",
+    "value" : "Controller Tests"
+  }, {
+    "name" : "feature",
+    "value" : "Places Tests"
+  }, {
+    "name" : "story",
+    "value" : "Remove list from added"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e6d4a3628aca3b4a.json",
+  "parameterValues" : [ ]
+}

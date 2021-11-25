@@ -1,0 +1,59 @@
+{
+  "uid" : "9dcaee1a8a3086f4",
+  "name" : "Add list to added",
+  "fullName" : "com.itmo.kkrukhmalev.places.backend.service.PlacesServiceTest.add list to added",
+  "historyId" : "b61303c29709aaf2f815954e9f961ee5",
+  "time" : {
+    "start" : 1637877985261,
+    "stop" : 1637877985264,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.itmo.kkrukhmalev.places.backend.service"
+  }, {
+    "name" : "testClass",
+    "value" : "com.itmo.kkrukhmalev.places.backend.service.PlacesServiceTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "add list to added"
+  }, {
+    "name" : "suite",
+    "value" : "Service Places Tests"
+  }, {
+    "name" : "host",
+    "value" : "fv-az37-931"
+  }, {
+    "name" : "thread",
+    "value" : "2113@fv-az37-931.main(1)"
+  }, {
+    "name" : "epic",
+    "value" : "Service Tests"
+  }, {
+    "name" : "feature",
+    "value" : "Places Tests"
+  }, {
+    "name" : "story",
+    "value" : "Add list to added"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9dcaee1a8a3086f4.json",
+  "parameterValues" : [ ]
+}

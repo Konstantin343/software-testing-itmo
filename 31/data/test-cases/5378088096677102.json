@@ -1,0 +1,59 @@
+{
+  "uid" : "5378088096677102",
+  "name" : "Add place",
+  "fullName" : "com.itmo.kkrukhmalev.places.backend.service.PlacesServiceTest.add place",
+  "historyId" : "6d8cf622d71bed8d9cd2efc318be427e",
+  "time" : {
+    "start" : 1637877985250,
+    "stop" : 1637877985253,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.itmo.kkrukhmalev.places.backend.service"
+  }, {
+    "name" : "testClass",
+    "value" : "com.itmo.kkrukhmalev.places.backend.service.PlacesServiceTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "add place"
+  }, {
+    "name" : "suite",
+    "value" : "Service Places Tests"
+  }, {
+    "name" : "host",
+    "value" : "fv-az37-931"
+  }, {
+    "name" : "thread",
+    "value" : "2113@fv-az37-931.main(1)"
+  }, {
+    "name" : "epic",
+    "value" : "Service Tests"
+  }, {
+    "name" : "feature",
+    "value" : "Places Tests"
+  }, {
+    "name" : "story",
+    "value" : "Add place"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5378088096677102.json",
+  "parameterValues" : [ ]
+}

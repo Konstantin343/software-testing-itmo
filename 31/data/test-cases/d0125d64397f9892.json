@@ -1,0 +1,59 @@
+{
+  "uid" : "d0125d64397f9892",
+  "name" : "Sign in with correct data",
+  "fullName" : "com.itmo.kkrukhmalev.places.backend.controller.AuthorizationControllerTest.sign in success",
+  "historyId" : "627fcd117d3f7152ee24d25629bc2b10",
+  "time" : {
+    "start" : 1637878018014,
+    "stop" : 1637878018025,
+    "duration" : 11
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.itmo.kkrukhmalev.places.backend.controller"
+  }, {
+    "name" : "testClass",
+    "value" : "com.itmo.kkrukhmalev.places.backend.controller.AuthorizationControllerTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "sign in success"
+  }, {
+    "name" : "suite",
+    "value" : "Controller Authorization Tests"
+  }, {
+    "name" : "host",
+    "value" : "fv-az37-931"
+  }, {
+    "name" : "thread",
+    "value" : "2113@fv-az37-931.main(1)"
+  }, {
+    "name" : "epic",
+    "value" : "Controller Tests"
+  }, {
+    "name" : "feature",
+    "value" : "Authorization Tests"
+  }, {
+    "name" : "story",
+    "value" : "Sign in"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d0125d64397f9892.json",
+  "parameterValues" : [ ]
+}

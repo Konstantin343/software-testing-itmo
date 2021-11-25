@@ -1,0 +1,192 @@
+{
+  "uid" : "2539c4e99dbe9586",
+  "name" : "All authorization operations",
+  "fullName" : "com.itmo.kkrukhmalev.places.backend.system.AuthorizationSystemTest.all authorization operations",
+  "historyId" : "fb15e6141e12c8a5607075d561031a54",
+  "time" : {
+    "start" : 1637878015298,
+    "stop" : 1637878016455,
+    "duration" : 1157
+  },
+  "description" : "Sign up, sign up with same credentials, sign in and sign out",
+  "descriptionHtml" : "<p>Sign up, sign up with same credentials, sign in and sign out</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Sign up, sign up with same credentials, sign in and sign out",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Sign up",
+      "time" : {
+        "start" : 1637878015311,
+        "stop" : 1637878015809,
+        "duration" : 498
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Sign up with same login",
+      "time" : {
+        "start" : 1637878015810,
+        "stop" : 1637878015841,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Sign in with wrong login",
+      "time" : {
+        "start" : 1637878015842,
+        "stop" : 1637878016172,
+        "duration" : 330
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Sign in with wrong login",
+      "time" : {
+        "start" : 1637878016173,
+        "stop" : 1637878016215,
+        "duration" : 42
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get current user without session",
+      "time" : {
+        "start" : 1637878016215,
+        "stop" : 1637878016365,
+        "duration" : 150
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get current user with session",
+      "time" : {
+        "start" : 1637878016366,
+        "stop" : 1637878016430,
+        "duration" : 64
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Sign out",
+      "time" : {
+        "start" : 1637878016431,
+        "stop" : 1637878016437,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get current user after sign out",
+      "time" : {
+        "start" : 1637878016438,
+        "stop" : 1637878016448,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.itmo.kkrukhmalev.places.backend.system"
+  }, {
+    "name" : "testClass",
+    "value" : "com.itmo.kkrukhmalev.places.backend.system.AuthorizationSystemTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "all authorization operations"
+  }, {
+    "name" : "suite",
+    "value" : "System Authorization Tests"
+  }, {
+    "name" : "host",
+    "value" : "fv-az37-931"
+  }, {
+    "name" : "thread",
+    "value" : "2113@fv-az37-931.main(1)"
+  }, {
+    "name" : "epic",
+    "value" : "System Tests"
+  }, {
+    "name" : "feature",
+    "value" : "Authorization Tests"
+  }, {
+    "name" : "story",
+    "value" : "User must sign up/sign in/sing out only with correct data"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2539c4e99dbe9586.json",
+  "parameterValues" : [ ]
+}

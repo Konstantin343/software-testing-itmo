@@ -1,0 +1,132 @@
+{
+  "uid" : "53c47b21fb766a77",
+  "name" : "Create and get places lists",
+  "fullName" : "com.itmo.kkrukhmalev.places.backend.system.PlacesSystemTest.create and get places lists",
+  "historyId" : "63b2e3e731caab2b13700d2657415f0b",
+  "time" : {
+    "start" : 1637878016493,
+    "stop" : 1637878016804,
+    "duration" : 311
+  },
+  "description" : "Sign up, creates empty list and check that list exists",
+  "descriptionHtml" : "<p>Sign up, creates empty list and check that list exists</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Sign up, creates empty list and check that list exists",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Sign up",
+      "time" : {
+        "start" : 1637878016495,
+        "stop" : 1637878016514,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Create places list",
+      "time" : {
+        "start" : 1637878016514,
+        "stop" : 1637878016659,
+        "duration" : 145
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get my places lists with session",
+      "time" : {
+        "start" : 1637878016659,
+        "stop" : 1637878016757,
+        "duration" : 98
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get all places lists with session",
+      "time" : {
+        "start" : 1637878016758,
+        "stop" : 1637878016802,
+        "duration" : 44
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.itmo.kkrukhmalev.places.backend.system"
+  }, {
+    "name" : "testClass",
+    "value" : "com.itmo.kkrukhmalev.places.backend.system.PlacesSystemTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "create and get places lists"
+  }, {
+    "name" : "suite",
+    "value" : "System Places Tests"
+  }, {
+    "name" : "host",
+    "value" : "fv-az37-931"
+  }, {
+    "name" : "thread",
+    "value" : "2113@fv-az37-931.main(1)"
+  }, {
+    "name" : "epic",
+    "value" : "System Tests"
+  }, {
+    "name" : "feature",
+    "value" : "Places Tests"
+  }, {
+    "name" : "story",
+    "value" : "User must see created lists"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "53c47b21fb766a77.json",
+  "parameterValues" : [ ]
+}

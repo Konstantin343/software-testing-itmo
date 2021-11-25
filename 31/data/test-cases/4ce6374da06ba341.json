@@ -1,0 +1,59 @@
+{
+  "uid" : "4ce6374da06ba341",
+  "name" : "Add list to added",
+  "fullName" : "com.itmo.kkrukhmalev.places.backend.controller.PlacesControllerTest.add list to added",
+  "historyId" : "ba581aaa478591f1c24b69d1714e822f",
+  "time" : {
+    "start" : 1637878018732,
+    "stop" : 1637878018747,
+    "duration" : 15
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.itmo.kkrukhmalev.places.backend.controller"
+  }, {
+    "name" : "testClass",
+    "value" : "com.itmo.kkrukhmalev.places.backend.controller.PlacesControllerTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "add list to added"
+  }, {
+    "name" : "suite",
+    "value" : "Controller Places Tests"
+  }, {
+    "name" : "host",
+    "value" : "fv-az37-931"
+  }, {
+    "name" : "thread",
+    "value" : "2113@fv-az37-931.main(1)"
+  }, {
+    "name" : "epic",
+    "value" : "Controller Tests"
+  }, {
+    "name" : "feature",
+    "value" : "Places Tests"
+  }, {
+    "name" : "story",
+    "value" : "Add list to added"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4ce6374da06ba341.json",
+  "parameterValues" : [ ]
+}
