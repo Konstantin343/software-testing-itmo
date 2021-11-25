@@ -29,7 +29,6 @@ jobs:
       - name: Build Adoc PDF
         uses: tonynv/asciidoctor-action@v2
         working-directory: spring-backend/src/test
-        run: echo "Building Adoc PDF..."
         with:
           program: "asciidoctor-pdf -a allow-uri-read -D . src/main/index.adoc"
 
