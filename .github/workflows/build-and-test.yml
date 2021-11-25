@@ -109,11 +109,11 @@ jobs:
         working-directory: client
         run: npx playwright test src/tests/e2e/*.spec.*js --workers=1 --config=src/tests/e2e/playwright.config.ts
         
-  Upload-Allure-Report:
-    name: Upload Allure Report
-    runs-on: ubuntu-latest
-    
-    needs: [Backend-Tests, Frontend-Tests, End-To-End-Test]
-    steps:
-      - name: test
-        run: echo test
+#  Upload-Allure-Report:
+#    name: Upload Allure Report
+#    runs-on: ubuntu-latest
+#    
+#    needs: [Backend-Tests, Frontend-Tests, End-To-End-Test]
+#    steps:
+#      - name: test
+#        run: echo test
