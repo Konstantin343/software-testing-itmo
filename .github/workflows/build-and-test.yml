@@ -26,6 +26,19 @@ jobs:
         working-directory: spring-backend
         run: ./mvnw test
 
+      - name: Build Adoc PDF
+        uses: tonynv/asciidoctor-action@v2
+        working-directory: spring-backend/src/test
+        run: echo "Building Adoc PDF..."
+        with:
+          program: "asciidoctor-pdf -a allow-uri-read -D . src/main/index.adoc"
+
+      - name: Upload Adoc PDF Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: PDF document
+          path: document.pdf
+
   Frontend-Tests:
     name: Frontend Tests
     runs-on: ubuntu-latest
