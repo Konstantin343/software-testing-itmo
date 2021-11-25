@@ -28,15 +28,16 @@ jobs:
 
       - name: Build Adoc PDF
         uses: tonynv/asciidoctor-action@v2
-        working-directory: spring-backend/src/test
         with:
+          working-directory: spring-backend/src/test
           program: "asciidoctor-pdf -a allow-uri-read -D . src/main/index.adoc"
 
       - name: Upload Adoc PDF Artifact
         uses: actions/upload-artifact@v2
         with:
-          name: PDF document
-          path: document.pdf
+          working-directory: spring-backend/src/test
+          name: docs.pdf
+          path: index.pdf
 
   Frontend-Tests:
     name: Frontend Tests
