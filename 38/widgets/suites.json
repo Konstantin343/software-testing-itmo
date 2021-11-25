@@ -1,0 +1,70 @@
+{
+  "total" : 6,
+  "items" : [ {
+    "uid" : "cf1682a43d8c09a1f9aa4d9757d24751",
+    "name" : "Controller Places Tests (Backend)",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 13,
+      "unknown" : 0,
+      "total" : 13
+    }
+  }, {
+    "uid" : "0e8d0ec457bb1dbb84cbf9309dfcbdae",
+    "name" : "Service Places Tests (Backend)",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 7,
+      "unknown" : 0,
+      "total" : 7
+    }
+  }, {
+    "uid" : "b6db2f3099f4816dc92179152119c485",
+    "name" : "Controller Authorization Tests (Backend)",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 6
+    }
+  }, {
+    "uid" : "cba2f547e222fcf943d23c37bb72d4e3",
+    "name" : "Service Authorization Tests (Backend)",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "53be316b2308de3247a6cf3269c8338d",
+    "name" : "System Authorization Tests (Backend)",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "1b3beb59c0241ab66016e23f5748a57a",
+    "name" : "System Places Tests (Backend)",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}
