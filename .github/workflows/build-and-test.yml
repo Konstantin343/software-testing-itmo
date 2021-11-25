@@ -124,7 +124,7 @@ jobs:
           name: backend-allure-results
           path: allure-results
           
-      - name: 
+      - name: Create allure report
         uses: simple-elf/allure-report-action@v1.5
         id: allure-report
         with:
@@ -138,4 +138,4 @@ jobs:
         env:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: allure-reports-pages
-          PUBLISH_DIR: docs
+          PUBLISH_DIR: allure-history
