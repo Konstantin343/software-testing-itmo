@@ -4,6 +4,7 @@ import App from "../../../components/App/App";
 
 describe("<App/>", () => {
     it('render app', async () => {
+        reporter.feature("Render")
         reporter.story("Render app")
 
         let placesService = new PlacesService('', 0);

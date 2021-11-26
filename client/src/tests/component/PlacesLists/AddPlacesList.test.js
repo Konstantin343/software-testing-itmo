@@ -4,6 +4,7 @@ import PlacesService from "../../../services/PlacesService";
 
 describe("<AddPlacesList/>", () => {
     it('render add places list item form', async () => {
+        reporter.feature("Render")
         reporter.story("Render add places list")
 
         let placesService = new PlacesService('', 0);
@@ -19,6 +20,7 @@ describe("<AddPlacesList/>", () => {
     });
 
     it('not render add places list item form for unauthorized', () => {
+        reporter.feature("Render")
         reporter.story("Render add places list")
 
         let placesService = new PlacesService('', 0);

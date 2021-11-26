@@ -4,6 +4,7 @@ import SignIn from "../../../components/SignIn/SignIn";
 
 describe("<SignIn/>", () => {
     it('render sign in page', () => {
+        reporter.feature("Render")
         reporter.story("Render sign in page")
 
         let placesService = new PlacesService('', 0);

@@ -4,6 +4,7 @@ import Preview from "../../../components/Preview/Preview";
 
 describe("<Preview/>", () => {
     it('render unauthorized preview', () => {
+        reporter.feature("Render")
         reporter.story("Render preview")
 
         let placesService = new PlacesService('', 0);
@@ -17,6 +18,7 @@ describe("<Preview/>", () => {
     });
 
     it('render authorized preview', async () => {
+        reporter.feature("Render")
         reporter.story("Render preview")
 
         let placesService = new PlacesService('', 0);

@@ -136,7 +136,7 @@ Run: `npx playwright test src/tests/e2e/*.spec.*js --workers=1 --config=src/test
 
 #### Bonus часть:
 
-- [X] Использовать Allure reporting для написанных тестов.
+- [X] ~~Использовать Allure reporting для написанных тестов.~~
 
 ### Allure Reports
 

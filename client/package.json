@@ -51,6 +51,7 @@
     ]
   },
   "devDependencies": {
+    "experimental-allure-playwright": "^0.0.3",
     "expresss": "^0.0.0",
     "jest-allure": "^0.1.3"
   }

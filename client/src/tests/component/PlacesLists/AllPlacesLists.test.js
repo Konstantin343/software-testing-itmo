@@ -4,6 +4,7 @@ import AllPlacesLists from "../../../components/PlacesLists/AllPlacesLists";
 
 describe("<AllPlacesLists/>", () => {
     it('render all places lists', async () => {
+        reporter.feature("Render")
         reporter.story("Render all places lists")
 
         let placesService = new PlacesService('', 0);
@@ -34,6 +35,7 @@ describe("<AllPlacesLists/>", () => {
     });
 
     it('render empty places lists', async () => {
+        reporter.feature("Render")
         reporter.story("Render all places lists")
 
         let placesService = new PlacesService('', 0);

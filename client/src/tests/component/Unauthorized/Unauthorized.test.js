@@ -4,6 +4,7 @@ import Unauthorized from "../../../components/Unauthorized/Unauthorized";
 
 describe("<Unauthorized/>", () => {
     it('render unauthorized', () => {
+        reporter.feature("Render")
         reporter.story("Render unauthorized page")
 
         let placesService = new PlacesService('', 0);

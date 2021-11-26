@@ -5,6 +5,7 @@ import {BrowserRouter} from "react-router-dom";
 
 describe("<PlacesList/>", () => {
     it('render owner places list', async () => {
+        reporter.feature("Render")
         reporter.story("Render places list")
 
         let placesService = new PlacesService('', 0);
@@ -44,6 +45,7 @@ describe("<PlacesList/>", () => {
     });
 
     it('render other places list when not added', async () => {
+        reporter.feature("Render")
         reporter.story("Render places list")
 
         let placesService = new PlacesService('', 0);
@@ -83,6 +85,7 @@ describe("<PlacesList/>", () => {
     });
 
     it('render other places list when added', async () => {
+        reporter.feature("Render")
         reporter.story("Render places list")
 
         let placesService = new PlacesService('', 0);
@@ -122,6 +125,7 @@ describe("<PlacesList/>", () => {
     });
 
     it('render other places list when unauthorized', async () => {
+        reporter.feature("Render")
         reporter.story("Render places list")
 
         let placesService = new PlacesService('', 0);

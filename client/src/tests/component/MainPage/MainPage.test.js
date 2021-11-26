@@ -4,6 +4,7 @@ import MainPage from "../../../components/MainPage/MainPage";
 
 describe("<MainPage/>", () => {
     it('render authorized main page', async () => {
+        reporter.feature("Render")
         reporter.story("Render main page")
 
         let placesService = new PlacesService('', 0);
@@ -17,6 +18,7 @@ describe("<MainPage/>", () => {
     });
 
     it('render unauthorized main page', () => {
+        reporter.feature("Render")
         reporter.story("Render main page")
 
         let placesService = new PlacesService('', 0);

@@ -117,6 +117,13 @@ jobs:
         working-directory: client
         run: npx playwright test src/tests/e2e/*.spec.*js --workers=1 --config=src/tests/e2e/playwright.config.ts
 
+      - name: Upload Allure Reports Artifact
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: e2e-allure-results
+          path: client/allure-results
+
   Upload-Allure-Report:
     name: Upload Allure Report
     runs-on: ubuntu-latest
@@ -136,6 +143,12 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: client-allure-results
+          path: allure-results
+
+      - name: Download e2e allure results
+        uses: actions/download-artifact@v2
+        with:
+          name: e2e-allure-results
           path: allure-results
           
       - name: Get Allure history
