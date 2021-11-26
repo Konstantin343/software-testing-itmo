@@ -1,0 +1,99 @@
+{
+  "uid" : "a8c14b21cf4d149c",
+  "name" : "render authorized preview",
+  "fullName" : "<Preview/>.render authorized preview",
+  "historyId" : "cc74dc404e0f16276c5ed36f34acc667",
+  "time" : {
+    "start" : 1637938675654,
+    "stop" : 1637938675664,
+    "duration" : 10
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Render"
+  }, {
+    "name" : "story",
+    "value" : "Render preview"
+  }, {
+    "name" : "suite",
+    "value" : "<Preview/>"
+  }, {
+    "name" : "testClass",
+    "value" : "<Preview/>"
+  }, {
+    "name" : "testMethod",
+    "value" : "render authorized preview"
+  }, {
+    "name" : "package",
+    "value" : "<Preview/>"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "5434c771567a6bb4",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/42//#testresult/5434c771567a6bb4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637935013385,
+          "stop" : 1637935013393,
+          "duration" : 8
+        }
+      }, {
+        "uid" : "9dcf32d852c0387d",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/41//#testresult/9dcf32d852c0387d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637934350113,
+          "stop" : 1637934350123,
+          "duration" : 10
+        }
+      }, {
+        "uid" : "798e1ef1bf3ffba5",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/40//#testresult/798e1ef1bf3ffba5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637933214416,
+          "stop" : 1637933214432,
+          "duration" : 16
+        }
+      }, {
+        "uid" : "17d267d5cc4b395c",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/39//#testresult/17d267d5cc4b395c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637930330533,
+          "stop" : 1637930330544,
+          "duration" : 11
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a8c14b21cf4d149c.json",
+  "parameterValues" : [ ]
+}
