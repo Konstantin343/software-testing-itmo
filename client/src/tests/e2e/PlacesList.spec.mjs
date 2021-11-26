@@ -22,7 +22,7 @@ test.describe('Places lists', () => {
         await addNewList(page, 'testName' + suffix, 'testDescription' + suffix)
 
         await expect(await page.locator('text=testName' + suffix))
-            .toHaveText('testName2' + suffix)
+            .toHaveText('testName' + suffix)
         await expect(await page.locator('text=testDescription' + suffix))
             .toHaveText('testDescription' + suffix)
     })
