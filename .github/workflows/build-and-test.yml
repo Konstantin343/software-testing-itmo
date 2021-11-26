@@ -124,6 +124,13 @@ jobs:
           name: e2e-allure-results
           path: client/allure-results
 
+      - name: Upload Test Results Artifact
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-results
+          path: client/test-results
+
   Upload-Allure-Report:
     name: Upload Allure Report
     runs-on: ubuntu-latest
@@ -150,6 +157,12 @@ jobs:
         with:
           name: e2e-allure-results
           path: allure-results
+
+      - name: Download e2e test results
+        uses: actions/download-artifact@v2
+        with:
+          name: test-results
+          path: client/test-results
           
       - name: Get Allure history
         uses: actions/checkout@v2
@@ -182,3 +195,12 @@ jobs:
           state: 'success'
           sha: ${{ github.event.pull_request.head.sha }}
           target_url: https://konstantin343.github.io/software-testing-itmo/${{ github.run_number }}
+
+      - name: Delete allure reports from artifacts
+        uses: geekyeggo/delete-artifact@v1
+        with:
+          name: |
+            backend-allure-results
+            client-allure-results
+            e2e-allure-results
+            test-results
