@@ -4,6 +4,8 @@ import AllPlacesLists from "../../../components/PlacesLists/AllPlacesLists";
 
 describe("<AllPlacesLists/>", () => {
     it('render all places lists', async () => {
+        reporter.story("Render all places lists")
+
         let placesService = new PlacesService('', 0);
         jest.spyOn(placesService, 'currentUser')
             .mockImplementation(async () => ['user1', null]);
@@ -32,6 +34,8 @@ describe("<AllPlacesLists/>", () => {
     });
 
     it('render empty places lists', async () => {
+        reporter.story("Render all places lists")
+
         let placesService = new PlacesService('', 0);
         jest.spyOn(placesService, 'currentUser')
             .mockImplementation(async () => ['user1', null]);

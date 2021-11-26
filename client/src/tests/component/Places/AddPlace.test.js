@@ -4,6 +4,7 @@ import {BrowserRouter} from "react-router-dom";
 
 describe("<AddPlace/>", () => {
     it('render add place item form', () => {
+        reporter.story("Render add place form")
 
         render(<BrowserRouter><AddPlace/></BrowserRouter>);
 

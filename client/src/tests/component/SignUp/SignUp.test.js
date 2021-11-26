@@ -4,6 +4,8 @@ import SignUp from "../../../components/SignUp/SignUp";
 
 describe("<SignUp/>", () => {
     it('render sign up page', () => {
+        reporter.story("Render sign up page")
+
         let placesService = new PlacesService('', 0);
         jest.spyOn(placesService, 'currentUser').mockImplementation(
             async () => [null, null]);

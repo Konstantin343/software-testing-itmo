@@ -3,6 +3,8 @@ import PlacesListItem from "../../../components/PlacesLists/PlacesListItem";
 
 describe("<PlacesListItem/>", () => {
     it('render places list item', () => {
+        reporter.story("Render places list item")
+
         const list = {
             name: 'Bars',
             description: 'List of bars',

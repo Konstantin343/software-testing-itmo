@@ -5,6 +5,8 @@ import {BrowserRouter} from "react-router-dom";
 
 describe("<PlacesList/>", () => {
     it('render owner places list', async () => {
+        reporter.story("Render places list")
+
         let placesService = new PlacesService('', 0);
         jest.spyOn(placesService, 'currentUser')
             .mockImplementation(async () => ['user', null]);
@@ -42,6 +44,8 @@ describe("<PlacesList/>", () => {
     });
 
     it('render other places list when not added', async () => {
+        reporter.story("Render places list")
+
         let placesService = new PlacesService('', 0);
         jest.spyOn(placesService, 'currentUser')
             .mockImplementation(async () => ['user1', null]);
@@ -79,6 +83,8 @@ describe("<PlacesList/>", () => {
     });
 
     it('render other places list when added', async () => {
+        reporter.story("Render places list")
+
         let placesService = new PlacesService('', 0);
         jest.spyOn(placesService, 'currentUser')
             .mockImplementation(async () => ['user1', null]);
@@ -116,6 +122,8 @@ describe("<PlacesList/>", () => {
     });
 
     it('render other places list when unauthorized', async () => {
+        reporter.story("Render places list")
+
         let placesService = new PlacesService('', 0);
         jest.spyOn(placesService, 'currentUser')
             .mockImplementation(async () => [null, null]);

@@ -4,6 +4,8 @@ import Preview from "../../../components/Preview/Preview";
 
 describe("<Preview/>", () => {
     it('render unauthorized preview', () => {
+        reporter.story("Render preview")
+
         let placesService = new PlacesService('', 0);
         jest.spyOn(placesService, 'currentUser')
             .mockImplementation(async () => [null, null]);
@@ -15,6 +17,8 @@ describe("<Preview/>", () => {
     });
 
     it('render authorized preview', async () => {
+        reporter.story("Render preview")
+
         let placesService = new PlacesService('', 0);
         jest.spyOn(placesService, 'currentUser')
             .mockImplementation(async () => ['user', null]);

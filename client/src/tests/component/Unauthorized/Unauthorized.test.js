@@ -4,6 +4,8 @@ import Unauthorized from "../../../components/Unauthorized/Unauthorized";
 
 describe("<Unauthorized/>", () => {
     it('render unauthorized', () => {
+        reporter.story("Render unauthorized page")
+
         let placesService = new PlacesService('', 0);
         jest.spyOn(placesService, 'currentUser').mockImplementation(
             async () => [null, null]);
