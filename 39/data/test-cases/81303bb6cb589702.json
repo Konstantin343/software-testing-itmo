@@ -1,0 +1,49 @@
+{
+  "uid" : "81303bb6cb589702",
+  "name" : "render other places list when not added",
+  "fullName" : "<PlacesList/>.render other places list when not added",
+  "historyId" : "412029916f7a6390d8a2c0c79c545dbe",
+  "time" : {
+    "start" : 1637930327649,
+    "stop" : 1637930327699,
+    "duration" : 50
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Render places list"
+  }, {
+    "name" : "suite",
+    "value" : "<PlacesList/>"
+  }, {
+    "name" : "testClass",
+    "value" : "<PlacesList/>"
+  }, {
+    "name" : "testMethod",
+    "value" : "render other places list when not added"
+  }, {
+    "name" : "package",
+    "value" : "<PlacesList/>"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "81303bb6cb589702.json",
+  "parameterValues" : [ ]
+}

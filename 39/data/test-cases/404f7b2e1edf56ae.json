@@ -1,0 +1,49 @@
+{
+  "uid" : "404f7b2e1edf56ae",
+  "name" : "render unauthorized",
+  "fullName" : "<Unauthorized/>.render unauthorized",
+  "historyId" : "2d6a7a2b8d54b3a33316ac9e6951990d",
+  "time" : {
+    "start" : 1637930332012,
+    "stop" : 1637930332029,
+    "duration" : 17
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Render unauthorized page"
+  }, {
+    "name" : "suite",
+    "value" : "<Unauthorized/>"
+  }, {
+    "name" : "testClass",
+    "value" : "<Unauthorized/>"
+  }, {
+    "name" : "testMethod",
+    "value" : "render unauthorized"
+  }, {
+    "name" : "package",
+    "value" : "<Unauthorized/>"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "404f7b2e1edf56ae.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,49 @@
+{
+  "uid" : "fa871c848e6570b6",
+  "name" : "render add places list item form",
+  "fullName" : "<AddPlacesList/>.render add places list item form",
+  "historyId" : "4da78117017b4f5a228b3f5102ea0d11",
+  "time" : {
+    "start" : 1637930329422,
+    "stop" : 1637930329448,
+    "duration" : 26
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Render add places list"
+  }, {
+    "name" : "suite",
+    "value" : "<AddPlacesList/>"
+  }, {
+    "name" : "testClass",
+    "value" : "<AddPlacesList/>"
+  }, {
+    "name" : "testMethod",
+    "value" : "render add places list item form"
+  }, {
+    "name" : "package",
+    "value" : "<AddPlacesList/>"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fa871c848e6570b6.json",
+  "parameterValues" : [ ]
+}

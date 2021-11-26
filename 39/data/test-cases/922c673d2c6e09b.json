@@ -1,0 +1,49 @@
+{
+  "uid" : "922c673d2c6e09b",
+  "name" : "render empty places lists",
+  "fullName" : "<AllPlacesLists/>.render empty places lists",
+  "historyId" : "3fe21555d3d90122663fa8ac0c25db2",
+  "time" : {
+    "start" : 1637930328198,
+    "stop" : 1637930328203,
+    "duration" : 5
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Render all places lists"
+  }, {
+    "name" : "suite",
+    "value" : "<AllPlacesLists/>"
+  }, {
+    "name" : "testClass",
+    "value" : "<AllPlacesLists/>"
+  }, {
+    "name" : "testMethod",
+    "value" : "render empty places lists"
+  }, {
+    "name" : "package",
+    "value" : "<AllPlacesLists/>"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "922c673d2c6e09b.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,49 @@
+{
+  "uid" : "5aeb7b657a920b57",
+  "name" : "render owner places list",
+  "fullName" : "<PlacesList/>.render owner places list",
+  "historyId" : "3a00cbced1c96125d02bfb5c05ac2734",
+  "time" : {
+    "start" : 1637930327534,
+    "stop" : 1637930327648,
+    "duration" : 114
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Render places list"
+  }, {
+    "name" : "suite",
+    "value" : "<PlacesList/>"
+  }, {
+    "name" : "testClass",
+    "value" : "<PlacesList/>"
+  }, {
+    "name" : "testMethod",
+    "value" : "render owner places list"
+  }, {
+    "name" : "package",
+    "value" : "<PlacesList/>"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5aeb7b657a920b57.json",
+  "parameterValues" : [ ]
+}

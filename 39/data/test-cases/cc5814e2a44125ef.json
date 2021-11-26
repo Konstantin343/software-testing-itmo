@@ -1,0 +1,55 @@
+{
+  "uid" : "cc5814e2a44125ef",
+  "name" : "getPlacesLists",
+  "fullName" : "Places Service (Client).getPlacesLists",
+  "historyId" : "736dbffdeade548eb834cf83316da18d",
+  "time" : {
+    "start" : 1637930328525,
+    "stop" : 1637930328528,
+    "duration" : 3
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Unit Tests (Client)"
+  }, {
+    "name" : "feature",
+    "value" : "Places Service"
+  }, {
+    "name" : "story",
+    "value" : "Get places lists"
+  }, {
+    "name" : "suite",
+    "value" : "Places Service (Client)"
+  }, {
+    "name" : "testClass",
+    "value" : "Places Service (Client)"
+  }, {
+    "name" : "testMethod",
+    "value" : "getPlacesLists"
+  }, {
+    "name" : "package",
+    "value" : "Places Service (Client)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cc5814e2a44125ef.json",
+  "parameterValues" : [ ]
+}

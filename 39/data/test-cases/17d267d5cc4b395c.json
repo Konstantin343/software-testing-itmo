@@ -1,0 +1,49 @@
+{
+  "uid" : "17d267d5cc4b395c",
+  "name" : "render authorized preview",
+  "fullName" : "<Preview/>.render authorized preview",
+  "historyId" : "cc74dc404e0f16276c5ed36f34acc667",
+  "time" : {
+    "start" : 1637930330533,
+    "stop" : 1637930330544,
+    "duration" : 11
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Render preview"
+  }, {
+    "name" : "suite",
+    "value" : "<Preview/>"
+  }, {
+    "name" : "testClass",
+    "value" : "<Preview/>"
+  }, {
+    "name" : "testMethod",
+    "value" : "render authorized preview"
+  }, {
+    "name" : "package",
+    "value" : "<Preview/>"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "17d267d5cc4b395c.json",
+  "parameterValues" : [ ]
+}

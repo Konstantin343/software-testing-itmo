@@ -1,0 +1,49 @@
+{
+  "uid" : "516f3cba60326bd3",
+  "name" : "render unauthorized nav items",
+  "fullName" : "<Nav/>.render unauthorized nav items",
+  "historyId" : "6bbf5e3f5be9a1057d9dfbcb9c0f9985",
+  "time" : {
+    "start" : 1637930329793,
+    "stop" : 1637930329802,
+    "duration" : 9
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Render nav items"
+  }, {
+    "name" : "suite",
+    "value" : "<Nav/>"
+  }, {
+    "name" : "testClass",
+    "value" : "<Nav/>"
+  }, {
+    "name" : "testMethod",
+    "value" : "render unauthorized nav items"
+  }, {
+    "name" : "package",
+    "value" : "<Nav/>"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "516f3cba60326bd3.json",
+  "parameterValues" : [ ]
+}

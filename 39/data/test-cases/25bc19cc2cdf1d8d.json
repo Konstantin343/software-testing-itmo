@@ -1,0 +1,49 @@
+{
+  "uid" : "25bc19cc2cdf1d8d",
+  "name" : "render sign up page",
+  "fullName" : "<SignUp/>.render sign up page",
+  "historyId" : "2b4412d8bd050c7b8b2545b6c091e82",
+  "time" : {
+    "start" : 1637930331402,
+    "stop" : 1637930331422,
+    "duration" : 20
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Render sign up page"
+  }, {
+    "name" : "suite",
+    "value" : "<SignUp/>"
+  }, {
+    "name" : "testClass",
+    "value" : "<SignUp/>"
+  }, {
+    "name" : "testMethod",
+    "value" : "render sign up page"
+  }, {
+    "name" : "package",
+    "value" : "<SignUp/>"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "25bc19cc2cdf1d8d.json",
+  "parameterValues" : [ ]
+}
