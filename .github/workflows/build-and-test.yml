@@ -202,5 +202,5 @@ jobs:
           name: |
             backend-allure-results
             client-allure-results
-#            e2e-allure-results
-#            test-results
+            e2e-allure-results
+            test-results
