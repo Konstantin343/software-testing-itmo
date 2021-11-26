@@ -1,0 +1,81 @@
+{
+  "uid" : "73a3a60334af1796",
+  "name" : "render sign in page",
+  "fullName" : "<SignIn/>.render sign in page",
+  "historyId" : "11404a210b4e6be095a3ad34cfecc5ca",
+  "time" : {
+    "start" : 1637934351286,
+    "stop" : 1637934351302,
+    "duration" : 16
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Render"
+  }, {
+    "name" : "story",
+    "value" : "Render sign in page"
+  }, {
+    "name" : "suite",
+    "value" : "<SignIn/>"
+  }, {
+    "name" : "testClass",
+    "value" : "<SignIn/>"
+  }, {
+    "name" : "testMethod",
+    "value" : "render sign in page"
+  }, {
+    "name" : "package",
+    "value" : "<SignIn/>"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "f56344a0c77b83e2",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/40//#testresult/f56344a0c77b83e2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637933215244,
+          "stop" : 1637933215254,
+          "duration" : 10
+        }
+      }, {
+        "uid" : "843b0b4d03d817f0",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/39//#testresult/843b0b4d03d817f0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637930331740,
+          "stop" : 1637930331754,
+          "duration" : 14
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "73a3a60334af1796.json",
+  "parameterValues" : [ ]
+}
