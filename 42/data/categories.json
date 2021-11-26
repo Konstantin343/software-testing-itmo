@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expect(received).toHaveText(expected)\n\nExpected string: \"testName20.4623415519952161\"\nReceived string: \"testName0.4623415519952161\"\n\nCall log:\n  - waiting for selector \"text=testName0.4623415519952161\"\n  -   selector resolved to <h4 class=\"mb-1\">testName0.4623415519952161</h4>\n  -   unexpected value \"testName0.4623415519952161\"\n  -   selector resolved to <h4 class=\"mb-1\">testName0.4623415519952161</h4>\n  -   unexpected value \"testName0.4623415519952161\"\n  -   selector resolved to <h4 class=\"mb-1\">testName0.4623415519952161</h4>\n  -   unexpected value \"testName0.4623415519952161\"\n  -   selector resolved to <h4 class=\"mb-1\">testName0.4623415519952161</h4>\n  -   unexpected value \"testName0.4623415519952161\"\n  -   selector resolved to <h4 class=\"mb-1\">testName0.4623415519952161</h4>\n  -   unexpected value \"testName0.4623415519952161\"\n  -   selector resolved to <h4 class=\"mb-1\">testName0.4623415519952161</h4>\n  -   unexpected value \"testName0.4623415519952161\"\n",
+      "children" : [ {
+        "name" : "Add new places list",
+        "uid" : "582f01241e77c661",
+        "parentUid" : "6fb5bb215964d1d4e3a9cd751be2ee66",
+        "status" : "failed",
+        "time" : {
+          "start" : 1637935252635,
+          "stop" : 1637935259322,
+          "duration" : 6687
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6fb5bb215964d1d4e3a9cd751be2ee66"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
