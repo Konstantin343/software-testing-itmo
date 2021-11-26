@@ -1,0 +1,72 @@
+{
+  "uid" : "777b79cf66e1064e",
+  "name" : "render other places list when unauthorized",
+  "fullName" : "<PlacesList/>.render other places list when unauthorized",
+  "historyId" : "f72fe7203572c4ef58a5b6d1d66c5577",
+  "time" : {
+    "start" : 1637933212539,
+    "stop" : 1637933212560,
+    "duration" : 21
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Render"
+  }, {
+    "name" : "story",
+    "value" : "Render places list"
+  }, {
+    "name" : "suite",
+    "value" : "<PlacesList/>"
+  }, {
+    "name" : "testClass",
+    "value" : "<PlacesList/>"
+  }, {
+    "name" : "testMethod",
+    "value" : "render other places list when unauthorized"
+  }, {
+    "name" : "package",
+    "value" : "<PlacesList/>"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "f5ae4807aece1201",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/39//#testresult/f5ae4807aece1201",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637930327752,
+          "stop" : 1637930327781,
+          "duration" : 29
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "777b79cf66e1064e.json",
+  "parameterValues" : [ ]
+}

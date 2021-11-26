@@ -1,0 +1,75 @@
+{
+  "uid" : "85452eeb8baa9465",
+  "name" : "getPlacesLists",
+  "fullName" : "Places Service (Client).getPlacesLists",
+  "historyId" : "736dbffdeade548eb834cf83316da18d",
+  "time" : {
+    "start" : 1637933213089,
+    "stop" : 1637933213090,
+    "duration" : 1
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Unit Tests (Client)"
+  }, {
+    "name" : "feature",
+    "value" : "Places Service"
+  }, {
+    "name" : "story",
+    "value" : "Get places lists"
+  }, {
+    "name" : "suite",
+    "value" : "Places Service (Client)"
+  }, {
+    "name" : "testClass",
+    "value" : "Places Service (Client)"
+  }, {
+    "name" : "testMethod",
+    "value" : "getPlacesLists"
+  }, {
+    "name" : "package",
+    "value" : "Places Service (Client)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "cc5814e2a44125ef",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/39//#testresult/cc5814e2a44125ef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637930328525,
+          "stop" : 1637930328528,
+          "duration" : 3
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "85452eeb8baa9465.json",
+  "parameterValues" : [ ]
+}

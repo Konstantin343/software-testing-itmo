@@ -1,0 +1,72 @@
+{
+  "uid" : "23a1188b76e9bf57",
+  "name" : "render unauthorized main page",
+  "fullName" : "<MainPage/>.render unauthorized main page",
+  "historyId" : "6a56ed54d6fc2cbcf3dc45f47026bbe7",
+  "time" : {
+    "start" : 1637933214215,
+    "stop" : 1637933214223,
+    "duration" : 8
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Render"
+  }, {
+    "name" : "story",
+    "value" : "Render main page"
+  }, {
+    "name" : "suite",
+    "value" : "<MainPage/>"
+  }, {
+    "name" : "testClass",
+    "value" : "<MainPage/>"
+  }, {
+    "name" : "testMethod",
+    "value" : "render unauthorized main page"
+  }, {
+    "name" : "package",
+    "value" : "<MainPage/>"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "a713c7189e022b2a",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/39//#testresult/a713c7189e022b2a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637930330160,
+          "stop" : 1637930330171,
+          "duration" : 11
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "23a1188b76e9bf57.json",
+  "parameterValues" : [ ]
+}
