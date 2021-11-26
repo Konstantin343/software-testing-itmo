@@ -157,12 +157,6 @@ jobs:
         with:
           name: e2e-allure-results
           path: allure-results
-
-      - name: Download e2e test results
-        uses: actions/download-artifact@v2
-        with:
-          name: test-results
-          path: client/test-results
           
       - name: Get Allure history
         uses: actions/checkout@v2
@@ -170,6 +164,12 @@ jobs:
         with:
           ref: allure-reports-pages
           path: allure-reports-pages
+
+      - name: Download e2e test results
+        uses: actions/download-artifact@v2
+        with:
+          name: test-results
+          path: client/test-results
 
       - name: Create allure report
         uses: simple-elf/allure-report-action@v1.5
