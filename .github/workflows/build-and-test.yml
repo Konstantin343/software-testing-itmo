@@ -124,13 +124,6 @@ jobs:
           name: e2e-allure-results
           path: client/allure-results
 
-      - name: Upload Test Results Artifact
-        if: always()
-        uses: actions/upload-artifact@v2
-        with:
-          name: test-results
-          path: client/test-results
-
   Upload-Allure-Report:
     name: Upload Allure Report
     runs-on: ubuntu-latest
@@ -164,12 +157,6 @@ jobs:
         with:
           ref: allure-reports-pages
           path: allure-reports-pages
-
-      - name: Download e2e test results
-        uses: actions/download-artifact@v2
-        with:
-          name: test-results
-          path: client/test-results
 
       - name: Create allure report
         uses: simple-elf/allure-report-action@v1.5
