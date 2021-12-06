@@ -175,6 +175,12 @@ Run: `npx playwright test src/tests/e2e/**/*.spec.*js --workers=1 --config=src/t
 
 - **Home page**: `Heading elements are not in a sequentially-descending order`
 
+### Тесты
+
+- [**a11y**](client/src/tests/e2e/a11y) - A11y tests.
+  Run: `npx playwright test src/tests/e2e/a11y/*.spec.*js --workers=1 --config=src/tests/e2e/playwright.config.ts`
+
+
 ---
 
 ## ДЗ 7 (Selenium)
