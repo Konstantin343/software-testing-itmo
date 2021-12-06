@@ -52,12 +52,12 @@ export default class AddPlacesList extends BaseComponent {
                         <h3>Add List</h3>
                         <div>{this.state.error}</div>
                         <div className="w-100">
-                            <div className={"label"}>Name</div>
-                            <input type="text" name="name"  className="form-control" placeholder="Name" onChange={this.changeName}/>
+                            <div className={"label"}><label htmlFor="name">Name</label></div>
+                            <input type="text" name="name" id="name" className="form-control" placeholder="Name" onChange={this.changeName}/>
                         </div>
                         <div className="w-100">
-                            <div className={"label"}>Description</div>
-                            <textarea name="description" className="form-control" placeholder="Description" onChange={this.changeDescription}/>
+                            <div className={"label"}><label htmlFor="description">Description</label></div>
+                            <textarea name="description" id="description" className="form-control" placeholder="Description" onChange={this.changeDescription}/>
                         </div>
                         <div className="login-button-holder w-50 mt-3">
                             <button className={"login-button"} onClick={this.submitAdd}>Add</button>

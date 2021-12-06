@@ -84,33 +84,33 @@ class AddPlace extends BaseComponent {
             <div style={{float: 'left', width: '35%'}}>
                 <h3>Add Place</h3>
                 <div className="w-100">
-                    <div className={"label"}>Name</div>
-                    <input type="text" name="name" className="form-control" placeholder="Name"
+                    <div className={"label"}><label htmlFor="name">Name</label></div>
+                    <input type="text" id="name" name="name" className="form-control" placeholder="Name"
                            onChange={this.changeName}/>
                 </div>
                 <div className="w-100">
-                    <div className={"label"}>Description</div>
-                    <textarea name="description" className="form-control" placeholder="Description"
+                    <div className={"label"}><label htmlFor="description">Description</label></div>
+                    <textarea id="description" name="description" className="form-control" placeholder="Description"
                               onChange={this.changeDescription}/>
                 </div>
                 <div className="w-100">
-                    <div className={"label"}>Type</div>
-                    <input type="text" name="type" className="form-control" placeholder="Type"
+                    <div className={"label"}><label htmlFor="type">Type</label></div>
+                    <input type="text" id="type" name="type" className="form-control" placeholder="Type"
                            onChange={this.changeType}/>
                 </div>
                 <div className="w-100">
-                    <div className={"label"}>City</div>
-                    <input type="text" name="city" className="form-control" placeholder="City"
+                    <div className={"label"}><label htmlFor="city">City</label></div>
+                    <input type="text" id="city" name="city" className="form-control" placeholder="City"
                            onChange={this.changeCity}/>
                 </div>
                 <div className="w-100">
-                    <div className={"label"}>Street</div>
-                    <input type="text" name="street" className="form-control" placeholder="Street"
+                    <div className={"label"}><label htmlFor="street">Street</label></div>
+                    <input type="text" id="street" name="street" className="form-control" placeholder="Street"
                            onChange={this.changeStreet}/>
                 </div>
                 <div className="w-100">
-                    <div className={"label"}>Number</div>
-                    <input type="text" name="number" className="form-control" placeholder="Number"
+                    <div className={"label"}><label htmlFor="number">Number</label></div>
+                    <input type="text" id="number" name="number" className="form-control" placeholder="Number"
                            onChange={this.changeNumber}/>
                 </div>
                 <div className="login-button-holder w-50 mt-3">

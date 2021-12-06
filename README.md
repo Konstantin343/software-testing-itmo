@@ -160,9 +160,20 @@ Run: `npx playwright test src/tests/e2e/*.spec.*js --workers=1 --config=src/test
 
 #### Bonus часть:
 
-- [ ] Протестировать свой веб-сайт на а11y с помощью инструментов от Mozilla и Lighthouse. 
-- [ ] Пофиксить проблемы.
+- [X] Протестировать свой веб-сайт на а11y с помощью инструментов от Mozilla и Lighthouse. 
+- [X] Пофиксить проблемы.
 - [ ] Сделать автоматический тест с axe.
+
+### Проблемы
+
+#### Mozilla 
+- **Sign in**/**Sign up**: `Focusable element must have focus styling`
+- **Navigation**: `Clickable elements must be focusable and should have interactive semantics`
+- **Text fields**: `Form elements should have a visible text label`
+
+#### Lighthouse
+
+- **Home page**: `Heading elements are not in a sequentially-descending order`
 
 ---
 
