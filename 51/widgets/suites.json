@@ -1,0 +1,114 @@
+{
+  "total" : 24,
+  "items" : [ {
+    "uid" : "3204ecf9125d8f960ab8e6351c99adb3",
+    "name" : "PlacesList.spec.mjs",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "cf1682a43d8c09a1f9aa4d9757d24751",
+    "name" : "Controller Places Tests (Backend)",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 13,
+      "unknown" : 0,
+      "total" : 13
+    }
+  }, {
+    "uid" : "0e8d0ec457bb1dbb84cbf9309dfcbdae",
+    "name" : "Service Places Tests (Backend)",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 7,
+      "unknown" : 0,
+      "total" : 7
+    }
+  }, {
+    "uid" : "b6db2f3099f4816dc92179152119c485",
+    "name" : "Controller Authorization Tests (Backend)",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 6
+    }
+  }, {
+    "uid" : "2ae7d5f198178201409d401d8798d5da",
+    "name" : "<PlacesList/>",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "2fccb60270b0cab93b9e9079be404a5d",
+    "name" : "Places Service (Client)",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
+    "uid" : "7c6fd7e179368b60528c30a91a0bea6c",
+    "name" : "a11y/Accessibility.spec.mjs",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
+    "uid" : "6315d1259b76b57c12d37c98fdc109ff",
+    "name" : "<AllPlacesLists/>",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "d563420483b24f1bf179bc60d4e5053a",
+    "name" : "<AddPlacesList/>",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "4e839d3b78e13e2c0594730c28925996",
+    "name" : "<Nav/>",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  } ]
+}
