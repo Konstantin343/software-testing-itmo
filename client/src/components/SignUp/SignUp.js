@@ -35,6 +35,7 @@ export default class SignUp extends BaseComponent {
         return (
             <div>
                 <center>
+                    <h1>Registration</h1>
                     <div className="w-25 mt-5">
                         <form method="post" name="sign-up" autoComplete="off"
                               action={process.env.REACT_APP_SERVER_HOST + ":" + process.env.REACT_APP_SERVER_PORT + "/sign-up"}>
