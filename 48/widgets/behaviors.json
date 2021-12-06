@@ -1,0 +1,59 @@
+{
+  "total" : 8,
+  "items" : [ {
+    "uid" : "ecc101c9f92bc618faabbd7d63fb618b",
+    "name" : "Render",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 14,
+      "unknown" : 0,
+      "total" : 14
+    }
+  }, {
+    "uid" : "a640770b00ed1dc969ef0d4277b4a019",
+    "name" : "System Tests (Backend)",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "0a4caf7a7a413519e44fd30ab06aad3a",
+    "name" : "Controller Tests (Backend)",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "966ba453970fc24eff4c9ee98f72cf36",
+    "name" : "Service Tests (Backend)",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "58335fbda03b56e3194fddb1c5087e6c",
+    "name" : "Unit Tests (Client)",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

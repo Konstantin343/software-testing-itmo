@@ -1,0 +1,60 @@
+{
+  "uid" : "ad15bf3a35c50f37",
+  "name" : "Sign up accessibility",
+  "fullName" : "Sign up accessibility",
+  "historyId" : " a11y/Accessibility.spec.mjs A11y Sign up accessibility",
+  "time" : {
+    "start" : 1638798150651,
+    "stop" : 1638798151472,
+    "duration" : 821
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "84904a26e5750e21",
+      "name" : "stdout",
+      "source" : "84904a26e5750e21.txt",
+      "type" : "text/plain",
+      "size" : 38
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "suite",
+    "value" : "a11y/Accessibility.spec.mjs"
+  }, {
+    "name" : "subSuite",
+    "value" : "A11y"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ad15bf3a35c50f37.json",
+  "parameterValues" : [ ]
+}
