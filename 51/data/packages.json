@@ -4,52 +4,52 @@
     "name" : "<PlacesList/>",
     "children" : [ {
       "name" : "render owner places list",
-      "uid" : "d8740951f31a1ef",
+      "uid" : "ef708f30bc36c6b3",
       "parentUid" : "dd3d2bc98f5163d251d90d3b31213e88",
       "status" : "passed",
       "time" : {
-        "start" : 1638823884147,
-        "stop" : 1638823884251,
-        "duration" : 104
+        "start" : 1638889890013,
+        "stop" : 1638889890109,
+        "duration" : 96
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "render other places list when not added",
-      "uid" : "e49c632b541e7e44",
+      "uid" : "f6f3b789b1ccf784",
       "parentUid" : "dd3d2bc98f5163d251d90d3b31213e88",
       "status" : "passed",
       "time" : {
-        "start" : 1638823884251,
-        "stop" : 1638823884293,
-        "duration" : 42
+        "start" : 1638889890109,
+        "stop" : 1638889890145,
+        "duration" : 36
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "render other places list when added",
-      "uid" : "3cbed82bc4d37d59",
+      "uid" : "65c1ccfd4b98dbb2",
       "parentUid" : "dd3d2bc98f5163d251d90d3b31213e88",
       "status" : "passed",
       "time" : {
-        "start" : 1638823884293,
-        "stop" : 1638823884332,
-        "duration" : 39
+        "start" : 1638889890145,
+        "stop" : 1638889890176,
+        "duration" : 31
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "render other places list when unauthorized",
-      "uid" : "d9eba8a7f90475b8",
+      "uid" : "57e8511ac603ec93",
       "parentUid" : "dd3d2bc98f5163d251d90d3b31213e88",
       "status" : "passed",
       "time" : {
-        "start" : 1638823884332,
-        "stop" : 1638823884363,
-        "duration" : 31
+        "start" : 1638889890176,
+        "stop" : 1638889890202,
+        "duration" : 26
       },
       "flaky" : false,
       "newFailed" : false,
@@ -60,26 +60,26 @@
     "name" : "<AllPlacesLists/>",
     "children" : [ {
       "name" : "render all places lists",
-      "uid" : "211ff2632715399b",
+      "uid" : "e6b97dba81fc4bcb",
       "parentUid" : "8e721024f457d92945d0d96276fc5dab",
       "status" : "passed",
       "time" : {
-        "start" : 1638823884685,
-        "stop" : 1638823884711,
-        "duration" : 26
+        "start" : 1638889890445,
+        "stop" : 1638889890469,
+        "duration" : 24
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "render empty places lists",
-      "uid" : "58c8d7345a3b517e",
+      "uid" : "534853a1aeba8962",
       "parentUid" : "8e721024f457d92945d0d96276fc5dab",
       "status" : "passed",
       "time" : {
-        "start" : 1638823884711,
-        "stop" : 1638823884717,
-        "duration" : 6
+        "start" : 1638889890469,
+        "stop" : 1638889890476,
+        "duration" : 7
       },
       "flaky" : false,
       "newFailed" : false,
@@ -90,38 +90,38 @@
     "name" : "Places Service (Client)",
     "children" : [ {
       "name" : "currentUser",
-      "uid" : "adc5c984d0842aa7",
+      "uid" : "cfe8230cd2978a7b",
       "parentUid" : "5110e10427fd58f87ac330309c2d4edf",
       "status" : "passed",
       "time" : {
-        "start" : 1638823884970,
-        "stop" : 1638823884972,
-        "duration" : 2
+        "start" : 1638889890711,
+        "stop" : 1638889890722,
+        "duration" : 11
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "getPlacesLists",
-      "uid" : "c2fdc54c838b40d6",
+      "uid" : "32e3d5f31ff2c863",
       "parentUid" : "5110e10427fd58f87ac330309c2d4edf",
       "status" : "passed",
       "time" : {
-        "start" : 1638823884972,
-        "stop" : 1638823884974,
-        "duration" : 2
+        "start" : 1638889890722,
+        "stop" : 1638889890723,
+        "duration" : 1
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "getPlacesList",
-      "uid" : "7d149b4fbfdf6a55",
+      "uid" : "95afbd06c1699e59",
       "parentUid" : "5110e10427fd58f87ac330309c2d4edf",
       "status" : "passed",
       "time" : {
-        "start" : 1638823884974,
-        "stop" : 1638823884975,
+        "start" : 1638889890723,
+        "stop" : 1638889890724,
         "duration" : 1
       },
       "flaky" : false,
@@ -133,13 +133,13 @@
     "name" : "<MyPlacesLists/>",
     "children" : [ {
       "name" : "render my places lists",
-      "uid" : "8ebe5272bfd160b2",
+      "uid" : "98bb83ec9568f9aa",
       "parentUid" : "cbe6c1643915591e59aefb053b4abf75",
       "status" : "passed",
       "time" : {
-        "start" : 1638823885294,
-        "stop" : 1638823885327,
-        "duration" : 33
+        "start" : 1638889890991,
+        "stop" : 1638889891016,
+        "duration" : 25
       },
       "flaky" : false,
       "newFailed" : false,
@@ -150,26 +150,26 @@
     "name" : "<AddPlacesList/>",
     "children" : [ {
       "name" : "render add places list item form",
-      "uid" : "1be04e6a93bfe9cb",
+      "uid" : "6ffaa1270ff5cec4",
       "parentUid" : "437bb999b877cfe42eb0c33ae2790870",
       "status" : "passed",
       "time" : {
-        "start" : 1638823885598,
-        "stop" : 1638823885621,
-        "duration" : 23
+        "start" : 1638889891246,
+        "stop" : 1638889891277,
+        "duration" : 31
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "not render add places list item form for unauthorized",
-      "uid" : "295929a811518ec8",
+      "uid" : "26d01513214297e5",
       "parentUid" : "437bb999b877cfe42eb0c33ae2790870",
       "status" : "passed",
       "time" : {
-        "start" : 1638823885621,
-        "stop" : 1638823885638,
-        "duration" : 17
+        "start" : 1638889891277,
+        "stop" : 1638889891334,
+        "duration" : 57
       },
       "flaky" : false,
       "newFailed" : false,
@@ -180,26 +180,26 @@
     "name" : "<Nav/>",
     "children" : [ {
       "name" : "render unauthorized nav items",
-      "uid" : "4f22c2c4e7ab6319",
+      "uid" : "fb28a84953ce1872",
       "parentUid" : "230bd29d31bbb3f229f49dd93708d5d5",
       "status" : "passed",
       "time" : {
-        "start" : 1638823885902,
-        "stop" : 1638823885911,
-        "duration" : 9
+        "start" : 1638889891555,
+        "stop" : 1638889891563,
+        "duration" : 8
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "render authorized nav items",
-      "uid" : "4a787206e1f07ff8",
+      "uid" : "c7f7d2daeef40be8",
       "parentUid" : "230bd29d31bbb3f229f49dd93708d5d5",
       "status" : "passed",
       "time" : {
-        "start" : 1638823885911,
-        "stop" : 1638823885922,
-        "duration" : 11
+        "start" : 1638889891563,
+        "stop" : 1638889891579,
+        "duration" : 16
       },
       "flaky" : false,
       "newFailed" : false,
@@ -210,26 +210,26 @@
     "name" : "<MainPage/>",
     "children" : [ {
       "name" : "render authorized main page",
-      "uid" : "aca7bb76f6c1bc01",
+      "uid" : "275ebae3af25f0d6",
       "parentUid" : "fec1d9593dd98928bd8da0baf6f47845",
       "status" : "passed",
       "time" : {
-        "start" : 1638823886152,
-        "stop" : 1638823886177,
-        "duration" : 25
+        "start" : 1638889891768,
+        "stop" : 1638889891795,
+        "duration" : 27
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "render unauthorized main page",
-      "uid" : "7a644ba1b24ee6a3",
+      "uid" : "b4870971fa56cc7a",
       "parentUid" : "fec1d9593dd98928bd8da0baf6f47845",
       "status" : "passed",
       "time" : {
-        "start" : 1638823886177,
-        "stop" : 1638823886187,
-        "duration" : 10
+        "start" : 1638889891795,
+        "stop" : 1638889891802,
+        "duration" : 7
       },
       "flaky" : false,
       "newFailed" : false,
@@ -240,26 +240,26 @@
     "name" : "<Preview/>",
     "children" : [ {
       "name" : "render unauthorized preview",
-      "uid" : "935fb107dc81fde5",
+      "uid" : "34f564b6ff149e2a",
       "parentUid" : "818baa47f8e1144b2104a1c5c8087868",
       "status" : "passed",
       "time" : {
-        "start" : 1638823886395,
-        "stop" : 1638823886404,
-        "duration" : 9
+        "start" : 1638889891978,
+        "stop" : 1638889891986,
+        "duration" : 8
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "render authorized preview",
-      "uid" : "7c45a66ab19f3c0e",
+      "uid" : "484316a1e1f9ef8a",
       "parentUid" : "818baa47f8e1144b2104a1c5c8087868",
       "status" : "passed",
       "time" : {
-        "start" : 1638823886404,
-        "stop" : 1638823886423,
-        "duration" : 19
+        "start" : 1638889891986,
+        "stop" : 1638889891993,
+        "duration" : 7
       },
       "flaky" : false,
       "newFailed" : false,
@@ -270,13 +270,13 @@
     "name" : "<AddPlace/>",
     "children" : [ {
       "name" : "render add place item form",
-      "uid" : "11e8baeff31e8b19",
+      "uid" : "88c0ec08209482dc",
       "parentUid" : "cb8b3a1af90d3da07bb1de45d5fe575b",
       "status" : "passed",
       "time" : {
-        "start" : 1638823886622,
-        "stop" : 1638823886644,
-        "duration" : 22
+        "start" : 1638889892197,
+        "stop" : 1638889892218,
+        "duration" : 21
       },
       "flaky" : false,
       "newFailed" : false,
@@ -287,13 +287,13 @@
     "name" : "<PlaceItem/>",
     "children" : [ {
       "name" : "render place item",
-      "uid" : "1a0c31ca54664798",
+      "uid" : "9e1aa44f8d99ef85",
       "parentUid" : "1b2791de0ceea907bd7a67caf4013fc1",
       "status" : "passed",
       "time" : {
-        "start" : 1638823886846,
-        "stop" : 1638823886854,
-        "duration" : 8
+        "start" : 1638889892396,
+        "stop" : 1638889892413,
+        "duration" : 17
       },
       "flaky" : false,
       "newFailed" : false,
@@ -304,13 +304,13 @@
     "name" : "<SignIn/>",
     "children" : [ {
       "name" : "render sign in page",
-      "uid" : "e94517c597a70cd5",
+      "uid" : "46dfc818d6ca5749",
       "parentUid" : "5b804ab6958a2fe08e795e8a63613672",
       "status" : "passed",
       "time" : {
-        "start" : 1638823887101,
-        "stop" : 1638823887117,
-        "duration" : 16
+        "start" : 1638889892622,
+        "stop" : 1638889892643,
+        "duration" : 21
       },
       "flaky" : false,
       "newFailed" : false,
@@ -321,13 +321,13 @@
     "name" : "<SignUp/>",
     "children" : [ {
       "name" : "render sign up page",
-      "uid" : "b36bd93d8e24c1b3",
+      "uid" : "a084f740fdf8bf8c",
       "parentUid" : "215fa16967afd4eac518f2f219ffe204",
       "status" : "passed",
       "time" : {
-        "start" : 1638823887352,
-        "stop" : 1638823887365,
-        "duration" : 13
+        "start" : 1638889892850,
+        "stop" : 1638889892861,
+        "duration" : 11
       },
       "flaky" : false,
       "newFailed" : false,
@@ -338,13 +338,13 @@
     "name" : "<Unauthorized/>",
     "children" : [ {
       "name" : "render unauthorized",
-      "uid" : "f457a7047a4a23b6",
+      "uid" : "28163c813789b556",
       "parentUid" : "eb8aefe110efbd30b04426df4faab7c5",
       "status" : "passed",
       "time" : {
-        "start" : 1638823887592,
-        "stop" : 1638823887602,
-        "duration" : 10
+        "start" : 1638889893042,
+        "stop" : 1638889893051,
+        "duration" : 9
       },
       "flaky" : false,
       "newFailed" : false,
@@ -355,13 +355,13 @@
     "name" : "<App/>",
     "children" : [ {
       "name" : "render app",
-      "uid" : "e8d64de908bd4d42",
+      "uid" : "5fe77550a69e0670",
       "parentUid" : "27b104a20927f18932ff1d60e98e98bd",
       "status" : "passed",
       "time" : {
-        "start" : 1638823887889,
-        "stop" : 1638823887924,
-        "duration" : 35
+        "start" : 1638889893300,
+        "stop" : 1638889893339,
+        "duration" : 39
       },
       "flaky" : false,
       "newFailed" : false,
@@ -372,13 +372,13 @@
     "name" : "<PlacesListItem/>",
     "children" : [ {
       "name" : "render places list item",
-      "uid" : "7fd0b001fc2a2451",
+      "uid" : "465e7b40c43bd83d",
       "parentUid" : "5bbc051bee02ccda45de14b20c7b64b4",
       "status" : "passed",
       "time" : {
-        "start" : 1638823888126,
-        "stop" : 1638823888133,
-        "duration" : 7
+        "start" : 1638889893513,
+        "stop" : 1638889893519,
+        "duration" : 6
       },
       "flaky" : false,
       "newFailed" : false,
@@ -391,26 +391,26 @@
       "name" : "system",
       "children" : [ {
         "name" : "all authorization operations",
-        "uid" : "9d2c67e5bc95f3cd",
+        "uid" : "8c127f232a57e3b9",
         "parentUid" : "b07e3e74fd0a01f63a8fa366eb920a4a",
         "status" : "passed",
         "time" : {
-          "start" : 1638823934691,
-          "stop" : 1638823937089,
-          "duration" : 2398
+          "start" : 1638889914295,
+          "stop" : 1638889915789,
+          "duration" : 1494
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "create and get places lists",
-        "uid" : "2282ff6c16c38151",
+        "uid" : "391c056930d52e88",
         "parentUid" : "b07e3e74fd0a01f63a8fa366eb920a4a",
         "status" : "passed",
         "time" : {
-          "start" : 1638823937206,
-          "stop" : 1638823937563,
-          "duration" : 357
+          "start" : 1638889915881,
+          "stop" : 1638889916144,
+          "duration" : 263
         },
         "flaky" : false,
         "newFailed" : false,
@@ -421,116 +421,116 @@
       "name" : "controller",
       "children" : [ {
         "name" : "sign in failed",
-        "uid" : "dcb4a564d57bc62d",
+        "uid" : "d07ce8fcff784596",
         "parentUid" : "5d6241d0c404ccf2a1daa5a87626f113",
         "status" : "passed",
         "time" : {
-          "start" : 1638823939323,
-          "stop" : 1638823939446,
-          "duration" : 123
+          "start" : 1638889917130,
+          "stop" : 1638889917224,
+          "duration" : 94
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "sign up success",
-        "uid" : "25316bbbf1ea2014",
+        "uid" : "9efb5461ff16faf",
         "parentUid" : "5d6241d0c404ccf2a1daa5a87626f113",
         "status" : "passed",
         "time" : {
-          "start" : 1638823939448,
-          "stop" : 1638823939513,
-          "duration" : 65
+          "start" : 1638889917226,
+          "stop" : 1638889917275,
+          "duration" : 49
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "current user when authorized",
-        "uid" : "1288ac4ae22fe4ac",
+        "uid" : "47b0d43b6ad60dd9",
         "parentUid" : "5d6241d0c404ccf2a1daa5a87626f113",
         "status" : "passed",
         "time" : {
-          "start" : 1638823939522,
-          "stop" : 1638823939589,
-          "duration" : 67
+          "start" : 1638889917289,
+          "stop" : 1638889917330,
+          "duration" : 41
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "current user when unauthorized",
-        "uid" : "d2d34018184c2cba",
+        "uid" : "9a9936444d1c30ca",
         "parentUid" : "5d6241d0c404ccf2a1daa5a87626f113",
         "status" : "passed",
         "time" : {
-          "start" : 1638823939591,
-          "stop" : 1638823939598,
-          "duration" : 7
+          "start" : 1638889917331,
+          "stop" : 1638889917337,
+          "duration" : 6
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "sign in success",
-        "uid" : "ca089295453b31ea",
+        "uid" : "ba4de79997e8a0a4",
         "parentUid" : "5d6241d0c404ccf2a1daa5a87626f113",
         "status" : "passed",
         "time" : {
-          "start" : 1638823939600,
-          "stop" : 1638823939658,
-          "duration" : 58
+          "start" : 1638889917344,
+          "stop" : 1638889917354,
+          "duration" : 10
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "sign up failed",
-        "uid" : "4f8d67ad97a9be00",
+        "uid" : "7b5bc3b7b53799e0",
         "parentUid" : "5d6241d0c404ccf2a1daa5a87626f113",
         "status" : "passed",
         "time" : {
-          "start" : 1638823939664,
-          "stop" : 1638823939704,
-          "duration" : 40
+          "start" : 1638889917356,
+          "stop" : 1638889917361,
+          "duration" : 5
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "remove list from added with exception",
-        "uid" : "bbc1aafd13f5fc08",
+        "uid" : "c9bcc2eccaf41f51",
         "parentUid" : "5d6241d0c404ccf2a1daa5a87626f113",
         "status" : "passed",
         "time" : {
-          "start" : 1638823940728,
-          "stop" : 1638823940782,
-          "duration" : 54
+          "start" : 1638889917801,
+          "stop" : 1638889917823,
+          "duration" : 22
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "add places list",
-        "uid" : "78a8d9a2a4fa91ce",
+        "uid" : "edbcee9bd1ae7f54",
         "parentUid" : "5d6241d0c404ccf2a1daa5a87626f113",
         "status" : "passed",
         "time" : {
-          "start" : 1638823940785,
-          "stop" : 1638823940809,
-          "duration" : 24
+          "start" : 1638889917825,
+          "stop" : 1638889917836,
+          "duration" : 11
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "get places list with error",
-        "uid" : "7156c184bd0f195d",
+        "uid" : "5962b82f16b1998c",
         "parentUid" : "5d6241d0c404ccf2a1daa5a87626f113",
         "status" : "passed",
         "time" : {
-          "start" : 1638823940812,
-          "stop" : 1638823940824,
+          "start" : 1638889917838,
+          "stop" : 1638889917850,
           "duration" : 12
         },
         "flaky" : false,
@@ -538,130 +538,130 @@
         "parameters" : [ ]
       }, {
         "name" : "add list to added with exception",
-        "uid" : "5603b1e56f9ff43f",
+        "uid" : "ce5f015b57ecf2ba",
         "parentUid" : "5d6241d0c404ccf2a1daa5a87626f113",
         "status" : "passed",
         "time" : {
-          "start" : 1638823940827,
-          "stop" : 1638823940841,
-          "duration" : 14
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "add places list with exception",
-        "uid" : "1f82c98d2bcffcab",
-        "parentUid" : "5d6241d0c404ccf2a1daa5a87626f113",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638823940844,
-          "stop" : 1638823940857,
-          "duration" : 13
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "get all places lists",
-        "uid" : "46ae1a1529579932",
-        "parentUid" : "5d6241d0c404ccf2a1daa5a87626f113",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638823940859,
-          "stop" : 1638823940901,
-          "duration" : 42
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "add list to added when unauthorized",
-        "uid" : "40498f65fcb9ec81",
-        "parentUid" : "5d6241d0c404ccf2a1daa5a87626f113",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638823940904,
-          "stop" : 1638823940913,
-          "duration" : 9
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "add list to added",
-        "uid" : "ad8cde38da86dff7",
-        "parentUid" : "5d6241d0c404ccf2a1daa5a87626f113",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638823940924,
-          "stop" : 1638823940943,
-          "duration" : 19
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "add places list when unauthorized",
-        "uid" : "ca093dafc2283d73",
-        "parentUid" : "5d6241d0c404ccf2a1daa5a87626f113",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638823940948,
-          "stop" : 1638823940954,
+          "start" : 1638889917851,
+          "stop" : 1638889917857,
           "duration" : 6
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "remove list from added when unauthorized",
-        "uid" : "94a6ba921f58265b",
+        "name" : "add places list with exception",
+        "uid" : "870b52517363680e",
         "parentUid" : "5d6241d0c404ccf2a1daa5a87626f113",
         "status" : "passed",
         "time" : {
-          "start" : 1638823940956,
-          "stop" : 1638823940963,
-          "duration" : 7
+          "start" : 1638889917859,
+          "stop" : 1638889917865,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "get all places lists",
+        "uid" : "e03491fa6646b4e",
+        "parentUid" : "5d6241d0c404ccf2a1daa5a87626f113",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638889917866,
+          "stop" : 1638889917885,
+          "duration" : 19
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add list to added when unauthorized",
+        "uid" : "c746746631fffb6a",
+        "parentUid" : "5d6241d0c404ccf2a1daa5a87626f113",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638889917887,
+          "stop" : 1638889917892,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add list to added",
+        "uid" : "a8089aed1676dc74",
+        "parentUid" : "5d6241d0c404ccf2a1daa5a87626f113",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638889917898,
+          "stop" : 1638889917908,
+          "duration" : 10
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add places list when unauthorized",
+        "uid" : "ca31e3dab585b582",
+        "parentUid" : "5d6241d0c404ccf2a1daa5a87626f113",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638889917910,
+          "stop" : 1638889917914,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "remove list from added when unauthorized",
+        "uid" : "2e4e153a7c2bfbe2",
+        "parentUid" : "5d6241d0c404ccf2a1daa5a87626f113",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638889917915,
+          "stop" : 1638889917920,
+          "duration" : 5
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "remove list from added",
-        "uid" : "7dba039d470aa502",
+        "uid" : "93a61ad65e7c5c0f",
         "parentUid" : "5d6241d0c404ccf2a1daa5a87626f113",
         "status" : "passed",
         "time" : {
-          "start" : 1638823940965,
-          "stop" : 1638823940980,
-          "duration" : 15
+          "start" : 1638889917921,
+          "stop" : 1638889917929,
+          "duration" : 8
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "get places lists with exception",
-        "uid" : "1139e5a575055f07",
+        "uid" : "aa90968968c16e38",
         "parentUid" : "5d6241d0c404ccf2a1daa5a87626f113",
         "status" : "passed",
         "time" : {
-          "start" : 1638823940982,
-          "stop" : 1638823940991,
-          "duration" : 9
+          "start" : 1638889917930,
+          "stop" : 1638889917935,
+          "duration" : 5
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "get places list",
-        "uid" : "1ff666b904ac1e6a",
+        "uid" : "7bf333e4a91aced6",
         "parentUid" : "5d6241d0c404ccf2a1daa5a87626f113",
         "status" : "passed",
         "time" : {
-          "start" : 1638823940994,
-          "stop" : 1638823941025,
-          "duration" : 31
+          "start" : 1638889917936,
+          "stop" : 1638889917947,
+          "duration" : 11
         },
         "flaky" : false,
         "newFailed" : false,
@@ -672,12 +672,12 @@
       "name" : "service",
       "children" : [ {
         "name" : "sign in user",
-        "uid" : "cdd3799a6e270fcd",
+        "uid" : "3734001cac659fd1",
         "parentUid" : "930e5c8d90f3797105c8587bf77cfc08",
         "status" : "passed",
         "time" : {
-          "start" : 1638823941204,
-          "stop" : 1638823941206,
+          "start" : 1638889918086,
+          "stop" : 1638889918088,
           "duration" : 2
         },
         "flaky" : false,
@@ -685,12 +685,12 @@
         "parameters" : [ ]
       }, {
         "name" : "sign up user",
-        "uid" : "6d3843bc9a63826a",
+        "uid" : "f0955a4865645b9b",
         "parentUid" : "930e5c8d90f3797105c8587bf77cfc08",
         "status" : "passed",
         "time" : {
-          "start" : 1638823941208,
-          "stop" : 1638823941212,
+          "start" : 1638889918089,
+          "stop" : 1638889918093,
           "duration" : 4
         },
         "flaky" : false,
@@ -698,12 +698,12 @@
         "parameters" : [ ]
       }, {
         "name" : "get places lists by user",
-        "uid" : "c96fad00de148c3b",
+        "uid" : "8109e0a328bf88f7",
         "parentUid" : "930e5c8d90f3797105c8587bf77cfc08",
         "status" : "passed",
         "time" : {
-          "start" : 1638823941219,
-          "stop" : 1638823941221,
+          "start" : 1638889918111,
+          "stop" : 1638889918113,
           "duration" : 2
         },
         "flaky" : false,
@@ -711,12 +711,12 @@
         "parameters" : [ ]
       }, {
         "name" : "add places list",
-        "uid" : "bfb8c761ac4bc5ca",
+        "uid" : "87634956cb22cfd7",
         "parentUid" : "930e5c8d90f3797105c8587bf77cfc08",
         "status" : "passed",
         "time" : {
-          "start" : 1638823941222,
-          "stop" : 1638823941223,
+          "start" : 1638889918117,
+          "stop" : 1638889918118,
           "duration" : 1
         },
         "flaky" : false,
@@ -724,25 +724,25 @@
         "parameters" : [ ]
       }, {
         "name" : "add place",
-        "uid" : "d7831790454e319e",
+        "uid" : "f01264ec86cf6e0f",
         "parentUid" : "930e5c8d90f3797105c8587bf77cfc08",
         "status" : "passed",
         "time" : {
-          "start" : 1638823941224,
-          "stop" : 1638823941226,
-          "duration" : 2
+          "start" : 1638889918119,
+          "stop" : 1638889918120,
+          "duration" : 1
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "get places list with place by id",
-        "uid" : "49e287fbc2556ed6",
+        "uid" : "37a064464d0a78d",
         "parentUid" : "930e5c8d90f3797105c8587bf77cfc08",
         "status" : "passed",
         "time" : {
-          "start" : 1638823941227,
-          "stop" : 1638823941228,
+          "start" : 1638889918121,
+          "stop" : 1638889918122,
           "duration" : 1
         },
         "flaky" : false,
@@ -750,38 +750,38 @@
         "parameters" : [ ]
       }, {
         "name" : "get all places lists",
-        "uid" : "b7a595d616b958b0",
+        "uid" : "97c4488e6ad309be",
         "parentUid" : "930e5c8d90f3797105c8587bf77cfc08",
         "status" : "passed",
         "time" : {
-          "start" : 1638823941229,
-          "stop" : 1638823941230,
-          "duration" : 1
+          "start" : 1638889918123,
+          "stop" : 1638889918123,
+          "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "add list to added",
-        "uid" : "1e9745870396f524",
+        "uid" : "ff635afa366bd9f3",
         "parentUid" : "930e5c8d90f3797105c8587bf77cfc08",
         "status" : "passed",
         "time" : {
-          "start" : 1638823941231,
-          "stop" : 1638823941234,
-          "duration" : 3
+          "start" : 1638889918124,
+          "stop" : 1638889918126,
+          "duration" : 2
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "remove list from added",
-        "uid" : "3f2c745fff2bee04",
+        "uid" : "53624a946b3d5245",
         "parentUid" : "930e5c8d90f3797105c8587bf77cfc08",
         "status" : "passed",
         "time" : {
-          "start" : 1638823941235,
-          "stop" : 1638823941237,
+          "start" : 1638889918127,
+          "stop" : 1638889918129,
           "duration" : 2
         },
         "flaky" : false,
@@ -793,78 +793,78 @@
     "uid" : "com.itmo.kkrukhmalev.places.backend"
   }, {
     "name" : "Home accessibility",
-    "uid" : "c3a20291fbf0da7b",
+    "uid" : "f145a3f8e0fbaf80",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "passed",
     "time" : {
-      "start" : 1638824208086,
-      "stop" : 1638824209615,
-      "duration" : 1529
+      "start" : 1638890194306,
+      "stop" : 1638890196061,
+      "duration" : 1755
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Sign in accessibility",
-    "uid" : "d3147d6f3ee925a1",
+    "uid" : "e212394102805532",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "passed",
     "time" : {
-      "start" : 1638824209615,
-      "stop" : 1638824210371,
-      "duration" : 756
+      "start" : 1638890196061,
+      "stop" : 1638890197053,
+      "duration" : 992
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Sign up accessibility",
-    "uid" : "2abbfd263f726509",
+    "uid" : "4a049723e36c6179",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "passed",
     "time" : {
-      "start" : 1638824210372,
-      "stop" : 1638824211241,
-      "duration" : 869
+      "start" : 1638890197054,
+      "stop" : 1638890197829,
+      "duration" : 775
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Add new places list",
-    "uid" : "529d190c9fafc19a",
+    "uid" : "8da950054259cc1b",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "passed",
     "time" : {
-      "start" : 1638824212442,
-      "stop" : 1638824214349,
-      "duration" : 1907
+      "start" : 1638890198933,
+      "stop" : 1638890200717,
+      "duration" : 1784
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Add new places list with place",
-    "uid" : "7918b62ee77af678",
-    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "failed",
-    "time" : {
-      "start" : 1638824214351,
-      "stop" : 1638824220933,
-      "duration" : 6582
-    },
-    "flaky" : true,
-    "newFailed" : true,
-    "parameters" : [ ]
-  }, {
-    "name" : "Sing up, sign out, sign in and check session",
-    "uid" : "ef6bbc7166700a16",
+    "uid" : "24d10d4a52d41ee4",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "passed",
     "time" : {
-      "start" : 1638824221422,
-      "stop" : 1638824223191,
-      "duration" : 1769
+      "start" : 1638890200719,
+      "stop" : 1638890202818,
+      "duration" : 2099
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Sing up, sign out, sign in and check session",
+    "uid" : "6159ead93b3546fa",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1638890202833,
+      "stop" : 1638890204499,
+      "duration" : 1666
     },
     "flaky" : false,
     "newFailed" : false,

@@ -1,17 +1,6 @@
 {
   "total" : 24,
   "items" : [ {
-    "uid" : "3204ecf9125d8f960ab8e6351c99adb3",
-    "name" : "PlacesList.spec.mjs",
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 2
-    }
-  }, {
     "uid" : "cf1682a43d8c09a1f9aa4d9757d24751",
     "name" : "Controller Places Tests (Backend)",
     "statistic" : {
@@ -102,6 +91,17 @@
   }, {
     "uid" : "4e839d3b78e13e2c0594730c28925996",
     "name" : "<Nav/>",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "a9485f30c42c4e450bd37588122db8a7",
+    "name" : "<MainPage/>",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

@@ -3,6 +3,18 @@
   "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/51/",
   "reportName" : "Allure Report with history",
   "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 61,
+    "unknown" : 0,
+    "total" : 61
+  }
+}, {
+  "buildOrder" : 51,
+  "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/51/",
+  "reportName" : "Allure Report with history",
+  "data" : {
     "failed" : 1,
     "broken" : 0,
     "skipped" : 0,

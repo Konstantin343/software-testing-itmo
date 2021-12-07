@@ -7,6 +7,14 @@
     "retry" : 0
   }
 }, {
+  "buildOrder" : 51,
+  "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/51/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "run" : 61,
+    "retry" : 0
+  }
+}, {
   "buildOrder" : 50,
   "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/50/",
   "reportName" : "Allure Report with history",
