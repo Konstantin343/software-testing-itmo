@@ -113,7 +113,7 @@ Run: `npx playwright test src/tests/e2e/*.spec.*js --workers=1 --config=src/test
 
 #### Main часть:
 
-- [ ] Добавить GitHub action для запуска тестов на UI и Backend по пушу из в master ветку.
+- [X] ~~Добавить GitHub action для запуска тестов на UI и Backend по пушу из в master ветку.~~
 
 #### Advanced часть:
 
@@ -122,6 +122,11 @@ Run: `npx playwright test src/tests/e2e/*.spec.*js --workers=1 --config=src/test
 #### Bonus часть:
 
 - [ ] Использовать Kubernetes в Azure/Яндекс Облаке для разворачивания среды.
+
+### Структура 
+
+- [**workflows**](.github/workflows) - `*.yml` files with GitHub workflows
+  - [**Build & Test**](.github/workflows/build-and-test.yml) - workflow that build `spring-backend`/`client` and run tests
 
 ---
 
