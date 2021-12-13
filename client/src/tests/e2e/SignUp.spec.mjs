@@ -1,7 +1,6 @@
 import {test, expect} from '@playwright/test';
 import {submitCredentials} from "./Steps.mjs";
 
-
 test.describe('Sign up', () => {
     test('Sing up, sign out, sign in and check session', async ({page}) => {
         const suffix = Math.random()
