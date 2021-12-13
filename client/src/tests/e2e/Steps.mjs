@@ -1,4 +1,5 @@
 import {expect} from '@playwright/test';
+import {checkA11y, injectAxe} from "axe-playwright";
 
 export async function submitCredentials(page, login, password, buttonText = null) {
     await page.fill('input[name=\'login\']', login)
@@ -26,4 +27,12 @@ export async function addNewPlace(page, name, description, type, city, street, n
     await page.fill('input[name=\'number\']', number)
     const addButton = await page.locator('button')
     await addButton.click()
+}
+
+export async function testA11y(page, url) {
+    await page.goto(url)
+    await injectAxe(page)
+    await checkA11y(page, null, {
+        detailedReport: true
+    })
 }

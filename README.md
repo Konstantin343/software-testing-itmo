@@ -46,7 +46,7 @@
   **Test**: `cd client && npm test`
 
 - [**e2e**](client/src/tests/e2e) - End-to-End tests. 
-Run: `npx playwright test src/tests/e2e/*.spec.*js --workers=1 --config=src/tests/e2e/playwright.config.ts`
+Run: `npx playwright test src/tests/e2e/**/*.spec.*js --workers=1 --config=src/tests/e2e/playwright.config.ts`
 
 ---
 
@@ -160,9 +160,26 @@ Run: `npx playwright test src/tests/e2e/*.spec.*js --workers=1 --config=src/test
 
 #### Bonus часть:
 
-- [ ] Протестировать свой веб-сайт на а11y с помощью инструментов от Mozilla и Lighthouse. 
-- [ ] Пофиксить проблемы.
-- [ ] Сделать автоматический тест с axe.
+- [X] ~~Протестировать свой веб-сайт на а11y с помощью инструментов от Mozilla и Lighthouse.~~ 
+- [X] ~~Пофиксить проблемы.~~
+- [X] ~~Сделать автоматический тест с axe.~~
+
+### Проблемы
+
+#### Mozilla 
+- **Sign in**/**Sign up**: `Focusable element must have focus styling`
+- **Navigation**: `Clickable elements must be focusable and should have interactive semantics`
+- **Text fields**: `Form elements should have a visible text label`
+
+#### Lighthouse
+
+- **Home page**: `Heading elements are not in a sequentially-descending order`
+
+### Тесты
+
+- [**a11y**](client/src/tests/e2e/a11y) - A11y tests.
+  Run: `npx playwright test src/tests/e2e/a11y/*.spec.*js --workers=1 --config=src/tests/e2e/playwright.config.ts`
+
 
 ---
 

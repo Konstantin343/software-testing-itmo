@@ -115,7 +115,9 @@ jobs:
 
       - name: Run E2E Playwirght Tests
         working-directory: client
-        run: npx playwright test src/tests/e2e/*.spec.*js --workers=1 --config=src/tests/e2e/playwright.config.ts
+        run: |
+          npx playwright test src/tests/e2e/a11y/*.spec.*js --workers=1 --config=src/tests/e2e/playwright.config.ts
+          npx playwright test src/tests/e2e/*.spec.*js --workers=1 --config=src/tests/e2e/playwright.config.ts
 
       - name: Upload Allure Reports Artifact
         if: always()
