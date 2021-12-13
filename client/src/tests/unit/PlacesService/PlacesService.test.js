@@ -1,8 +1,16 @@
 import PlacesService from "../../../services/PlacesService";
 import {waitFor} from "@testing-library/react";
 
-describe("<PlacesService/>", () => {
+describe("Places Service (Client)", () => {
+    function allureInfo(story) {
+        reporter.epic("Unit Tests (Client)")
+        reporter.feature("Places Service")
+        reporter.story(story)
+    }
+
     it('currentUser', async () => {
+        allureInfo("Get current user")
+
         let placesService = new PlacesService('', 0);
         global.fetch = jest.fn(async (args) => {
                 if (args.includes("/current-user")) {
@@ -19,6 +27,8 @@ describe("<PlacesService/>", () => {
     });
 
     it('getPlacesLists', async () => {
+        allureInfo("Get places lists")
+
         let placesService = new PlacesService('', 0);
         global.fetch = jest.fn(async (args) => {
                 if (args.includes("/places-lists")) {
@@ -35,6 +45,8 @@ describe("<PlacesService/>", () => {
     });
 
     it('getPlacesList', async () => {
+        allureInfo("Get places list")
+
         let placesService = new PlacesService('', 0);
         global.fetch = jest.fn(async (args) => {
                 if (args.includes("/places-list?id=1")) {

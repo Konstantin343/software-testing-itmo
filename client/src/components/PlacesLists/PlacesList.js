@@ -69,7 +69,7 @@ class PlacesList extends BaseComponent {
             return (
                 <div className="m-lg-3">
                     <AddPlace placesService={this.placesService}/>
-                    <div style={{float: 'right', 'margin-right':'15px', width: '60%'}}>
+                    <div style={{float: 'right', marginRight:'15px', width: '60%'}}>
                         <div className="w-100 m-lg-3">
                             <PlacesListItem eg={true} list={this.state.list}/>
                         </div>

@@ -37,6 +37,13 @@ jobs:
           name: docs.pdf
           path: index.pdf
 
+      - name: Upload Allure Reports Artifact
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: backend-allure-results
+          path: spring-backend/target/allure-results
+
   Frontend-Tests:
     name: Frontend Tests
     runs-on: ubuntu-latest
@@ -57,6 +64,13 @@ jobs:
         working-directory: client
         run: npm test
 
+      - name: Upload Allure Reports Artifact
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: client-allure-results
+          path: client/allure-results
+
   End-To-End-Tests:
     name: End-to-End Tests
     runs-on: ubuntu-latest
@@ -71,7 +85,7 @@ jobs:
         ports:
           - 5432:5432
         options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
-    needs: [Backend-Tests, Frontend-Tests]
+    needs: [ Backend-Tests, Frontend-Tests ]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -102,3 +116,78 @@ jobs:
       - name: Run E2E Playwirght Tests
         working-directory: client
         run: npx playwright test src/tests/e2e/*.spec.*js --workers=1 --config=src/tests/e2e/playwright.config.ts
+
+      - name: Upload Allure Reports Artifact
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: e2e-allure-results
+          path: client/allure-results
+
+  Upload-Allure-Report:
+    name: Upload Allure Report
+    runs-on: ubuntu-latest
+    if: always()
+    #    # uncomment after hw check
+    #    if: ${{ github.event_name == 'refs/heads/main' }}
+
+    needs: [ Backend-Tests, Frontend-Tests, End-To-End-Tests ]
+    steps:
+      - name: Download backend allure results
+        uses: actions/download-artifact@v2
+        with:
+          name: backend-allure-results
+          path: allure-results
+
+      - name: Download client allure results
+        uses: actions/download-artifact@v2
+        with:
+          name: client-allure-results
+          path: allure-results
+
+      - name: Download e2e allure results
+        uses: actions/download-artifact@v2
+        with:
+          name: e2e-allure-results
+          path: allure-results
+          
+      - name: Get Allure history
+        uses: actions/checkout@v2
+        continue-on-error: true
+        with:
+          ref: allure-reports-pages
+          path: allure-reports-pages
+
+      - name: Create allure report
+        uses: simple-elf/allure-report-action@v1.5
+        id: allure-report
+        with:
+          allure_results: allure-results
+          gh_pages: allure-reports-pages
+          allure_report: allure-report
+          allure_history: allure-history
+
+      - name: Deploy report to Github Pages
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: allure-reports-pages
+          PUBLISH_DIR: allure-history
+
+      - name: Post the link to the report
+        uses: Sibz/github-status-action@v1
+        with:
+          authToken: ${{secrets.GITHUB_TOKEN}}
+          context: 'Test report'
+          state: 'success'
+          sha: ${{ github.event.pull_request.head.sha }}
+          target_url: https://konstantin343.github.io/software-testing-itmo/${{ github.run_number }}
+
+      - name: Delete allure reports from artifacts
+        uses: geekyeggo/delete-artifact@v1
+        with:
+          name: |
+            backend-allure-results
+            client-allure-results
+            e2e-allure-results
+            test-results

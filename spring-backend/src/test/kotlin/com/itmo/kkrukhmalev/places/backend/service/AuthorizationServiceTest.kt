@@ -4,17 +4,26 @@ import com.itmo.kkrukhmalev.places.backend.base.BaseServiceTest
 import com.itmo.kkrukhmalev.places.backend.domain.User
 import com.itmo.kkrukhmalev.places.backend.requestModel.AuthRequestModel
 import com.itmo.kkrukhmalev.places.backend.utils.Sha256
+import io.qameta.allure.Epic
+import io.qameta.allure.Feature
+import io.qameta.allure.Story
+import io.qameta.allure.junit4.DisplayName
+import org.junit.Test
 import org.junit.jupiter.api.Assertions
-import org.junit.jupiter.api.Test
 import org.mockito.Mockito.`when`
 import org.mockito.kotlin.any
-import org.mockito.kotlin.whenever
 import org.mockito.kotlin.verify
+import org.mockito.kotlin.whenever
 
+@Epic("Service Tests (Backend)")
+@Feature("Authorization Tests")
+@DisplayName("Service Authorization Tests (Backend)")
 class AuthorizationServiceTest : BaseServiceTest() {
     private val authorizationService = AuthorizationService(mockUsersRepo)
 
     @Test
+    @Story("Sign up")
+    @DisplayName("Sign up")
     fun `sign up user`() {
         val hashPass = Sha256.passwordHash("password")
         lateinit var user: User
@@ -34,6 +43,8 @@ class AuthorizationServiceTest : BaseServiceTest() {
     }
 
     @Test
+    @Story("Sign in")
+    @DisplayName("Sign in")
     fun `sign in user`() {
         val hashPass = Sha256.passwordHash("password")
         whenever(mockUsersRepo.findUserByLoginAndPassword("login", hashPass))

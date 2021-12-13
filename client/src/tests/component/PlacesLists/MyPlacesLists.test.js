@@ -4,6 +4,9 @@ import MyPlacesLists from "../../../components/PlacesLists/MyPlacesLists";
 
 describe("<MyPlacesLists/>", () => {
     it('render my places lists', async () => {
+        reporter.feature("Render")
+        reporter.story("Render my places lists")
+
         let placesService = new PlacesService('', 0);
         jest.spyOn(placesService, 'currentUser')
             .mockImplementation(async () => ['user1', null]);

@@ -3,6 +3,9 @@ import PlaceItem from "../../../components/Places/PlaceItem";
 
 describe("<PlaceItem/>", () => {
     it('render place item', () => {
+        reporter.feature("Render")
+        reporter.story("Render place item")
+
         const place = {
             name: 'BB',
             description: 'best bar',

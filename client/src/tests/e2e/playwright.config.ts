@@ -7,11 +7,16 @@ const getBaseUrl = () => {
 }
 
 const config: PlaywrightTestConfig = {
+    reporter: [
+        ['line'],
+        ['experimental-allure-playwright']
+    ],
     use: {
         baseURL: getBaseUrl(),
         headless: true,
         viewport: { width: 1280, height: 720 },
         ignoreHTTPSErrors: true,
+        screenshot: 'only-on-failure'
     },
 }
 

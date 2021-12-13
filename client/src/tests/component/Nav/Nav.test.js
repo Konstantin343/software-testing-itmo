@@ -4,6 +4,9 @@ import PlacesService from "../../../services/PlacesService";
 
 describe("<Nav/>", () => {
     it('render unauthorized nav items', () => {
+        reporter.feature("Render")
+        reporter.story("Render nav items")
+
         let placesService = new PlacesService('', 0);
         jest.spyOn(placesService, 'currentUser').mockImplementation(
             async () => [null, null]);
@@ -14,6 +17,9 @@ describe("<Nav/>", () => {
     });
 
     it('render authorized nav items', async () => {
+        reporter.feature("Render")
+        reporter.story("Render nav items")
+
         let placesService = new PlacesService('', 0);
         jest.spyOn(placesService, 'currentUser')
             .mockImplementation(async () => ['user', null]);

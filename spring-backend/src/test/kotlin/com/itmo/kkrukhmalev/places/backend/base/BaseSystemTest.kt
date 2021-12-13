@@ -1,6 +1,7 @@
 package com.itmo.kkrukhmalev.places.backend.base
 
 import com.itmo.kkrukhmalev.places.backend.responseModel.ListsResponseModel
+import org.junit.runner.RunWith
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.boot.test.util.TestPropertyValues
@@ -13,14 +14,16 @@ import org.springframework.http.HttpHeaders
 import org.springframework.http.HttpMethod
 import org.springframework.http.MediaType
 import org.springframework.test.context.ContextConfiguration
+import org.springframework.test.context.junit4.SpringRunner
 import org.springframework.util.LinkedMultiValueMap
 import org.testcontainers.containers.PostgreSQLContainer
 import org.testcontainers.junit.jupiter.Testcontainers
 
 @Suppress("SameParameterValue")
 @Testcontainers
+@RunWith(SpringRunner::class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-@ContextConfiguration(initializers = [BaseSystemTest.Initializer::class])
+@ContextConfiguration(initializers = [BaseSystemTest.Initializer::class]) 
 abstract class BaseSystemTest {
     object Initializer : ApplicationContextInitializer<ConfigurableApplicationContext> {
         lateinit var postgreSQLContainer: PostgreSQLContainer<Nothing>
@@ -47,7 +50,7 @@ abstract class BaseSystemTest {
 
     @LocalServerPort
     protected var port: Int = 0
-
+    
     private inline fun <reified T, P> post(method: String, httpEntity: HttpEntity<P>) =
         restTemplateBuilder.build().postForEntity(
             "http://localhost:$port/$method",
