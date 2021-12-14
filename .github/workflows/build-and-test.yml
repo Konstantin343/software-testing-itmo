@@ -171,7 +171,8 @@ jobs:
       - name: Selenoid
         uses: Xotabu4/selenoid-github-action@v2
         with:
-          selenoid-start-arguments: --args "-timeout 60s" --browsers 'chrome'
+          selenoid-start-arguments: |
+            --args "-timeout 180s"
         
       - name: Run tests
         working-directory: selenide-tests
