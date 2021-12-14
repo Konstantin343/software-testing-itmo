@@ -189,7 +189,7 @@ Run: `npx playwright test src/tests/e2e/**/*.spec.*js --workers=1 --config=src/t
 
 #### Main часть:
 
-- [ ] Написать e2e тесты, используя Selenide.
+- [X] ~~Написать e2e тесты, используя Selenide.~~
 
 #### Advanced часть:
 
@@ -199,6 +199,11 @@ Run: `npx playwright test src/tests/e2e/**/*.spec.*js --workers=1 --config=src/t
 
 - [ ] Настроить генерацию отчетов с Allure report, сделав полный сетап в GitHub: e2e тесты с selenide запускаются с использованием Selenoid на разных окружениях(браузерах) параллельно и собирают отчет с помощью Allure Report.
 - [ ] Написать статью как собрать такой сетап.
+
+### Тесты
+
+- [**selenide**](selenide-tests) - Selenide tests.
+  Run: `./gradlew test`
 
 ---
 
