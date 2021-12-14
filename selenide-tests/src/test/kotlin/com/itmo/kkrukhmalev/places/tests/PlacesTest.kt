@@ -7,7 +7,7 @@ import com.itmo.kkrukhmalev.places.tests.utils.Steps
 import com.itmo.kkrukhmalev.places.tests.utils.UserUtils
 import org.junit.jupiter.api.Test
 
-class PlacesTest : BaseTest() {
+class PlacesTest : BaseSelenideTest() {
     @Test
     fun testCreatePlacesList() {
         val user = UserUtils.createRandomUser()

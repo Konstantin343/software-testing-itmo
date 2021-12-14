@@ -4,7 +4,7 @@ import com.itmo.kkrukhmalev.places.tests.utils.Steps
 import com.itmo.kkrukhmalev.places.tests.utils.UserUtils
 import org.junit.jupiter.api.Test
 
-class AuthorizationTest : BaseTest() {
+class AuthorizationTest : BaseSelenideTest() {
     @Test
     fun testSignUpAndSignIn() {
         val user = UserUtils.createRandomUser()
