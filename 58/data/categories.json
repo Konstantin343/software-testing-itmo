@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expect(received).toHaveText(expected)\n\nExpected string: \"placeTestName0.5356544270339645\"\nReceived string: \"\"\n\nCall log:\n  - waiting for selector \"text=placeTestName0.5356544270339645\"\n",
+      "children" : [ {
+        "name" : "Add new places list with place",
+        "uid" : "86322f0f623f9461",
+        "parentUid" : "8ebb8a612672687f6791f5839bfbbf9a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1639517417776,
+          "stop" : 1639517424458,
+          "duration" : 6682
+        },
+        "flaky" : true,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8ebb8a612672687f6791f5839bfbbf9a"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
