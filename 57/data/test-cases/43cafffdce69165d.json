@@ -1,0 +1,232 @@
+{
+  "uid" : "43cafffdce69165d",
+  "name" : "Sign in with incorrect data",
+  "fullName" : "com.itmo.kkrukhmalev.places.backend.controller.AuthorizationControllerTest.sign in failed",
+  "historyId" : "6a4c66fa6a11f81bf02c3049c7ab7fef",
+  "time" : {
+    "start" : 1639516291137,
+    "stop" : 1639516291217,
+    "duration" : 80
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.itmo.kkrukhmalev.places.backend.controller"
+  }, {
+    "name" : "testClass",
+    "value" : "com.itmo.kkrukhmalev.places.backend.controller.AuthorizationControllerTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "sign in failed"
+  }, {
+    "name" : "suite",
+    "value" : "Controller Authorization Tests (Backend)"
+  }, {
+    "name" : "host",
+    "value" : "fv-az99-755"
+  }, {
+    "name" : "thread",
+    "value" : "1978@fv-az99-755.main(1)"
+  }, {
+    "name" : "epic",
+    "value" : "Controller Tests (Backend)"
+  }, {
+    "name" : "feature",
+    "value" : "Authorization Tests"
+  }, {
+    "name" : "story",
+    "value" : "Sign in"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 19,
+        "unknown" : 0,
+        "total" : 19
+      },
+      "items" : [ {
+        "uid" : "76e8e4a5e8863ffa",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/55//#testresult/76e8e4a5e8863ffa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639382142091,
+          "stop" : 1639382142181,
+          "duration" : 90
+        }
+      }, {
+        "uid" : "a643631939d58933",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/54//#testresult/a643631939d58933",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639381290084,
+          "stop" : 1639381290161,
+          "duration" : 77
+        }
+      }, {
+        "uid" : "3a9e3f1f46a56ef2",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/53//#testresult/3a9e3f1f46a56ef2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639381147152,
+          "stop" : 1639381147235,
+          "duration" : 83
+        }
+      }, {
+        "uid" : "d07ce8fcff784596",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/51//#testresult/d07ce8fcff784596",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638889917130,
+          "stop" : 1638889917224,
+          "duration" : 94
+        }
+      }, {
+        "uid" : "dcb4a564d57bc62d",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/51//#testresult/dcb4a564d57bc62d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638823939323,
+          "stop" : 1638823939446,
+          "duration" : 123
+        }
+      }, {
+        "uid" : "c1924602ab2996c6",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/50//#testresult/c1924602ab2996c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638798800789,
+          "stop" : 1638798800920,
+          "duration" : 131
+        }
+      }, {
+        "uid" : "e3e1692daa145326",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/49//#testresult/e3e1692daa145326",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638798250974,
+          "stop" : 1638798251167,
+          "duration" : 193
+        }
+      }, {
+        "uid" : "86584bf7a920acc7",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/48//#testresult/86584bf7a920acc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638797871940,
+          "stop" : 1638797872145,
+          "duration" : 205
+        }
+      }, {
+        "uid" : "bc57398bb76d7b5d",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/47//#testresult/bc57398bb76d7b5d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638797523022,
+          "stop" : 1638797523133,
+          "duration" : 111
+        }
+      }, {
+        "uid" : "4ab8b47b438ab211",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/46//#testresult/4ab8b47b438ab211",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637940550527,
+          "stop" : 1637940550738,
+          "duration" : 211
+        }
+      }, {
+        "uid" : "6acbfe80e7aeb271",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/45//#testresult/6acbfe80e7aeb271",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637940109979,
+          "stop" : 1637940110080,
+          "duration" : 101
+        }
+      }, {
+        "uid" : "88fd52f6ded4ea1",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/43//#testresult/88fd52f6ded4ea1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637938670668,
+          "stop" : 1637938670738,
+          "duration" : 70
+        }
+      }, {
+        "uid" : "2a6d714a686eedaa",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/42//#testresult/2a6d714a686eedaa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637935028732,
+          "stop" : 1637935028817,
+          "duration" : 85
+        }
+      }, {
+        "uid" : "a973275f8bb4746b",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/41//#testresult/a973275f8bb4746b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637934373988,
+          "stop" : 1637934374172,
+          "duration" : 184
+        }
+      }, {
+        "uid" : "48408cbda7201dc8",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/40//#testresult/48408cbda7201dc8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637933236559,
+          "stop" : 1637933236738,
+          "duration" : 179
+        }
+      }, {
+        "uid" : "a5f6f21b59dc475b",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/39//#testresult/a5f6f21b59dc475b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637930336964,
+          "stop" : 1637930337045,
+          "duration" : 81
+        }
+      }, {
+        "uid" : "d8b4d0b7302fb2d0",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/38//#testresult/d8b4d0b7302fb2d0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637883758692,
+          "stop" : 1637883758873,
+          "duration" : 181
+        }
+      }, {
+        "uid" : "933588e62d97e02c",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/37//#testresult/933588e62d97e02c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637883297353,
+          "stop" : 1637883297430,
+          "duration" : 77
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "43cafffdce69165d.json",
+  "parameterValues" : [ ]
+}
