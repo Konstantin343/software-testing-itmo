@@ -172,11 +172,15 @@ jobs:
         uses: Xotabu4/selenoid-github-action@v2
         with:
           selenoid-start-arguments: |
-            --args "-timeout 180s"
+            --args "-timeout 180s" --browsers="chrome;firefox;opera"
         
       - name: Run tests
         working-directory: selenide-tests
-        run: ./gradlew test
+        run: |
+          ./gradlew test -Dselenide.browser=chrome &
+          ./gradlew test -Dselenide.browser=firefox &
+          ./gradlew test -Dselenide.browser=opera &
+          wait
 
   Upload-Allure-Report:
     name: Upload Allure Report

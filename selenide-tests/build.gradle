@@ -32,7 +32,11 @@ compileKotlin.dependsOn libs
 test {
     useJUnitPlatform()
     systemProperties = [
-            'file.encoding'    : 'UTF-8',
-            'selenide.headless': 'true',
+            'file.encoding'                : 'UTF-8',
+            'selenide.headless'            : 'false',
+            'selenide.browser'             : System.getProperty("selenide.browser") ?: 'chrome',
+            'selenide.baseUrl'             : System.getProperty("selenide.baseUrl") ?: 'http://localhost:3000',
+            'selenide.driverManagerEnabled': System.getProperty("selenide.driverManagerEnabled") ?: 'false',
+            'selenide.remote'              : System.getProperty("selenide.remote") ?: 'http://localhost:4444/wd/hub'
     ]
 }
