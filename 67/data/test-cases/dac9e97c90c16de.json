@@ -1,0 +1,64 @@
+{
+  "uid" : "dac9e97c90c16de",
+  "name" : "Sign up and sign in (firefox)",
+  "fullName" : "com.itmo.kkrukhmalev.places.tests.AuthorizationTest.Sign up and sign in",
+  "historyId" : "7c9297f8094a7dc1d2818ea7d726fde4",
+  "time" : {
+    "start" : 1639576500543,
+    "stop" : 1639576508176,
+    "duration" : 7633
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Selenide Tests"
+  }, {
+    "name" : "feature",
+    "value" : "Authorization Tests"
+  }, {
+    "name" : "story",
+    "value" : "Sign up and sign in"
+  }, {
+    "name" : "host",
+    "value" : "fv-az92-63"
+  }, {
+    "name" : "thread",
+    "value" : "3573@fv-az92-63.Test worker(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "com.itmo.kkrukhmalev.places.tests.AuthorizationTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.itmo.kkrukhmalev.places.tests.AuthorizationTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "Sign up and sign in"
+  }, {
+    "name" : "suite",
+    "value" : "com.itmo.kkrukhmalev.places.tests.AuthorizationTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "dac9e97c90c16de.json",
+  "parameterValues" : [ ]
+}
