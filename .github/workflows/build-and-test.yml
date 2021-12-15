@@ -131,6 +131,7 @@ jobs:
     runs-on: ubuntu-latest
     
     strategy:
+      fail-fast: false
       matrix:
         browser: [ chrome, firefox, opera ]
     
