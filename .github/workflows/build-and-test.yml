@@ -177,7 +177,8 @@ jobs:
         uses: Xotabu4/selenoid-github-action@v2
         with:
           selenoid-start-arguments: |
-            --args "-timeout 100s" --browsers="chrome;firefox"
+            --args "-timeout 100s" --browsers="chrome;firefox" --use-drivers &
+            sleep 30
         
       - name: Run Selenide Tests
         working-directory: selenide-tests
