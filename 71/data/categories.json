@@ -1,0 +1,86 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expect(received).toHaveText(expected)\n\nExpected string: \"placeTestName0.01235000365263672\"\nReceived string: \"\"\n\nCall log:\n  - waiting for selector \"text=placeTestName0.01235000365263672\"\n",
+      "children" : [ {
+        "name" : "Add new places list with place",
+        "uid" : "da095f4c5e863f60",
+        "parentUid" : "5b8f76ee374a1bac3b691efd9626678c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1639589921030,
+          "stop" : 1639589927447,
+          "duration" : 6417
+        },
+        "flaky" : true,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5b8f76ee374a1bac3b691efd9626678c"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Invalid 'remote' parameter: ",
+      "children" : [ {
+        "name" : "Sign up and sign in (chrome)",
+        "uid" : "fb7d4232995fcee6",
+        "parentUid" : "9ebd3e3c92ba8df0a557a09da66d7290",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639590019425,
+          "stop" : 1639590019639,
+          "duration" : 214
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Sign up and create places list (chrome)",
+        "uid" : "d18f5a3f6b3f512",
+        "parentUid" : "9ebd3e3c92ba8df0a557a09da66d7290",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639590019753,
+          "stop" : 1639590019767,
+          "duration" : 14
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Sign up and sign in (firefox)",
+        "uid" : "596b4ab42a437fd5",
+        "parentUid" : "9ebd3e3c92ba8df0a557a09da66d7290",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639590032262,
+          "stop" : 1639590032402,
+          "duration" : 140
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Sign up and create places list (firefox)",
+        "uid" : "68556789eafa1161",
+        "parentUid" : "9ebd3e3c92ba8df0a557a09da66d7290",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639590032538,
+          "stop" : 1639590032548,
+          "duration" : 10
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9ebd3e3c92ba8df0a557a09da66d7290"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
