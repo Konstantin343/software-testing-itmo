@@ -16,7 +16,7 @@ import org.junit.jupiter.api.Test
 
 @Epic("Selenide Tests")
 @Feature("Places Tests")
-@DisplayName("Selenide Places Tests (E2E)")
+//@DisplayName("Selenide Places Tests (E2E)")
 @DisplayNameGeneration(BrowserDisplayNameGenerator::class)
 class PlacesTest {
     @Test

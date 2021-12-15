@@ -133,7 +133,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        browser: [ chrome, firefox, opera ]
+        browser: [ chrome, firefox ]
     
     services:
       postgres:
@@ -177,7 +177,7 @@ jobs:
 #        uses: Xotabu4/selenoid-github-action@v2
 #        with:
 #          selenoid-start-arguments: |
-#            --args "-timeout 180s" --browsers="chrome;firefox;opera"
+#            --args "-timeout 180s" --browsers="chrome;firefox"
         
       - name: Run Selenide Tests
         working-directory: selenide-tests
@@ -225,12 +225,6 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: selenide-allure-results-firefox
-          path: allure-results
-          
-      - name: Download selenide opera allure results
-        uses: actions/download-artifact@v2
-        with:
-          name: selenide-allure-results-opera
           path: allure-results
           
       - name: Get Allure history
