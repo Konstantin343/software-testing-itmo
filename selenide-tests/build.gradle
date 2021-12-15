@@ -7,18 +7,43 @@ buildscript {
     }
 }
 
+plugins {
+    id 'io.qameta.allure' version '2.6.0'
+}
+
 apply plugin: "kotlin"
 
 repositories {
     mavenCentral()
 }
 
+
+def allureVersion = '2.17.2'
+def junitVersion = '5.7.0'
+
 dependencies {
     testImplementation 'org.jetbrains.kotlin:kotlin-stdlib:1.5.20'
     testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0'
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.2'
     testImplementation 'com.codeborne:selenide:5.22.1'
     testRuntimeOnly 'org.slf4j:slf4j-simple:1.7.31'
+
+    testImplementation("org.junit.jupiter:junit-jupiter-api:$junitVersion")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitVersion")
+    testCompileOnly('org.assertj:assertj-core:3.11.1')
+
+    testRuntimeOnly("io.qameta.allure:allure-junit5:$allureVersion")
+    testCompileOnly("io.qameta.allure:allure-java-commons:$allureVersion")
+    testCompileOnly("io.qameta.allure:allure-attachments:$allureVersion")
+    testCompileOnly("io.qameta.allure:allure-generator:$allureVersion")
+    testCompileOnly("io.qameta.allure:allure-httpclient:$allureVersion")
+}
+
+allure {
+    autoconfigure = true
+    version = '2.17.2'
+    reportDir = file("$projectDir/build/allure-report")
+    resultsDir = file("$projectDir/build/allure-results")
+    downloadLinkFormat = 'https://github.com/allure-framework/allure2/releases/download/%s/allure-%<s.zip'
 }
 
 task libs(type: Sync) {
@@ -36,7 +61,8 @@ test {
             'selenide.headless'            : 'false',
             'selenide.browser'             : System.getProperty("selenide.browser") ?: 'chrome',
             'selenide.baseUrl'             : System.getProperty("selenide.baseUrl") ?: 'http://localhost:3000',
-            'selenide.driverManagerEnabled': System.getProperty("selenide.driverManagerEnabled") ?: 'false',
-            'selenide.remote'              : System.getProperty("selenide.remote") ?: 'http://localhost:4444/wd/hub'
+//            'selenide.driverManagerEnabled': System.getProperty("selenide.driverManagerEnabled") ?: 'false',
+//            'selenide.remote'              : System.getProperty("selenide.remote") ?: 'http://localhost:4444/wd/hub',
+            'allure.results.directory'     : "$projectDir/build/allure-results"
     ]
 }

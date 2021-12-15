@@ -127,8 +127,12 @@ jobs:
           path: client/allure-results
 
   Selenide-Tests:
-    name: Selenide Tests
+    name: Selenide Tests - ${{ matrix.browser }}
     runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        browser: [ chrome, firefox, opera ]
     
     services:
       postgres:
@@ -158,7 +162,7 @@ jobs:
         working-directory: spring-backend
         run: ./mvnw spring-boot:run &
 
-      - name: Run E2E Cypress Tests
+      - name: Wait for App
         uses: cypress-io/github-action@v2
         with:
           working-directory: client
@@ -168,19 +172,22 @@ jobs:
           headless: true
           browser: chrome
 
-      - name: Selenoid
-        uses: Xotabu4/selenoid-github-action@v2
-        with:
-          selenoid-start-arguments: |
-            --args "-timeout 180s" --browsers="chrome;firefox;opera"
+#      - name: Start Selenoid
+#        uses: Xotabu4/selenoid-github-action@v2
+#        with:
+#          selenoid-start-arguments: |
+#            --args "-timeout 180s" --browsers="chrome;firefox;opera"
         
-      - name: Run tests
+      - name: Run Selenide Tests
         working-directory: selenide-tests
-        run: |
-          ./gradlew test -Dselenide.browser=chrome &
-          ./gradlew test -Dselenide.browser=firefox &
-          ./gradlew test -Dselenide.browser=opera &
-          wait
+        run: ./gradlew test -Dselenide.browser=${{ matrix.browser }}
+
+      - name: Upload Allure Reports Artifact
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: selenide-allure-results-${{ matrix.browser }}
+          path: selenide-tests/build/allure-results
 
   Upload-Allure-Report:
     name: Upload Allure Report
@@ -205,6 +212,24 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: e2e-allure-results
+          path: allure-results
+          
+      - name: Download selenide chrome allure results
+        uses: actions/download-artifact@v2
+        with:
+          name: selenide-allure-results-chrome
+          path: allure-results
+          
+      - name: Download selenide firefox allure results
+        uses: actions/download-artifact@v2
+        with:
+          name: selenide-allure-results-firefox
+          path: allure-results
+          
+      - name: Download selenide opera allure results
+        uses: actions/download-artifact@v2
+        with:
+          name: selenide-allure-results-opera
           path: allure-results
           
       - name: Get Allure history
