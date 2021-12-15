@@ -61,7 +61,7 @@ test {
             'selenide.headless'            : 'true',
             'selenide.browser'             : System.getProperty("selenide.browser") ?: 'safari',
             'selenide.baseUrl'             : System.getProperty("selenide.baseUrl") ?: 'http://localhost:3000',
-            'selenide.driverManagerEnabled': System.getProperty("selenide.driverManagerEnabled"),
+            'selenide.driverManagerEnabled': System.getProperty("selenide.driverManagerEnabled") ?: 'true',
             'selenide.remote'              : System.getProperty("selenide.remote"),
             'allure.results.directory'     : "$projectDir/build/allure-results"
     ]
