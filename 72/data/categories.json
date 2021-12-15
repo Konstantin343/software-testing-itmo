@@ -1,0 +1,65 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Invalid 'remote' parameter: ",
+      "children" : [ {
+        "name" : "Sign up and sign in (chrome)",
+        "uid" : "df211eb92e7a1c29",
+        "parentUid" : "9ebd3e3c92ba8df0a557a09da66d7290",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639590575285,
+          "stop" : 1639590575531,
+          "duration" : 246
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Sign up and create places list (chrome)",
+        "uid" : "4542905c84451f85",
+        "parentUid" : "9ebd3e3c92ba8df0a557a09da66d7290",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639590575690,
+          "stop" : 1639590575696,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Sign up and sign in (firefox)",
+        "uid" : "60ace64a2c694c65",
+        "parentUid" : "9ebd3e3c92ba8df0a557a09da66d7290",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639590598982,
+          "stop" : 1639590599192,
+          "duration" : 210
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Sign up and create places list (firefox)",
+        "uid" : "2026e66cc41c62e3",
+        "parentUid" : "9ebd3e3c92ba8df0a557a09da66d7290",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639590599356,
+          "stop" : 1639590599371,
+          "duration" : 15
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9ebd3e3c92ba8df0a557a09da66d7290"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

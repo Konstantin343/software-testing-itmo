@@ -1,0 +1,239 @@
+{
+  "uid" : "98b0065935404c45",
+  "name" : "Add new places list with place",
+  "fullName" : "Add new places list with place",
+  "historyId" : " PlacesList.spec.mjs Places lists Add new places list with place",
+  "time" : {
+    "start" : 1639590467249,
+    "stop" : 1639590468851,
+    "duration" : 1602
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "suite",
+    "value" : "PlacesList.spec.mjs"
+  }, {
+    "name" : "subSuite",
+    "value" : "Places lists"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 4,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 21,
+        "unknown" : 0,
+        "total" : 25
+      },
+      "items" : [ {
+        "uid" : "da095f4c5e863f60",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/71//#testresult/da095f4c5e863f60",
+        "status" : "failed",
+        "statusDetails" : "expect(received).toHaveText(expected)\n\nExpected string: \"placeTestName0.01235000365263672\"\nReceived string: \"\"\n\nCall log:\n  - waiting for selector \"text=placeTestName0.01235000365263672\"\n",
+        "time" : {
+          "start" : 1639589921030,
+          "stop" : 1639589927447,
+          "duration" : 6417
+        }
+      }, {
+        "uid" : "29ec80ad18c39892",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/69//#testresult/29ec80ad18c39892",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639583740508,
+          "stop" : 1639583742096,
+          "duration" : 1588
+        }
+      }, {
+        "uid" : "9f4a049d41fa9dd6",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/67//#testresult/9f4a049d41fa9dd6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639576486689,
+          "stop" : 1639576488175,
+          "duration" : 1486
+        }
+      }, {
+        "uid" : "dc35eaa107c9c3d6",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/66//#testresult/dc35eaa107c9c3d6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639574405765,
+          "stop" : 1639574407313,
+          "duration" : 1548
+        }
+      }, {
+        "uid" : "5c5ad79622cdcdb8",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/65//#testresult/5c5ad79622cdcdb8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639571267625,
+          "stop" : 1639571269488,
+          "duration" : 1863
+        }
+      }, {
+        "uid" : "4b86dd1fc7efdcd8",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/62//#testresult/4b86dd1fc7efdcd8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639565049902,
+          "stop" : 1639565051684,
+          "duration" : 1782
+        }
+      }, {
+        "uid" : "2b34f786524e4c80",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/61//#testresult/2b34f786524e4c80",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639550850472,
+          "stop" : 1639550852023,
+          "duration" : 1551
+        }
+      }, {
+        "uid" : "55452089a5d0fd66",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/60//#testresult/55452089a5d0fd66",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639518653312,
+          "stop" : 1639518655558,
+          "duration" : 2246
+        }
+      }, {
+        "uid" : "a42dc3dde1c706ce",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/59//#testresult/a42dc3dde1c706ce",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639518074010,
+          "stop" : 1639518075945,
+          "duration" : 1935
+        }
+      }, {
+        "uid" : "86322f0f623f9461",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/58//#testresult/86322f0f623f9461",
+        "status" : "failed",
+        "statusDetails" : "expect(received).toHaveText(expected)\n\nExpected string: \"placeTestName0.5356544270339645\"\nReceived string: \"\"\n\nCall log:\n  - waiting for selector \"text=placeTestName0.5356544270339645\"\n",
+        "time" : {
+          "start" : 1639517417776,
+          "stop" : 1639517424458,
+          "duration" : 6682
+        }
+      }, {
+        "uid" : "558969a69cd8a198",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/57//#testresult/558969a69cd8a198",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639516517676,
+          "stop" : 1639516519233,
+          "duration" : 1557
+        }
+      }, {
+        "uid" : "edb6b172916d6441",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/55//#testresult/edb6b172916d6441",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639382398907,
+          "stop" : 1639382400798,
+          "duration" : 1891
+        }
+      }, {
+        "uid" : "ea5480daa78f87e5",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/54//#testresult/ea5480daa78f87e5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639381508264,
+          "stop" : 1639381509662,
+          "duration" : 1398
+        }
+      }, {
+        "uid" : "5cd7805ba220128d",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/53//#testresult/5cd7805ba220128d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639381404857,
+          "stop" : 1639381406643,
+          "duration" : 1786
+        }
+      }, {
+        "uid" : "24d10d4a52d41ee4",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/51//#testresult/24d10d4a52d41ee4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638890200719,
+          "stop" : 1638890202818,
+          "duration" : 2099
+        }
+      }, {
+        "uid" : "7918b62ee77af678",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/51//#testresult/7918b62ee77af678",
+        "status" : "failed",
+        "statusDetails" : "expect(received).toHaveText(expected)\n\nExpected string: \"placeTestName0.6292752681899307\"\nReceived string: \"\"\n\nCall log:\n  - waiting for selector \"text=placeTestName0.6292752681899307\"\n",
+        "time" : {
+          "start" : 1638824214351,
+          "stop" : 1638824220933,
+          "duration" : 6582
+        }
+      }, {
+        "uid" : "245bf2e31f73f9f0",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/50//#testresult/245bf2e31f73f9f0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638799068155,
+          "stop" : 1638799069893,
+          "duration" : 1738
+        }
+      }, {
+        "uid" : "7ac577e115313224",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/47//#testresult/7ac577e115313224",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638797750291,
+          "stop" : 1638797751841,
+          "duration" : 1550
+        }
+      }, {
+        "uid" : "f28b14451e07c382",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/46//#testresult/f28b14451e07c382",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637940786627,
+          "stop" : 1637940787978,
+          "duration" : 1351
+        }
+      }, {
+        "uid" : "a2d7137736d25af3",
+        "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/45//#testresult/a2d7137736d25af3",
+        "status" : "failed",
+        "statusDetails" : "expect(received).toHaveText(expected)\n\nExpected string: \"placeTestName0.37380845513055583\"\nReceived string: \"\"\n\nCall log:\n  - waiting for selector \"text=placeTestName0.37380845513055583\"\n",
+        "time" : {
+          "start" : 1637940332309,
+          "stop" : 1637940338700,
+          "duration" : 6391
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "98b0065935404c45.json",
+  "parameterValues" : [ ]
+}
