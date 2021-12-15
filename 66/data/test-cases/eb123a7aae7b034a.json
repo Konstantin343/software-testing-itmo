@@ -1,0 +1,64 @@
+{
+  "uid" : "eb123a7aae7b034a",
+  "name" : "Sign up and create places list (chrome)",
+  "fullName" : "com.itmo.kkrukhmalev.places.tests.PlacesTest.Sign up and create places list",
+  "historyId" : "234ed91d4c11d65f50bfb48a34a7f60b",
+  "time" : {
+    "start" : 1639574458305,
+    "stop" : 1639574460029,
+    "duration" : 1724
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Selenide Tests"
+  }, {
+    "name" : "feature",
+    "value" : "Places Tests"
+  }, {
+    "name" : "story",
+    "value" : "Sign up and create places list"
+  }, {
+    "name" : "host",
+    "value" : "fv-az92-63"
+  }, {
+    "name" : "thread",
+    "value" : "3610@fv-az92-63.Test worker(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "com.itmo.kkrukhmalev.places.tests.PlacesTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.itmo.kkrukhmalev.places.tests.PlacesTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "Sign up and create places list"
+  }, {
+    "name" : "suite",
+    "value" : "Selenide Places Tests (E2E)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "eb123a7aae7b034a.json",
+  "parameterValues" : [ ]
+}

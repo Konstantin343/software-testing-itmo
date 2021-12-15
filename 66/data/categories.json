@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "headless browser not supported in Opera. Set headless property to false.\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az99-755', ip: '10.1.0.95', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1022-azure', java.version: '11.0.11'\nDriver info: driver.version: SelenideDriver\nselenide.url: http://localhost:3000/sign-up\nselenide.baseUrl: http://localhost:3000",
+      "children" : [ {
+        "name" : "Sign up and sign in (opera)",
+        "uid" : "33ab15fe5c772a43",
+        "parentUid" : "9ea4b43a632ee3a486aba9ab3aa75d9a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639574494989,
+          "stop" : 1639574497386,
+          "duration" : 2397
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9ea4b43a632ee3a486aba9ab3aa75d9a"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

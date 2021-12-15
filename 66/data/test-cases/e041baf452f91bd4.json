@@ -1,0 +1,64 @@
+{
+  "uid" : "e041baf452f91bd4",
+  "name" : "Sign up and sign in (chrome)",
+  "fullName" : "com.itmo.kkrukhmalev.places.tests.AuthorizationTest.Sign up and sign in",
+  "historyId" : "7c9297f8094a7dc1d2818ea7d726fde4",
+  "time" : {
+    "start" : 1639574453075,
+    "stop" : 1639574458208,
+    "duration" : 5133
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Selenide Tests"
+  }, {
+    "name" : "feature",
+    "value" : "Authorization Tests"
+  }, {
+    "name" : "story",
+    "value" : "Sign up and sign in"
+  }, {
+    "name" : "host",
+    "value" : "fv-az92-63"
+  }, {
+    "name" : "thread",
+    "value" : "3610@fv-az92-63.Test worker(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "com.itmo.kkrukhmalev.places.tests.AuthorizationTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.itmo.kkrukhmalev.places.tests.AuthorizationTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "Sign up and sign in"
+  }, {
+    "name" : "suite",
+    "value" : "Selenide Authorization Tests (E2E)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e041baf452f91bd4.json",
+  "parameterValues" : [ ]
+}
