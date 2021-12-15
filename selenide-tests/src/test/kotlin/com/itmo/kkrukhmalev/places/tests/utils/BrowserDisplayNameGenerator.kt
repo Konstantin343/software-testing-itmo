@@ -7,7 +7,4 @@ import java.lang.reflect.Method
 class BrowserDisplayNameGenerator : DisplayNameGenerator.Standard() {
     override fun generateDisplayNameForMethod(testClass: Class<*>?, testMethod: Method?) =
         "${super.generateDisplayNameForMethod(testClass, testMethod).removeSuffix("()")} (${Configuration.browser})"
-
-    override fun generateDisplayNameForClass(testClass: Class<*>?) =
-        "${super.generateDisplayNameForClass(testClass)} (${Configuration.browser})"
 }
