@@ -193,17 +193,29 @@ Run: `npx playwright test src/tests/e2e/**/*.spec.*js --workers=1 --config=src/t
 
 #### Advanced часть:
 
-- [ ] Настроить запуск тестов с Selenoid.
+- [X] ~~Настроить запуск тестов с Selenoid.~~
 
 #### Bonus часть:
 
-- [ ] Настроить генерацию отчетов с Allure report, сделав полный сетап в GitHub: e2e тесты с selenide запускаются с использованием Selenoid на разных окружениях(браузерах) параллельно и собирают отчет с помощью Allure Report.
-- [ ] Написать статью как собрать такой сетап.
+- [X] ~~Настроить генерацию отчетов с Allure report, сделав полный сетап в GitHub: e2e тесты с selenide запускаются с использованием Selenoid на разных окружениях(браузерах) параллельно и собирают отчет с помощью Allure Report.~~
+- [X] ~~Написать статью как собрать такой сетап.~~
 
 ### Тесты
 
-- [**selenide**](selenide-tests) - Selenide tests.
-  Run: `./gradlew test`
+- [**Selenide**](selenide-tests) - Selenide tests.
+  Run: `./gradlew test --Dselenide.browser="<value>"`
+
+### Workflow
+
+- [**Build & Test**](.github/workflows/build-and-test.yml) - workflow that build app and run tests
+
+### Allure Reports
+
+- [**Reports**](https://konstantin343.github.io/software-testing-itmo/) - отчеты о тестах
+
+### Статья
+
+- [**Сетап тестов**](selenide-tests/README.md) - статья по настройке подобных тестов
 
 ---
 

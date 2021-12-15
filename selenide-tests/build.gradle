@@ -60,7 +60,7 @@ test {
             'file.encoding'                : 'UTF-8',
             'selenide.headless'            : 'true',
             'selenide.browser'             : System.getProperty("selenide.browser") ?: 'chrome',
-            'selenide.baseUrl'             : System.getProperty("selenide.baseUrl") ?: 'http://host.docker.internal:3000',
+            'selenide.baseUrl'             : System.getProperty("selenide.baseUrl") ?: 'http://127.0.0.1:3000',
             'selenide.driverManagerEnabled': System.getProperty("selenide.driverManagerEnabled") ?: 'false',
             'selenide.remote'              : System.getProperty("selenide.remote") ?: 'http://localhost:4444/wd/hub',
             'allure.results.directory'     : "$projectDir/build/allure-results"
