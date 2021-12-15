@@ -194,7 +194,7 @@ jobs:
     runs-on: ubuntu-latest
     if: always()
 
-    needs: [ Backend-Tests, Frontend-Tests, End-To-End-Tests ]
+    needs: [ Backend-Tests, Frontend-Tests, End-To-End-Tests, Selenide-Tests ]
     steps:
       - name: Download backend allure results
         uses: actions/download-artifact@v2
