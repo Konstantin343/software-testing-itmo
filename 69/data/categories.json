@@ -1,0 +1,69 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Reached error page: about:neterror?e=connectionFailure&u=http%3A//127.0.0.1%3A3000/sign-up&c=UTF-8&d=Firefox%20can%E2%80%99t%20establish%20a%20connection%20to%20the%20server%20at%20127.0.0.1%3A3000.\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az101-644', ip: '10.1.0.106', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1022-azure', java.version: '11.0.11'\nselenide.remote: http://localhost:4444/wd/hub\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nselenide.url: http://127.0.0.1:3000/sign-up\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 94.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211028161635, moz:geckodriverVersion: 0.29.1, moz:headless: true, moz:processID: 82, moz:profile: /tmp/rust_mozprofilefCpTH5, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 5.11.0-1022-azure, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nselenide.baseUrl: http://127.0.0.1:3000\nSession ID: 0d62c1b2-b8e6-4415-9172-972476bd65ec",
+      "children" : [ {
+        "name" : "Sign up and sign in (firefox)",
+        "uid" : "62744c22bb4d6b8f",
+        "parentUid" : "846ba9260f378e61243a7c2fdbfa7319",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639583834677,
+          "stop" : 1639583838816,
+          "duration" : 4139
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Sign up and create places list (firefox)",
+        "uid" : "145741977da2be0e",
+        "parentUid" : "846ba9260f378e61243a7c2fdbfa7319",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639583838983,
+          "stop" : 1639583839154,
+          "duration" : 171
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "846ba9260f378e61243a7c2fdbfa7319"
+    }, {
+      "name" : "unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: headless chrome=96.0.4664.45)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az37-586', ip: '10.1.0.207', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1022-azure', java.version: '11.0.11'\nselenide.remote: http://localhost:4444/wd/hub\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nselenide.url: http://127.0.0.1:3000/sign-up\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.2UJvya}, goog:chromeOptions: {debuggerAddress: localhost:37177}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nselenide.baseUrl: http://127.0.0.1:3000\nSession ID: b1a424c6368bd938c97396071743d2bd",
+      "children" : [ {
+        "name" : "Sign up and sign in (chrome)",
+        "uid" : "8249dd20a90ed46f",
+        "parentUid" : "e11acdd6ffd4332c4fede83cce27336c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639583841195,
+          "stop" : 1639583844701,
+          "duration" : 3506
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Sign up and create places list (chrome)",
+        "uid" : "5b9343862a54dde6",
+        "parentUid" : "e11acdd6ffd4332c4fede83cce27336c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639583844819,
+          "stop" : 1639583844861,
+          "duration" : 42
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e11acdd6ffd4332c4fede83cce27336c"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
