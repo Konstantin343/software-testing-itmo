@@ -19,8 +19,8 @@ abstract class BaseSelenideTest {
 
     @BeforeEach
     open fun setUp() {
-        Configuration.driverManagerEnabled = false
-        Configuration.remote = "http://localhost:4444/wd/hub"
+//        Configuration.driverManagerEnabled = false
+//        Configuration.remote = "http://localhost:4444/wd/hub"
     }
     
     protected fun openRelative(relativeUrl: String) {
