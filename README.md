@@ -235,12 +235,16 @@ Run: `npx playwright test src/tests/e2e/**/*.spec.*js --workers=1 --config=src/t
 
 - [ ] Настроить генерацию отчетов с Allure report.
 
+### Результат
+
+- [**perf-workshop**](perf-workshop)
+
 ### GitLab репозиторий
 
-**https://gitlab.com/kk-st/kk-st**
+- **https://gitlab.com/kk-st/kk-st**
 
 ### Отчет о тестах
 
-**https://kk-st.gitlab.io/kk-st**
+- **https://kk-st.gitlab.io/kk-st**
 
 ---
