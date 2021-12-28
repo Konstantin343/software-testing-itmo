@@ -225,7 +225,7 @@ Run: `npx playwright test src/tests/e2e/**/*.spec.*js --workers=1 --config=src/t
 
 #### Main часть:
 
-- [ ] Пройти воркшоп и выложить результат в гитхаб репозиторий.
+- [X] ~~Пройти воркшоп и выложить результат в гитхаб репозиторий.~~
 
 #### Advanced часть:
 
@@ -234,5 +234,17 @@ Run: `npx playwright test src/tests/e2e/**/*.spec.*js --workers=1 --config=src/t
 #### Bonus часть:
 
 - [ ] Настроить генерацию отчетов с Allure report.
+
+### Результат
+
+- [**perf-workshop**](perf-workshop)
+
+### GitLab репозиторий
+
+- **https://gitlab.com/kk-st/kk-st**
+
+### Отчет о тестах
+
+- **https://kk-st.gitlab.io/kk-st**
 
 ---
