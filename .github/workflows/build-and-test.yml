@@ -126,12 +126,76 @@ jobs:
           name: e2e-allure-results
           path: client/allure-results
 
+  Selenide-Tests:
+    name: Selenide Tests - ${{ matrix.browser }}
+    runs-on: ubuntu-latest
+    
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [ chrome, firefox ]
+    
+    services:
+      postgres:
+        image: postgres:11
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: postgres
+        ports:
+          - 5432:5432
+        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
+    needs: [ Backend-Tests, Frontend-Tests ]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install dependencies
+        working-directory: client
+        run: npm install
+
+      - name: Start Backend
+        working-directory: spring-backend
+        run: ./mvnw spring-boot:run &
+
+      - name: Wait for App
+        uses: cypress-io/github-action@v2
+        with:
+          working-directory: client
+          start: npm start
+          wait-on: 'http://localhost:5000/places-lists, http://localhost:3000'
+          wait-on-timeout: 120
+          headless: true
+          browser: chrome
+
+      - name: Start Selenoid
+        uses: Xotabu4/selenoid-github-action@v2
+        with:
+          selenoid-start-arguments: |
+            --args "-timeout 100s" --browsers="chrome;firefox"
+        
+      - name: Run Selenide Tests
+        working-directory: selenide-tests
+        run: ./gradlew test -Dselenide.browser=${{ matrix.browser }}
+
+      - name: Upload Allure Reports Artifact
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: selenide-allure-results-${{ matrix.browser }}
+          path: selenide-tests/build/allure-results
+
   Upload-Allure-Report:
     name: Upload Allure Report
     runs-on: ubuntu-latest
     if: always()
 
-    needs: [ Backend-Tests, Frontend-Tests, End-To-End-Tests ]
+    needs: [ Backend-Tests, Frontend-Tests, End-To-End-Tests, Selenide-Tests ]
     steps:
       - name: Download backend allure results
         uses: actions/download-artifact@v2
@@ -149,6 +213,18 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: e2e-allure-results
+          path: allure-results
+          
+      - name: Download selenide chrome allure results
+        uses: actions/download-artifact@v2
+        with:
+          name: selenide-allure-results-chrome
+          path: allure-results
+          
+      - name: Download selenide firefox allure results
+        uses: actions/download-artifact@v2
+        with:
+          name: selenide-allure-results-firefox
           path: allure-results
           
       - name: Get Allure history
