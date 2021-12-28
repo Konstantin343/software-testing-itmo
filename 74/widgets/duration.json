@@ -1,0 +1,651 @@
+[ {
+  "uid" : "7c92c582e3fc11b1",
+  "name" : "render empty places lists",
+  "time" : {
+    "start" : 1640673448926,
+    "stop" : 1640673448930,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "76278161df59161b",
+  "name" : "Get places list with place by id",
+  "time" : {
+    "start" : 1640673478243,
+    "stop" : 1640673478248,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d599240e84c0199e",
+  "name" : "render app",
+  "time" : {
+    "start" : 1640673451699,
+    "stop" : 1640673451729,
+    "duration" : 30
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ea7d3f241cbdee27",
+  "name" : "Get all places lists",
+  "time" : {
+    "start" : 1640673480276,
+    "stop" : 1640673480295,
+    "duration" : 19
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "66ff31616d8f4cea",
+  "name" : "Remove list from added (unauthorized)",
+  "time" : {
+    "start" : 1640673480335,
+    "stop" : 1640673480341,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d2c5b6a80f47ba20",
+  "name" : "Get all places lists (exception)",
+  "time" : {
+    "start" : 1640673480356,
+    "stop" : 1640673480362,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9c603a38da442f07",
+  "name" : "render unauthorized main page",
+  "time" : {
+    "start" : 1640673450195,
+    "stop" : 1640673450201,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e82df0533d961b68",
+  "name" : "Get places lists by user",
+  "time" : {
+    "start" : 1640673478174,
+    "stop" : 1640673478228,
+    "duration" : 54
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "82d4f8adb92637e8",
+  "name" : "render authorized nav items",
+  "time" : {
+    "start" : 1640673449951,
+    "stop" : 1640673449962,
+    "duration" : 11
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9cf63f218d7aea32",
+  "name" : "render owner places list",
+  "time" : {
+    "start" : 1640673448444,
+    "stop" : 1640673448534,
+    "duration" : 90
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ba330b48289edf54",
+  "name" : "render other places list when unauthorized",
+  "time" : {
+    "start" : 1640673448604,
+    "stop" : 1640673448630,
+    "duration" : 26
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bbd794f35b5fb02d",
+  "name" : "Get place lists (error)",
+  "time" : {
+    "start" : 1640673480247,
+    "stop" : 1640673480255,
+    "duration" : 8
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2470928cc161e21",
+  "name" : "render other places list when not added",
+  "time" : {
+    "start" : 1640673448534,
+    "stop" : 1640673448571,
+    "duration" : 37
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d869d185e3c679f3",
+  "name" : "Sign in with incorrect data",
+  "time" : {
+    "start" : 1640673479423,
+    "stop" : 1640673479593,
+    "duration" : 170
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7da7720c96536f95",
+  "name" : "Sign in accessibility",
+  "time" : {
+    "start" : 1640673698278,
+    "stop" : 1640673698973,
+    "duration" : 695
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "461f84639b605b70",
+  "name" : "render sign up page",
+  "time" : {
+    "start" : 1640673451231,
+    "stop" : 1640673451242,
+    "duration" : 11
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "72db42fd29d8552c",
+  "name" : "Add places list",
+  "time" : {
+    "start" : 1640673478231,
+    "stop" : 1640673478235,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c192b60a2e1ae7df",
+  "name" : "render places list item",
+  "time" : {
+    "start" : 1640673451895,
+    "stop" : 1640673451901,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "144ca537a119a977",
+  "name" : "Add list to added (exception)",
+  "time" : {
+    "start" : 1640673480256,
+    "stop" : 1640673480264,
+    "duration" : 8
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9475edb8a7c7b2f4",
+  "name" : "All authorization operations",
+  "time" : {
+    "start" : 1640673475346,
+    "stop" : 1640673477216,
+    "duration" : 1870
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e2f229b279e99f02",
+  "name" : "Sign in",
+  "time" : {
+    "start" : 1640673478272,
+    "stop" : 1640673478276,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4287fa36483cbf0d",
+  "name" : "Sign up and create places list (firefox)",
+  "time" : {
+    "start" : 1640673814432,
+    "stop" : 1640673816531,
+    "duration" : 2099
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "94e01265b4c35a61",
+  "name" : "getPlacesList",
+  "time" : {
+    "start" : 1640673449149,
+    "stop" : 1640673449157,
+    "duration" : 8
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "22f2ab2e62fe23fd",
+  "name" : "Add places list (exception)",
+  "time" : {
+    "start" : 1640673480266,
+    "stop" : 1640673480274,
+    "duration" : 8
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b6a5944e30faef10",
+  "name" : "Add list to added (unauthorized)",
+  "time" : {
+    "start" : 1640673480296,
+    "stop" : 1640673480303,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e95a31d7a3556a09",
+  "name" : "render sign in page",
+  "time" : {
+    "start" : 1640673450997,
+    "stop" : 1640673451011,
+    "duration" : 14
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ec786df7d76fa1be",
+  "name" : "Add list to added",
+  "time" : {
+    "start" : 1640673480312,
+    "stop" : 1640673480325,
+    "duration" : 13
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dc344da44965d13",
+  "name" : "Remove list from added",
+  "time" : {
+    "start" : 1640673480343,
+    "stop" : 1640673480355,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b914230d09f4ba3c",
+  "name" : "Get place lists",
+  "time" : {
+    "start" : 1640673480364,
+    "stop" : 1640673480379,
+    "duration" : 15
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4e2efe396f449dc2",
+  "name" : "Current user when authorized",
+  "time" : {
+    "start" : 1640673479670,
+    "stop" : 1640673479720,
+    "duration" : 50
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a298ab1dec0119b",
+  "name" : "Sign up and sign in (firefox)",
+  "time" : {
+    "start" : 1640673806755,
+    "stop" : 1640673814262,
+    "duration" : 7507
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b33b8ca7debbcd58",
+  "name" : "Sign up with incorrect data",
+  "time" : {
+    "start" : 1640673479750,
+    "stop" : 1640673479760,
+    "duration" : 10
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f7adaae0dc51d347",
+  "name" : "Current user when unauthorized",
+  "time" : {
+    "start" : 1640673479722,
+    "stop" : 1640673479730,
+    "duration" : 8
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "212c0190b38dee86",
+  "name" : "render all places lists",
+  "time" : {
+    "start" : 1640673448904,
+    "stop" : 1640673448926,
+    "duration" : 22
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dd83661ffa17334",
+  "name" : "render other places list when added",
+  "time" : {
+    "start" : 1640673448571,
+    "stop" : 1640673448604,
+    "duration" : 33
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d3ce2011bf09a1cd",
+  "name" : "render add places list item form",
+  "time" : {
+    "start" : 1640673449689,
+    "stop" : 1640673449706,
+    "duration" : 17
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e7e1a554e1f0addd",
+  "name" : "Sign up and sign in (chrome)",
+  "time" : {
+    "start" : 1640673812300,
+    "stop" : 1640673817228,
+    "duration" : 4928
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "79a2d14924205a5b",
+  "name" : "render authorized main page",
+  "time" : {
+    "start" : 1640673450174,
+    "stop" : 1640673450195,
+    "duration" : 21
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d156f69b807c55a",
+  "name" : "Add new places list with place",
+  "time" : {
+    "start" : 1640673701914,
+    "stop" : 1640673703546,
+    "duration" : 1632
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "148474e6446a2808",
+  "name" : "Sign up accessibility",
+  "time" : {
+    "start" : 1640673698975,
+    "stop" : 1640673699624,
+    "duration" : 649
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9fc882056ba0cb21",
+  "name" : "Home accessibility",
+  "time" : {
+    "start" : 1640673697044,
+    "stop" : 1640673698276,
+    "duration" : 1232
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "503a7e4aa4e2b0d6",
+  "name" : "render add place item form",
+  "time" : {
+    "start" : 1640673450589,
+    "stop" : 1640673450618,
+    "duration" : 29
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "759d2c4d75a271ee",
+  "name" : "Add places list",
+  "time" : {
+    "start" : 1640673480230,
+    "stop" : 1640673480245,
+    "duration" : 15
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4c18fb4f617d701",
+  "name" : "Sign up with correct data",
+  "time" : {
+    "start" : 1640673479598,
+    "stop" : 1640673479667,
+    "duration" : 69
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1c45215a8a3b53cc",
+  "name" : "render my places lists",
+  "time" : {
+    "start" : 1640673449429,
+    "stop" : 1640673449451,
+    "duration" : 22
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ac673f7f7b14333c",
+  "name" : "render authorized preview",
+  "time" : {
+    "start" : 1640673450399,
+    "stop" : 1640673450406,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1608ff70f8a73688",
+  "name" : "Sign in with correct data",
+  "time" : {
+    "start" : 1640673479732,
+    "stop" : 1640673479748,
+    "duration" : 16
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d3a4b7f53b20ad12",
+  "name" : "render place item",
+  "time" : {
+    "start" : 1640673450786,
+    "stop" : 1640673450793,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fa3c9ee00b4d346c",
+  "name" : "Sing up, sign out, sign in and check session",
+  "time" : {
+    "start" : 1640673703552,
+    "stop" : 1640673704932,
+    "duration" : 1380
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c146c40bc6f55c3d",
+  "name" : "render unauthorized nav items",
+  "time" : {
+    "start" : 1640673449944,
+    "stop" : 1640673449951,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6107bb2e860f8599",
+  "name" : "render unauthorized",
+  "time" : {
+    "start" : 1640673451414,
+    "stop" : 1640673451423,
+    "duration" : 9
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a3353ca2f34aa4fe",
+  "name" : "Add new places list",
+  "time" : {
+    "start" : 1640673700488,
+    "stop" : 1640673701913,
+    "duration" : 1425
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fac7f1d816fd2665",
+  "name" : "Get all places lists",
+  "time" : {
+    "start" : 1640673478251,
+    "stop" : 1640673478252,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f2f291466c8b9b46",
+  "name" : "Remove list from added",
+  "time" : {
+    "start" : 1640673478260,
+    "stop" : 1640673478262,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5ab38444c0ce17dd",
+  "name" : "Add place",
+  "time" : {
+    "start" : 1640673478239,
+    "stop" : 1640673478241,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4445ea2aafc14b0c",
+  "name" : "getPlacesLists",
+  "time" : {
+    "start" : 1640673449148,
+    "stop" : 1640673449149,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ca48c6d539ad07f8",
+  "name" : "Sign up and create places list (chrome)",
+  "time" : {
+    "start" : 1640673817339,
+    "stop" : 1640673819103,
+    "duration" : 1764
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "73ece749ab91efc4",
+  "name" : "not render add places list item form for unauthorized",
+  "time" : {
+    "start" : 1640673449706,
+    "stop" : 1640673449720,
+    "duration" : 14
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c910b72463b6943c",
+  "name" : "Sign up",
+  "time" : {
+    "start" : 1640673478277,
+    "stop" : 1640673478283,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5bd4da274c40509f",
+  "name" : "Add list to added",
+  "time" : {
+    "start" : 1640673478253,
+    "stop" : 1640673478257,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f6216839e155942d",
+  "name" : "Add places list (unauthorized)",
+  "time" : {
+    "start" : 1640673480327,
+    "stop" : 1640673480333,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4bbc20f54edcea12",
+  "name" : "currentUser",
+  "time" : {
+    "start" : 1640673449146,
+    "stop" : 1640673449148,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e44da208ec2dd1d8",
+  "name" : "render unauthorized preview",
+  "time" : {
+    "start" : 1640673450391,
+    "stop" : 1640673450399,
+    "duration" : 8
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2cc524796e284982",
+  "name" : "Remove list from added (exception)",
+  "time" : {
+    "start" : 1640673480214,
+    "stop" : 1640673480229,
+    "duration" : 15
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "166f2144a425b856",
+  "name" : "Create and get places lists",
+  "time" : {
+    "start" : 1640673477294,
+    "stop" : 1640673477618,
+    "duration" : 324
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

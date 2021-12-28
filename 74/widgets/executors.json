@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://Konstantin343.github.io/software-testing-itmo",
+  "buildOrder" : 74,
+  "buildName" : "GitHub Actions Run #1629505546",
+  "buildUrl" : "https://github.com/Konstantin343/software-testing-itmo/actions/runs/1629505546",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://Konstantin343.github.io/software-testing-itmo/74/"
+} ]
